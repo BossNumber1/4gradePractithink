@@ -1,6 +1,6 @@
 .app21 {
     width: 1170px;
-    height: 510px;
+    height: 460px;
     left: calc(50% - 1170px / 2);
     top: 10px;
     box-shadow: 4px 4px 50px rgba(0, 0, 0, 0.05);
@@ -11,49 +11,70 @@
 
 .titlePage21 {
     top: 25px;
-    width: 1170px;
-    height: 22px;
+    left: calc(50% - 770px / 2);
+    width: 770px;
+    height: 44px;
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
     line-height: 22px;
     text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     color: #2f2f2f;
+}
+
+.subtitle21 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    top: 10px;
+    left: calc(50% - 506px / 2);
+    width: 506px;
+    height: 24px;
+    /* left: 571px; */
+    /* top: 6906px; */
+    color: #065b5b;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    margin-left: 10px;
 }
 
 .lineUnderHeading21 {
     position: absolute;
     width: 1169px;
     height: 0px;
-    top: 71px;
+    top: 100px;
     border-bottom: 1px solid #a8a8a8;
 }
 
 /* content styles */
 
 .content21 {
-    top: 132px;
-    left: calc(50% - 570px / 2);
-    width: 570px;
-    height: 258px;
+    top: 140px;
+    left: calc(50% - 242.33px / 2);
+    width: 242.33px;
+    height: 175.92px;
+    /* border: 1px solid; */
 }
 
-.triangles21 {
-    left: calc(50% - 370px / 2);
-    width: 370px;
-    height: 163px;
+.figure21 {
+    width: 242.33px;
+    height: 80.92px;
+    /* border: 1px solid; */
 }
+
+/* btns styles */
 
 .btns21 {
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    width: 570px;
+    align-items: center;
+    justify-content: space-between;
+    left: calc(50% - 160px / 2);
+    width: 160px;
     height: 45px;
-    top: 47px;
+    top: 50px;
 }
 
 .btns21 div {
@@ -63,16 +84,15 @@
     align-items: center;
     padding: 6px 16px;
     position: static;
-    width: 170px;
+    width: 70px;
     height: 45px;
-    left: calc(50% - 170px / 2 - 200px);
-    top: calc(50% - 45px / 2);
-    border: 1px solid #2f2f2f;
+    background: #369cb7;
+    border: 1px solid #369cb7;
     box-sizing: border-box;
     border-radius: 5px;
     flex: none;
-    order: 0;
+    order: 1;
     flex-grow: 0;
-    margin-right: 30px;
+    margin-right: 20px;
     cursor: pointer;
 }
