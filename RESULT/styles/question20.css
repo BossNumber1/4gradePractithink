@@ -55,8 +55,6 @@
     position: static;
     width: 70px;
     height: 45px;
-    /* left: calc(50% - 70px / 2 - 180px);
-    top: calc(50% - 45px / 2); */
     background: #369cb7;
     border: 1px solid #369cb7;
     box-sizing: border-box;
