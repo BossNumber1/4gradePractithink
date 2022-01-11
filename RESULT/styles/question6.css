@@ -1,6 +1,6 @@
 .app6 {
     width: 1170px;
-    height: 331px;
+    height: 482px;
     left: calc(50% - 1170px / 2);
     top: 10px;
     box-shadow: 4px 4px 50px rgba(0, 0, 0, 0.05);
@@ -24,8 +24,8 @@
 
 .subtitle6 {
     top: 10px;
-    left: calc(50% - 338px / 2);
-    width: 338px;
+    left: calc(50% - 348px / 2);
+    width: 348px;
     height: 24px;
     font-size: 16px;
     display: flex;
@@ -47,31 +47,33 @@
 
 .content6 {
     top: 136px;
-    left: calc(50% - 520px / 2);
-    width: 520px;
-    height: 45px;
+    left: calc(50% - 585px / 2);
+    width: 585px;
+    height: 205.56px;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
+    justify-content: space-between;
 }
 
 .content6 div {
-    position: static;
-    width: 80px;
-    height: 45px;
-    left: 440px;
-    top: 0px;
-    flex: none;
-    order: 4;
-    flex-grow: 0;
-    border: 1px solid #2f2f2f;
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
+    width: 155px;
+    height: 205.56px;
 }
 
-.content6 div:not(:last-child) {
-    margin-right: 30px;
+.content6 input {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 16px;
+    top: 17px;
+    left: calc(50% - 97.61px / 2);
+    width: 97.61px;
+    height: 30px;
+    border: 1px solid #2f2f2f;
+    box-sizing: border-box;
+    border-radius: 5px;
+    transform: matrix(1, -0.01, 0, 1, 0, 0);
+    text-align: center;
 }
