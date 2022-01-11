@@ -1,6 +1,6 @@
 .app20 {
     width: 1170px;
-    height: 510px;
+    height: 287px;
     left: calc(50% - 1170px / 2);
     top: 10px;
     box-shadow: 4px 4px 50px rgba(0, 0, 0, 0.05);
@@ -35,44 +35,35 @@
 /* content styles */
 
 .content20 {
-    top: 132px;
-    left: calc(50% - 570px / 2);
-    width: 570px;
-    height: 258px;
-}
-
-.triangles20 {
-    left: calc(50% - 370px / 2);
-    width: 370px;
-    height: 163px;
-}
-
-.btns20 {
+    top: 122px;
+    left: calc(50% - 430px / 2);
+    width: 430px;
+    height: 45px;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    width: 570px;
-    height: 45px;
-    top: 47px;
+
+    /* border: 1px solid; */
 }
 
-.btns20 div {
+.content20 div {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     padding: 6px 16px;
     position: static;
-    width: 170px;
+    width: 70px;
     height: 45px;
-    left: calc(50% - 170px / 2 - 200px);
-    top: calc(50% - 45px / 2);
-    border: 1px solid #2f2f2f;
+    /* left: calc(50% - 70px / 2 - 180px);
+    top: calc(50% - 45px / 2); */
+    background: #369cb7;
+    border: 1px solid #369cb7;
     box-sizing: border-box;
     border-radius: 5px;
     flex: none;
     order: 0;
     flex-grow: 0;
-    margin-right: 30px;
+    margin-right: 20px;
     cursor: pointer;
 }
