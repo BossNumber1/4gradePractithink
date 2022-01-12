@@ -1,6 +1,6 @@
 .app2 {
     width: 1170px;
-    height: 348px;
+    height: 495px;
     left: calc(50% - 1170px / 2);
     top: 10px;
     box-shadow: 4px 4px 50px rgba(0, 0, 0, 0.05);
@@ -13,7 +13,7 @@
     top: 25px;
     left: calc(50% - 770px / 2);
     width: 770px;
-    height: 88px;
+    height: 44px;
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
@@ -23,7 +23,7 @@
 }
 
 .lineUnderHeading2 {
-    top: 138px;
+    top: 100px;
     position: absolute;
     width: 1169px;
     height: 0px;
@@ -33,31 +33,56 @@
 /* content styles */
 
 .content2 {
-    top: 118px;
-    left: calc(50% - 252px / 2);
-    width: 252px;
-    height: 30px;
-
-    /* border: 1px solid gray; */
-
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
-    /* flex-direction: row;
-    align-items: flex-start; */
+    top: 125px;
+    left: calc(50% - 391px / 2);
+    width: 391px;
+    height: 230px;
 }
 
-.input2 {
-    position: static;
-    width: 50px;
+.figures2 {
+    width: 391px;
+    height: 170px;
+}
+
+.expression2 {
+    top: 30px;
+    left: calc(50% - 117px / 2);
+    width: 117px;
     height: 30px;
-    left: 63px;
-    top: 0px;
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-    margin-left: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 18px;
+}
+
+.content2 input {
+    width: 40px;
+    height: 30px;
     border-radius: 5px;
-    border: 1px solid #2f2f2f;
     text-align: center;
+}
+
+.expression2 input {
+    border: 1px solid #2f2f2f;
+}
+
+/* inputs styles */
+
+.inputs2 input {
+    border: 1px solid #0995e3;
+}
+
+.inputs2 div {
+    position: absolute;
+    top: -115px;
+}
+
+.inputs2 div:nth-child(1) {
+    left: 115px;
+}
+
+.inputs2 div:nth-child(2) {
+    left: 300px;
 }
