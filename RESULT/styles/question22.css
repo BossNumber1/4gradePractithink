@@ -1,6 +1,6 @@
 .app22 {
     width: 1170px;
-    height: 510px;
+    height: 687px;
     left: calc(50% - 1170px / 2);
     top: 10px;
     box-shadow: 4px 4px 50px rgba(0, 0, 0, 0.05);
@@ -11,8 +11,9 @@
 
 .titlePage22 {
     top: 25px;
-    width: 1170px;
-    height: 22px;
+    left: calc(50% - 770px / 2);
+    width: 770px;
+    height: 66px;
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
@@ -22,57 +23,104 @@
     align-items: center;
     justify-content: center;
     color: #2f2f2f;
+
+    /* border: 1px solid; */
+}
+
+.subtitle22 {
+    top: 37px;
+    left: calc(50% - 391px / 2);
+    width: 391px;
+    height: 24px;
+    font-size: 16px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    color: #065b5b;
+    font-weight: lighter;
 }
 
 .lineUnderHeading22 {
+    top: 148px;
     position: absolute;
     width: 1169px;
     height: 0px;
-    top: 71px;
     border-bottom: 1px solid #a8a8a8;
 }
 
 /* content styles */
 
 .content22 {
-    top: 132px;
-    left: calc(50% - 570px / 2);
-    width: 570px;
-    height: 258px;
-}
-
-.triangles22 {
-    left: calc(50% - 370px / 2);
-    width: 370px;
-    height: 163px;
-}
-
-.btns22 {
+    top: 129px;
+    left: calc(50% - 900px / 2);
+    width: 900px;
+    height: 369px;
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    width: 570px;
-    height: 45px;
-    top: 47px;
-}
-
-.btns22 div {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
     align-items: center;
-    padding: 6px 16px;
-    position: static;
-    width: 170px;
+    justify-content: space-between;
+}
+
+.graph22 {
+    width: 370px;
+    height: 369px;
+}
+
+.table22 {
+    top: -25px;
+    width: 398px;
+    height: 221px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.leftColumn22,
+.rightColumn22 {
+    width: 199.54px;
+    height: 221px;
+}
+
+/* rows styles */
+
+.first1row22,
+.second1row22,
+.third1row22,
+.fourth1row22,
+.fifth1row22,
+.first2row22,
+.second2row22,
+.third2row22,
+.fourth2row22,
+.fifth2row22 {
+    width: 199.54px;
     height: 45px;
-    left: calc(50% - 170px / 2 - 200px);
-    top: calc(50% - 45px / 2);
-    border: 1px solid #2f2f2f;
+    background: #ffffff;
+    border: 1px solid #cccccc;
     box-sizing: border-box;
-    border-radius: 5px;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    margin-right: 30px;
-    cursor: pointer;
+    padding-top: 12.5px;
+    text-align: center;
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.first1row22,
+.first2row22 {
+    background: #68c2d0;
+    color: white;
+}
+
+.adjustableLevel {
+    position: absolute;
+    width: 53px;
+    height: 83px;
+    left: 221px;
+    top: 225px;
+
+    border: 2px dashed #d634ff;
+    box-sizing: border-box;
+
+    cursor: row-resize;
 }
