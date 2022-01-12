@@ -1,7 +1,6 @@
 .app3 {
     width: 1170px;
-    height: 403px;
-    /* 503 */
+    height: 507px;
     left: calc(50% - 1170px / 2);
     top: 10px;
     box-shadow: 4px 4px 50px rgba(0, 0, 0, 0.05);
@@ -11,10 +10,10 @@
 }
 
 .titlePage3 {
-    top: 26px;
+    top: 25px;
     left: calc(50% - 770px / 2);
     width: 770px;
-    height: 44px;
+    height: 22px;
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
@@ -24,66 +23,87 @@
 }
 
 .lineUnderHeading3 {
+    top: 70px;
     position: absolute;
     width: 1169px;
     height: 0px;
-    top: 100px;
     border-bottom: 1px solid #a8a8a8;
 }
 
 /* content styles */
 
 .content3 {
-    top: 105px;
-    left: calc(50% - 514px / 2);
-    width: 514px;
-    height: 105px;
-
-    /* border: 1px solid gray; */
+    top: 102px;
+    left: calc(50% - 339px / 2);
+    width: 339px;
+    height: 265px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-/* inputs styles */
+.leftColumn3,
+.rightColumn3 {
+    width: 170px;
+    height: 265px;
 
-.inputsCollections {
-    top: 50px;
-    left: calc(50% - 205px / 2);
-    width: 205px;
-    height: 44px;
+    /* border: 1px solid red; */
+}
+
+/* rows styles */
+
+.first1row3,
+.second1row3,
+.third1row3,
+.fourth1row3,
+.fifth1row3,
+.sixth1row3,
+.first2row3,
+.second2row3,
+.third2row3,
+.fourth2row3,
+.fifth2row3,
+.sixth2row3 {
+    border: 1px solid #0995e3;
+    width: 170px;
+    height: 45px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.first1row3,
+.first2row3 {
+    background-color: #abe9ff;
+}
+
+.second1row3,
+.third1row3,
+.fourth1row3,
+.fifth1row3,
+.sixth1row3,
+.second2row3,
+.third2row3,
+.fourth2row3,
+.fifth2row3,
+.sixth2row3 {
+    background-color: #fff;
+}
+
+.content3 input {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-}
-
-.inputContent input {
-    position: static;
-    width: 50px;
+    padding: 6px 16px;
+    width: 40px;
     height: 30px;
-    flex: none;
-    order: 2;
-    flex-grow: 0;
-    margin: 0px 5px;
-    border: 1px solid #2f2f2f;
+    background: #ffffff;
+    border: 1px solid #0995e3;
+    box-sizing: border-box;
     border-radius: 5px;
     text-align: center;
-}
-
-.sign {
-    position: static;
-    width: 11px;
-    height: 22px;
-    left: 55px;
-    top: 4px;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 22px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    color: #2f2f2f;
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-    margin: 0px 5px;
 }
