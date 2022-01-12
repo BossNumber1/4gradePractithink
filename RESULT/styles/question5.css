@@ -1,6 +1,6 @@
 .app5 {
     width: 1170px;
-    height: 447px;
+    height: 480px;
     left: calc(50% - 1170px / 2);
     top: 10px;
     box-shadow: 4px 4px 50px rgba(0, 0, 0, 0.05);
@@ -22,6 +22,19 @@
     color: #2f2f2f;
 }
 
+.subtitle5 {
+    top: 10px;
+    left: calc(50% - 348px / 2);
+    width: 348px;
+    height: 24px;
+    font-size: 16px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    color: #065b5b;
+    font-weight: lighter;
+}
+
 .lineUnderHeading5 {
     position: absolute;
     width: 1169px;
@@ -33,47 +46,38 @@
 /* content styles */
 
 .content5 {
-    top: 134px;
-    left: calc(50% - 569px / 2);
-    width: 569px;
-    height: 173px;
-    /* border: 1px solid gray; */
-}
-
-.frog {
-    width: 569px;
-    height: 78px;
-    /* border: 1px solid gray; */
-}
-
-.btns5 {
-    top: 47px;
+    top: 136px;
     left: calc(50% - 370px / 2);
     width: 370px;
-    height: 45px;
+    height: 204px;
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    /* border: 1px solid gray; */
+    align-items: center;
+    justify-content: space-between;
 }
 
-.btns5 div {
+.leftColumn5,
+.rightColumn5 {
+    width: 155px;
+    height: 204px;
+}
+
+.top1row5,
+.center1row5,
+.bottom1row5,
+.top2row5,
+.center2row5,
+.bottom2row5 {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
     align-items: center;
-    padding: 6px 16px;
-    position: static;
-    width: 70px;
-    height: 45px;
-    left: calc(50% - 70px / 2 - 150px);
-    top: calc(50% - 45px / 2);
-    border: 1px solid #2f2f2f;
-    box-sizing: border-box;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.content5 input {
+    width: 57px;
+    height: 30.15px;
+    border: 1px solid;
     border-radius: 5px;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    margin-right: 30px;
-    cursor: pointer;
+    margin-left: 10px;
+    text-align: center;
 }

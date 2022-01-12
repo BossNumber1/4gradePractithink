@@ -37,9 +37,6 @@
     left: calc(50% - 415px / 2);
     width: 415px;
     height: 130px;
-
-    /* border: 1px solid gray; */
-
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -49,11 +46,6 @@
 .rightColumn9 {
     width: 173px;
     height: 130px;
-    /* border: 1px solid red; */
-
-    /* display: flex;
-    align-items: center;
-    justify-content: space-between; */
 }
 
 .content9 input {
@@ -79,7 +71,5 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-
-    /* border: 1px solid green; */
     margin-bottom: 18px;
 }
