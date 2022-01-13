@@ -1,4 +1,4 @@
-.app21 {
+.app25 {
     width: 1170px;
     height: 460px;
     left: calc(50% - 1170px / 2);
@@ -9,7 +9,7 @@
     margin-bottom: 51px;
 }
 
-.titlePage21 {
+.titlePage25 {
     top: 25px;
     left: calc(50% - 770px / 2);
     width: 770px;
@@ -22,7 +22,7 @@
     color: #2f2f2f;
 }
 
-.lineUnderHeading21 {
+.lineUnderHeading25 {
     position: absolute;
     width: 1169px;
     height: 0px;
@@ -32,42 +32,39 @@
 
 /* content styles */
 
-.content21 {
+.content25 {
     top: 110px;
     left: 300px;
     width: 393.01px;
     height: 175.92px;
-    /* border: 1px solid; */
 }
 
-.figures21 {
+.figures25 {
     width: 242.33px;
     height: 80.92px;
-    /* border: 1px solid; 67.08 */
 }
 
-.figures21 img:nth-child(1) {
+.figures25 img:nth-child(1) {
     margin-left: 150px;
 }
 
-.figures21 img:nth-child(2) {
+.figures25 img:nth-child(2) {
     margin-top: 45px;
 }
 
 /* btns styles */
 
-.btns21 {
+.btns25 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* left: calc(50% - 160px / 2); */
     left: 230px;
     width: 160px;
     height: 45px;
     top: 80px;
 }
 
-.btns21 div {
+.btns25 div {
     display: flex;
     flex-direction: row;
     justify-content: center;
