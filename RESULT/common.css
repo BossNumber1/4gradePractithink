@@ -70,7 +70,8 @@ body {
 }
 
 .subtitle,
-.subtitle014 {
+.subtitle014,
+.subtitle21 {
     margin-top: 35px;
     width: 1170px;
     height: 24px;
@@ -88,6 +89,10 @@ body {
 
 .subtitle014 {
     margin-top: 60px;
+}
+
+.subtitle21 {
+    margin-top: 17px;
 }
 
 .subtitle img {
