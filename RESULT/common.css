@@ -7,8 +7,8 @@
 @import "./styles/question4.css";
 @import "./styles/question5.css";
 @import "./styles/question6.css";
-@import "./styles/question7.css";
 @import "./styles/question08.css"; /* NEW */
+@import "./styles/question9.css";
 @import "./styles/question10.css";
 @import "./styles/question11.css";
 @import "./styles/question12.css";
@@ -70,6 +70,7 @@ body {
 }
 
 .subtitle,
+.subtitle9,
 .subtitle12,
 .subtitle14,
 .subtitle16,
@@ -93,6 +94,7 @@ body {
     margin-top: 60px;
 }
 
+.subtitle9,
 .subtitle12,
 .subtitle16,
 .subtitle25 {
@@ -100,6 +102,7 @@ body {
 }
 
 .subtitle img,
+.subtitle9 img,
 .subtitle12 img,
 .subtitle14 img,
 .subtitle16 img,

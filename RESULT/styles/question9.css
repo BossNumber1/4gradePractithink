@@ -1,4 +1,4 @@
-.app7 {
+.app9 {
     width: 1170px;
     height: 494px;
     left: calc(50% - 1170px / 2);
@@ -9,7 +9,7 @@
     margin-bottom: 51px;
 }
 
-.titlePage7 {
+.titlePage9 {
     top: 25px;
     left: calc(50% - 770px / 2);
     width: 770px;
@@ -22,7 +22,7 @@
     color: #2f2f2f;
 }
 
-.lineUnderHeading7 {
+.lineUnderHeading9 {
     top: 100px;
     position: absolute;
     width: 1169px;
@@ -32,19 +32,19 @@
 
 /* content styles */
 
-.content7 {
-    top: 157px;
+.content9 {
+    top: 117px;
     left: calc(50% - 392px / 2);
     width: 392px;
     height: 237px;
 }
 
-.figures7 {
+.figures9 {
     width: 391px;
     height: 170px;
 }
 
-.expression7 {
+.expression9 {
     top: 30px;
     left: calc(50% - 134px / 2);
     width: 134px;
@@ -57,7 +57,7 @@
     line-height: 18px;
 }
 
-.content7 input {
+.content9 input {
     width: 40px;
     height: 30px;
     text-align: center;
@@ -67,15 +67,15 @@
 
 /* inputs styles */
 
-.inputs7 div {
+.inputs9 div {
     position: absolute;
     top: -245px;
 }
 
-.inputs7 div:nth-child(1) {
+.inputs9 div:nth-child(1) {
     left: 115px;
 }
 
-.inputs7 div:nth-child(2) {
+.inputs9 div:nth-child(2) {
     left: 300px;
 }
