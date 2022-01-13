@@ -1,4 +1,4 @@
-.app8 {
+.app10 {
     width: 1170px;
     height: 362px;
     left: calc(50% - 1170px / 2);
@@ -9,7 +9,7 @@
     margin-bottom: 51px;
 }
 
-.titlePage8 {
+.titlePage10 {
     top: 25px;
     width: 1170px;
     height: 22px;
@@ -24,7 +24,7 @@
     color: #2f2f2f;
 }
 
-.lineUnderHeading8 {
+.lineUnderHeading10 {
     position: absolute;
     width: 1169px;
     height: 0px;
@@ -34,14 +34,14 @@
 
 /* content styles */
 
-.content8 {
-    top: 90px;
+.content10 {
+    top: 80px;
     left: calc(50% - 430px / 2);
     width: 430px;
     height: 268.32px;
 }
 
-.inputs8 {
+.inputs10 {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -56,7 +56,7 @@
     margin: 30px 0px;
 }
 
-.inputs8 div {
+.inputs10 div {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -71,24 +71,24 @@
     border-radius: 5px;
 }
 
-#firstEmpty8 {
+#firstEmpty10 {
     margin-right: 5px;
     margin-left: 0px;
 }
 
-#secondEmpty8 {
+#secondEmpty10 {
     margin-right: 5px;
     margin-left: 5px;
 }
 
-.dedicated5 {
+.dedicated10 {
     font-weight: bold;
     margin-left: 5px;
 }
 
 /* btns styles */
 
-.btns8 {
+.btns10 {
     top: 29px;
     left: calc(50% - 430px / 2);
     width: 430px;
@@ -98,7 +98,7 @@
     align-items: flex-start;
 }
 
-.btns8 div {
+.btns10 div {
     display: flex;
     flex-direction: row;
     justify-content: center;
