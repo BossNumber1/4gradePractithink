@@ -1,4 +1,4 @@
-.app15 {
+.app18 {
     width: 1170px;
     height: 613px;
     left: calc(50% - 1170px / 2);
@@ -9,7 +9,7 @@
     margin-bottom: 51px;
 }
 
-.titlePage15 {
+.titlePage18 {
     top: 25px;
     width: 1170px;
     height: 22px;
@@ -25,7 +25,7 @@
     justify-content: center;
 }
 
-.lineUnderHeading15 {
+.lineUnderHeading18 {
     position: absolute;
     width: 1169px;
     height: 0px;
@@ -35,14 +35,14 @@
 
 /* content styles */
 
-.content15 {
+.content18 {
     top: 102px;
     left: calc(50% - 572px / 2);
     width: 572px;
     height: 386px;
 }
 
-.triangle15 {
+.triangle18 {
     left: calc(50% - 537px / 2);
     width: 537px;
     height: 310px;
@@ -50,7 +50,7 @@
 
 /* angles styles */
 
-.angles15 {
+.angles18 {
     top: 33px;
     width: 572px;
     height: 40px;
@@ -59,13 +59,13 @@
     justify-content: space-between;
 }
 
-.angles15 div {
+.angles18 div {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.angles15 input {
+.angles18 input {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -81,7 +81,7 @@
 
 /* protractor styles */
 
-.protractor15 {
+.protractor18 {
     position: absolute;
     top: 118px;
     left: 320px;
