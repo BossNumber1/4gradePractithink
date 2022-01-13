@@ -688,6 +688,55 @@ function question10() {
     }
 }
 
+// 11 QUESTION
+
+let numbers11 = {
+    firstNumber: "",
+    secondNumber: "",
+    thirdNumber: "",
+    fourthNumber: "",
+};
+
+checkin(4, [342, 17, 261, 5], e, 11, numbers11);
+
+function question11() {
+    if (
+        numbers11.firstNumber != "" &&
+        numbers11.secondNumber != "" &&
+        numbers11.thirdNumber != "" &&
+        numbers11.fourthNumber != ""
+    ) {
+        succerrorAndCreateMiniIcon(4, 11, numbers11);
+
+        // выносим общий статус к номеру вопроса
+
+        if (
+            numbers11.firstNumber === "right" &&
+            numbers11.secondNumber === "right" &&
+            numbers11.thirdNumber === "right" &&
+            numbers11.fourthNumber === "right"
+        ) {
+            addImage(
+                "success",
+                document.getElementsByClassName("question11"),
+                "app11",
+                11
+            );
+        } else {
+            addImage(
+                "failure",
+                document.getElementsByClassName("question11"),
+                "app11",
+                11
+            );
+
+            // addCorrectAnswerQuestion11();
+        }
+    } else {
+        podsvetkanevibrannihblokov(4, 11, numbers11);
+    }
+}
+
 // RESULT
 
 document.getElementById("submit").onclick = function () {
@@ -701,4 +750,5 @@ document.getElementById("submit").onclick = function () {
     // -- 8 --
     // -- 9 --
     question10();
+    question11();
 };
