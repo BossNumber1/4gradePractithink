@@ -1,4 +1,4 @@
-.app19 {
+.app22 {
     width: 1170px;
     height: 329px;
     left: calc(50% - 1170px / 2);
@@ -9,7 +9,7 @@
     margin-bottom: 51px;
 }
 
-.titlePage19 {
+.titlePage22 {
     top: 26px;
     width: 1170px;
     height: 22px;
@@ -21,7 +21,7 @@
     color: #2f2f2f;
 }
 
-.lineUnderHeading19 {
+.lineUnderHeading22 {
     position: absolute;
     width: 1169px;
     height: 0px;
@@ -31,7 +31,7 @@
 
 /* content styles */
 
-.content19 {
+.content22 {
     top: 119px;
     left: calc(50% - 800px / 2);
     width: 800px;
@@ -41,7 +41,7 @@
     justify-content: space-between;
 }
 
-.content19 input {
+.content22 input {
     position: static;
     width: 40px;
     height: 30px;
@@ -54,10 +54,10 @@
     text-align: center;
 }
 
-.top1row19,
-.top2row19,
-.bottom1row19,
-.bottom2row19 {
+.top1row22,
+.top2row22,
+.bottom1row22,
+.bottom2row22 {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -67,12 +67,12 @@
     /* border: 1px solid orange; */
 }
 
-.leftBlock19 {
+.leftBlock22 {
     width: 348px;
     height: 90px;
 }
 
-.rightBlock19 {
+.rightBlock22 {
     width: 342px;
     height: 90px;
 }
