@@ -1,6 +1,7 @@
 @import "adaptiv.css";
 
 @import "./styles/question1.css";
+@import "./styles/question02.css";
 @import "./styles/question2.css";
 @import "./styles/question3.css";
 @import "./styles/question4.css";
@@ -63,6 +64,22 @@ body {
     font-weight: 700;
     color: #369cb7;
     margin: 0 0 5px 40px;
+}
+
+.subtitle {
+    margin-top: 35px;
+    width: 1170px;
+    height: 24px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #065b5b;
+    text-align: center;
+}
+
+.subtitle img {
+    margin-right: 5px;
 }
 
 /* correct answer styles */
