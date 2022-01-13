@@ -1,4 +1,4 @@
-.app014 {
+.app14 {
     width: 1170px;
     height: 296px;
     left: calc(50% - 1170px / 2);
@@ -9,7 +9,7 @@
     margin-bottom: 51px;
 }
 
-.titlePage014 {
+.titlePage14 {
     top: 25px;
     width: 1170px;
     height: 22px;
@@ -21,7 +21,7 @@
     color: #2f2f2f;
 }
 
-.lineUnderHeading014 {
+.lineUnderHeading14 {
     position: absolute;
     width: 1169px;
     height: 0px;
@@ -31,7 +31,7 @@
 
 /* content styles */
 
-.content014 {
+.content14 {
     top: 85px;
     left: calc(50% - 355.6px / 2);
     width: 355.6px;
@@ -41,7 +41,7 @@
     justify-content: space-between;
 }
 
-.content014 input {
+.content14 input {
     width: 67.45px;
     height: 38.78px;
     display: flex;
