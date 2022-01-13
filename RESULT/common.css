@@ -14,8 +14,8 @@
 @import "./styles/question10.css";
 @import "./styles/question11.css";
 @import "./styles/question12.css";
-@import "./styles/question13.css";
 @import "./styles/question014.css"; /* NEW */
+@import "./styles/question16.css";
 @import "./styles/question17.css";
 @import "./styles/question18.css";
 @import "./styles/question19.css";
@@ -71,6 +71,7 @@ body {
 
 .subtitle,
 .subtitle014,
+.subtitle16,
 .subtitle25 {
     margin-top: 35px;
     width: 1170px;
@@ -91,11 +92,15 @@ body {
     margin-top: 60px;
 }
 
+.subtitle16,
 .subtitle25 {
     margin-top: 17px;
 }
 
-.subtitle img {
+.subtitle img,
+.subtitle014 img,
+.subtitle16 img,
+.subtitle25 img {
     margin-right: 5px;
 }
 
