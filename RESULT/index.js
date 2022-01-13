@@ -143,6 +143,54 @@ function createMiniIcon(property, element) {
     }
 }
 
+function checkin(countId, correctNumbers, e, numberQuestion, number) {
+    for (let i = 0; i < countId; i++) {
+        if (i === 0) {
+            document.getElementById("firstNumber" + numberQuestion).onchange =
+                function (e) {
+                    if (e.target.value === correctNumbers[i]) {
+                        number.firstNumber = "right";
+                    } else {
+                        number.firstNumber = "wrong";
+                    }
+                };
+        }
+
+        if (i === 1) {
+            document.getElementById("secondNumber" + numberQuestion).onchange =
+                function (e) {
+                    if (e.target.value === correctNumbers[i]) {
+                        number.secondNumber = "right";
+                    } else {
+                        number.secondNumber = "wrong";
+                    }
+                };
+        }
+
+        if (i === 2) {
+            document.getElementById("thirdNumber" + numberQuestion).onchange =
+                function (e) {
+                    if (e.target.value === correctNumbers[i]) {
+                        number.thirdNumber = "right";
+                    } else {
+                        number.thirdNumber = "wrong";
+                    }
+                };
+        }
+
+        if (i === 3) {
+            document.getElementById("fourthNumber" + numberQuestion).onchange =
+                function (e) {
+                    if (e.target.value === correctNumbers[i]) {
+                        number.fourthNumber = "right";
+                    } else {
+                        number.fourthNumber = "wrong";
+                    }
+                };
+        }
+    }
+}
+
 function succerrorAndCreateMiniIcon(countId, numberQuestion, number) {
     for (let i = 0; i < countId; i++) {
         if (i === 0) {
@@ -241,37 +289,7 @@ let numbers1 = {
     fourthNumber: "",
 };
 
-document.getElementById("firstNumber1").onchange = function (e) {
-    if (e.target.value == 342) {
-        numbers1.firstNumber = "right";
-    } else {
-        numbers1.firstNumber = "wrong";
-    }
-};
-
-document.getElementById("secondNumber1").onchange = function (e) {
-    if (e.target.value == 17) {
-        numbers1.secondNumber = "right";
-    } else {
-        numbers1.secondNumber = "wrong";
-    }
-};
-
-document.getElementById("thirdNumber1").onchange = function (e) {
-    if (e.target.value == 261) {
-        numbers1.thirdNumber = "right";
-    } else {
-        numbers1.thirdNumber = "wrong";
-    }
-};
-
-document.getElementById("fourthNumber1").onchange = function (e) {
-    if (e.target.value == 5) {
-        numbers1.fourthNumber = "right";
-    } else {
-        numbers1.fourthNumber = "wrong";
-    }
-};
+checkin(4, [342, 17, 261, 5], e, 1, numbers1);
 
 function question1() {
     if (
@@ -304,7 +322,7 @@ function question1() {
                 1
             );
 
-            // addCorrectAnswerQuestion10();
+            // addCorrectAnswerQuestion1();
         }
     } else {
         podsvetkanevibrannihblokov(4, 1, numbers1);
@@ -319,29 +337,7 @@ let numbers2 = {
     thirdNumber: "",
 };
 
-document.getElementById("firstNumber2").onchange = function (e) {
-    if (e.target.value == 342) {
-        numbers2.firstNumber = "right";
-    } else {
-        numbers2.firstNumber = "wrong";
-    }
-};
-
-document.getElementById("secondNumber2").onchange = function (e) {
-    if (e.target.value == 17) {
-        numbers2.secondNumber = "right";
-    } else {
-        numbers2.secondNumber = "wrong";
-    }
-};
-
-document.getElementById("thirdNumber2").onchange = function (e) {
-    if (e.target.value == 261) {
-        numbers2.thirdNumber = "right";
-    } else {
-        numbers2.thirdNumber = "wrong";
-    }
-};
+checkin(3, [342, 17, 261, 5], e, 2, numbers2);
 
 function question2() {
     if (
@@ -372,10 +368,59 @@ function question2() {
                 2
             );
 
-            // addCorrectAnswerQuestion10();
+            // addCorrectAnswerQuestion2();
         }
     } else {
         podsvetkanevibrannihblokov(3, 2, numbers2);
+    }
+}
+
+// 3 QUESTION
+
+let numbers3 = {
+    firstNumber: "",
+    secondNumber: "",
+    thirdNumber: "",
+    fourthNumber: "",
+};
+
+checkin(4, [342, 17, 261, 5], e, 3, numbers3);
+
+function question3() {
+    if (
+        numbers3.firstNumber != "" &&
+        numbers3.secondNumber != "" &&
+        numbers3.thirdNumber != "" &&
+        numbers3.fourthNumber != ""
+    ) {
+        succerrorAndCreateMiniIcon(4, 3, numbers3);
+
+        // выносим общий статус к номеру вопроса
+
+        if (
+            numbers3.firstNumber === "right" &&
+            numbers3.secondNumber === "right" &&
+            numbers3.thirdNumber === "right" &&
+            numbers3.fourthNumber === "right"
+        ) {
+            addImage(
+                "success",
+                document.getElementsByClassName("question3"),
+                "app3",
+                3
+            );
+        } else {
+            addImage(
+                "failure",
+                document.getElementsByClassName("question3"),
+                "app3",
+                3
+            );
+
+            // addCorrectAnswerQuestion3();
+        }
+    } else {
+        podsvetkanevibrannihblokov(4, 3, numbers3);
     }
 }
 
