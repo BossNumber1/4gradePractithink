@@ -839,6 +839,42 @@ function question15() {
     }
 }
 
+// 16 QUESTION
+
+let numbers16 = {
+    firstNumber: "",
+};
+
+checkin(1, [342, 17, 261, 5], e, 16, numbers16);
+
+function question16() {
+    if (numbers16.firstNumber != "") {
+        succerrorAndCreateMiniIcon(1, 16, numbers16);
+
+        // выносим общий статус к номеру вопроса
+
+        if (numbers16.firstNumber === "right") {
+            addImage(
+                "success",
+                document.getElementsByClassName("question16"),
+                "app16",
+                16
+            );
+        } else {
+            addImage(
+                "failure",
+                document.getElementsByClassName("question16"),
+                "app16",
+                16
+            );
+
+            // addCorrectAnswerQuestion16();
+        }
+    } else {
+        podsvetkanevibrannihblokov(1, 16, numbers16);
+    }
+}
+
 // RESULT
 
 document.getElementById("submit").onclick = function () {
@@ -857,4 +893,5 @@ document.getElementById("submit").onclick = function () {
     question13();
     // -- 14 --
     question15();
+    question16();
 };
