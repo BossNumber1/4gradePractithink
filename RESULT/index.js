@@ -188,6 +188,28 @@ function checkin(countId, correctNumbers, e, numberQuestion, number) {
                     }
                 };
         }
+
+        if (i === 4) {
+            document.getElementById("fifthNumber" + numberQuestion).onchange =
+                function (e) {
+                    if (e.target.value === correctNumbers[i]) {
+                        number.fifthNumber = "right";
+                    } else {
+                        number.fifthNumber = "wrong";
+                    }
+                };
+        }
+
+        if (i === 5) {
+            document.getElementById("sixthNumber" + numberQuestion).onchange =
+                function (e) {
+                    if (e.target.value === correctNumbers[i]) {
+                        number.sixthNumber = "right";
+                    } else {
+                        number.sixthNumber = "wrong";
+                    }
+                };
+        }
     }
 }
 
@@ -240,6 +262,30 @@ function succerrorAndCreateMiniIcon(countId, numberQuestion, number) {
                 document.getElementById("fourthNumber" + numberQuestion)
             );
         }
+
+        if (i === 4) {
+            succerror(
+                document.getElementById("fifthNumber" + numberQuestion),
+                number.fifthNumber === "wrong"
+            );
+
+            createMiniIcon(
+                number.fifthNumber,
+                document.getElementById("fifthNumber" + numberQuestion)
+            );
+        }
+
+        if (i === 5) {
+            succerror(
+                document.getElementById("sixthNumber" + numberQuestion),
+                number.sixthNumber === "wrong"
+            );
+
+            createMiniIcon(
+                number.sixthNumber,
+                document.getElementById("sixthNumber" + numberQuestion)
+            );
+        }
     }
 }
 
@@ -273,6 +319,22 @@ function podsvetkanevibrannihblokov(countId, numberQuestion, number) {
             if (number.fourthNumber === "") {
                 document.getElementById(
                     "fourthNumber" + numberQuestion
+                ).style.border = "2px solid #FFB47D";
+            }
+        }
+
+        if (i === 4) {
+            if (number.fifthNumber === "") {
+                document.getElementById(
+                    "fifthNumber" + numberQuestion
+                ).style.border = "2px solid #FFB47D";
+            }
+        }
+
+        if (i === 5) {
+            if (number.sixthNumber === "") {
+                document.getElementById(
+                    "sixthNumber" + numberQuestion
                 ).style.border = "2px solid #FFB47D";
             }
         }
@@ -424,8 +486,69 @@ function question3() {
     }
 }
 
+// PLACE FOR 4 QUESTION
+
+// 5 QUESTION
+
+let numbers5 = {
+    firstNumber: "",
+    secondNumber: "",
+    thirdNumber: "",
+    fourthNumber: "",
+    fifthNumber: "",
+    sixthNumber: "",
+};
+
+checkin(6, [342, 17, 261, 5], e, 5, numbers5);
+
+function question5() {
+    if (
+        numbers5.firstNumber != "" &&
+        numbers5.secondNumber != "" &&
+        numbers5.thirdNumber != "" &&
+        numbers5.fourthNumber != "" &&
+        numbers5.fifthNumber != "" &&
+        numbers5.sixthNumber != ""
+    ) {
+        succerrorAndCreateMiniIcon(6, 5, numbers5);
+
+        // выносим общий статус к номеру вопроса
+
+        if (
+            numbers5.firstNumber === "right" &&
+            numbers5.secondNumber === "right" &&
+            numbers5.thirdNumber === "right" &&
+            numbers5.fourthNumber === "right" &&
+            numbers5.fifthNumber === "right" &&
+            numbers5.sixthNumber === "right"
+        ) {
+            addImage(
+                "success",
+                document.getElementsByClassName("question5"),
+                "app5",
+                5
+            );
+        } else {
+            addImage(
+                "failure",
+                document.getElementsByClassName("question5"),
+                "app5",
+                5
+            );
+
+            // addCorrectAnswerQuestion5();
+        }
+    } else {
+        podsvetkanevibrannihblokov(6, 5, numbers5);
+    }
+}
+
 // RESULT
 
 document.getElementById("submit").onclick = function () {
     question1();
+    question2();
+    question3();
+    // -- 4 --
+    question5();
 };
