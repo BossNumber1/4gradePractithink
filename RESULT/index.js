@@ -399,7 +399,7 @@ let numbers2 = {
     thirdNumber: "",
 };
 
-checkin(3, [342, 17, 261, 5], 2, numbers2);
+checkin(3, [52, 40, 12], 2, numbers2);
 
 function question2() {
     if (
@@ -446,7 +446,7 @@ let numbers3 = {
     fourthNumber: "",
 };
 
-checkin(4, [342, 17, 261, 5], 3, numbers3);
+checkin(4, [12, 28, 40, 44], 3, numbers3);
 
 function question3() {
     if (
@@ -597,7 +597,7 @@ let numbers7 = {
     thirdNumber: "",
 };
 
-checkin(3, [342, 17, 261, 5], 7, numbers7);
+checkin(3, [109, 100, 9], 7, numbers7);
 
 function question7() {
     if (
@@ -648,7 +648,7 @@ let numbers10 = {
     fourthNumber: "",
 };
 
-checkin(4, [342, 17, 261, 5], 10, numbers10);
+checkin(4, [1215, 1000, 200, 15], 10, numbers10);
 
 function question10() {
     if (
@@ -749,7 +749,7 @@ let numbers13 = {
     fifthNumber: "",
 };
 
-checkin(5, [342, 17, 261, 5], 13, numbers13);
+checkin(5, [828, 600, 90, 120, 18], 13, numbers13);
 
 function question13() {
     if (
@@ -801,7 +801,7 @@ let numbers15 = {
     thirdNumber: "",
 };
 
-checkin(3, [342, 17, 261, 5], 15, numbers15);
+checkin(3, [40, 90, 50], 15, numbers15);
 
 function question15() {
     if (
@@ -845,7 +845,7 @@ let numbers16 = {
     firstNumber: "",
 };
 
-checkin(1, [342, 17, 261, 5], 16, numbers16);
+checkin(1, [14], 16, numbers16);
 
 function question16() {
     if (numbers16.firstNumber != "") {
@@ -881,7 +881,7 @@ let numbers17 = {
     firstNumber: "",
 };
 
-checkin(1, [342, 17, 261, 5], 17, numbers17);
+checkin(1, [2], 17, numbers17);
 
 function question17() {
     if (numbers17.firstNumber != "") {
@@ -922,7 +922,7 @@ let numbers19 = {
     fourthNumber: "",
 };
 
-checkin(4, [342, 17, 261, 5], 19, numbers19);
+checkin(4, [452, 34, 5411, 124], 19, numbers19);
 
 function question19() {
     if (
