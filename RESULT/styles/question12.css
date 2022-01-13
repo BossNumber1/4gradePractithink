@@ -1,4 +1,4 @@
-.app10 {
+.app12 {
     width: 1170px;
     height: 495px;
     left: calc(50% - 1170px / 2);
@@ -9,7 +9,7 @@
     margin-bottom: 51px;
 }
 
-.titlePage10 {
+.titlePage12 {
     top: 25px;
     left: calc(50% - 770px / 2);
     width: 770px;
@@ -22,7 +22,7 @@
     color: #2f2f2f;
 }
 
-.lineUnderHeading10 {
+.lineUnderHeading12 {
     top: 100px;
     position: absolute;
     width: 1169px;
@@ -32,19 +32,19 @@
 
 /* content styles */
 
-.content10 {
-    top: 125px;
+.content12 {
+    top: 105px;
     left: calc(50% - 550px / 2);
     width: 550px;
     height: 230px;
 }
 
-.figures10 {
+.figures12 {
     width: 391px;
     height: 170px;
 }
 
-.expression10 {
+.expression12 {
     top: 30px;
     left: calc(50% - 126px / 2);
     width: 126px;
@@ -57,36 +57,36 @@
     line-height: 18px;
 }
 
-.content10 input {
+.content12 input {
     width: 40px;
     height: 30px;
     border-radius: 5px;
     text-align: center;
 }
 
-.expression10 input {
+.expression12 input {
     border: 1px solid #2f2f2f;
 }
 
 /* inputs styles */
 
-.inputs10 input {
+.inputs12 input {
     border: 1px solid #0995e3;
 }
 
-.inputs10 div {
+.inputs12 div {
     position: absolute;
     top: -115px;
 }
 
-.inputs10 div:nth-child(1) {
+.inputs12 div:nth-child(1) {
     left: 115px;
 }
 
-.inputs10 div:nth-child(2) {
+.inputs12 div:nth-child(2) {
     left: 315px;
 }
 
-.inputs10 div:nth-child(3) {
+.inputs12 div:nth-child(3) {
     left: 467px;
 }

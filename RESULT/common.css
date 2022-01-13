@@ -11,7 +11,7 @@
 @import "./styles/question08.css"; /* NEW */
 @import "./styles/question8.css";
 @import "./styles/question9.css";
-@import "./styles/question10.css";
+@import "./styles/question12.css";
 @import "./styles/question13.css";
 @import "./styles/question14.css";
 @import "./styles/question15.css";
@@ -70,6 +70,7 @@ body {
 }
 
 .subtitle,
+.subtitle12,
 .subtitle14,
 .subtitle16,
 .subtitle25 {
@@ -92,12 +93,14 @@ body {
     margin-top: 60px;
 }
 
+.subtitle12,
 .subtitle16,
 .subtitle25 {
     margin-top: 17px;
 }
 
 .subtitle img,
+.subtitle12 img,
 .subtitle14 img,
 .subtitle16 img,
 .subtitle25 img {
