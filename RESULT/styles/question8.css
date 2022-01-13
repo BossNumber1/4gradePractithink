@@ -1,4 +1,4 @@
-.app08 {
+.app8 {
     width: 1170px;
     height: 361px;
     left: calc(50% - 1170px / 2);
@@ -9,7 +9,7 @@
     margin-bottom: 51px;
 }
 
-.titlePage08 {
+.titlePage8 {
     top: 25px;
     left: calc(50% - 770px / 2);
     width: 770px;
@@ -25,7 +25,7 @@
     color: #2f2f2f;
 }
 
-.lineUnderHeading08 {
+.lineUnderHeading8 {
     position: absolute;
     width: 1169px;
     height: 0px;
@@ -35,7 +35,7 @@
 
 /* content styles */
 
-.content08 {
+.content8 {
     top: 90px;
     left: calc(50% - 315.29px / 2);
     width: 315.29px;
@@ -45,12 +45,12 @@
     justify-content: space-between;
 }
 
-.fraction08 {
+.fraction8 {
     width: 41.29px;
     height: 70.31px;
 }
 
-.content08 input {
+.content8 input {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -66,12 +66,12 @@
     text-align: center;
 }
 
-.devil08 {
+.devil8 {
     text-align: center;
     margin-top: -13px;
 }
 
-.sign08 {
+.sign8 {
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
