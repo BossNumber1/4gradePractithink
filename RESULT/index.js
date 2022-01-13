@@ -143,7 +143,7 @@ function createMiniIcon(property, element) {
     }
 }
 
-function checkin(countId, correctNumbers, e, numberQuestion, number) {
+function checkin(countId, correctNumbers, numberQuestion, number) {
     for (let i = 0; i < countId; i++) {
         if (i === 0) {
             document.getElementById("firstNumber" + numberQuestion).onchange =
@@ -351,7 +351,7 @@ let numbers1 = {
     fourthNumber: "",
 };
 
-checkin(4, [342, 17, 261, 5], e, 1, numbers1);
+checkin(4, [342, 17, 261, 5], 1, numbers1);
 
 function question1() {
     if (
@@ -399,7 +399,7 @@ let numbers2 = {
     thirdNumber: "",
 };
 
-checkin(3, [342, 17, 261, 5], e, 2, numbers2);
+checkin(3, [342, 17, 261, 5], 2, numbers2);
 
 function question2() {
     if (
@@ -446,7 +446,7 @@ let numbers3 = {
     fourthNumber: "",
 };
 
-checkin(4, [342, 17, 261, 5], e, 3, numbers3);
+checkin(4, [342, 17, 261, 5], 3, numbers3);
 
 function question3() {
     if (
@@ -499,7 +499,7 @@ let numbers5 = {
     sixthNumber: "",
 };
 
-checkin(6, [342, 17, 261, 5], e, 5, numbers5);
+checkin(6, [342, 17, 261, 5], 5, numbers5);
 
 function question5() {
     if (
@@ -551,7 +551,7 @@ let numbers6 = {
     thirdNumber: "",
 };
 
-checkin(3, [342, 17, 261, 5], e, 6, numbers6);
+checkin(3, [342, 17, 261, 5], 6, numbers6);
 
 function question6() {
     if (
@@ -597,7 +597,7 @@ let numbers7 = {
     thirdNumber: "",
 };
 
-checkin(3, [342, 17, 261, 5], e, 7, numbers7);
+checkin(3, [342, 17, 261, 5], 7, numbers7);
 
 function question7() {
     if (
@@ -648,7 +648,7 @@ let numbers10 = {
     fourthNumber: "",
 };
 
-checkin(4, [342, 17, 261, 5], e, 10, numbers10);
+checkin(4, [342, 17, 261, 5], 10, numbers10);
 
 function question10() {
     if (
@@ -697,7 +697,7 @@ let numbers11 = {
     fourthNumber: "",
 };
 
-checkin(4, [342, 17, 261, 5], e, 11, numbers11);
+checkin(4, [342, 17, 261, 5], 11, numbers11);
 
 function question11() {
     if (
@@ -749,7 +749,7 @@ let numbers13 = {
     fifthNumber: "",
 };
 
-checkin(5, [342, 17, 261, 5], e, 13, numbers13);
+checkin(5, [342, 17, 261, 5], 13, numbers13);
 
 function question13() {
     if (
@@ -801,7 +801,7 @@ let numbers15 = {
     thirdNumber: "",
 };
 
-checkin(3, [342, 17, 261, 5], e, 15, numbers15);
+checkin(3, [342, 17, 261, 5], 15, numbers15);
 
 function question15() {
     if (
@@ -845,7 +845,7 @@ let numbers16 = {
     firstNumber: "",
 };
 
-checkin(1, [342, 17, 261, 5], e, 16, numbers16);
+checkin(1, [342, 17, 261, 5], 16, numbers16);
 
 function question16() {
     if (numbers16.firstNumber != "") {
@@ -881,7 +881,7 @@ let numbers17 = {
     firstNumber: "",
 };
 
-checkin(1, [342, 17, 261, 5], e, 17, numbers17);
+checkin(1, [342, 17, 261, 5], 17, numbers17);
 
 function question17() {
     if (numbers17.firstNumber != "") {
@@ -922,7 +922,7 @@ let numbers19 = {
     fourthNumber: "",
 };
 
-checkin(4, [342, 17, 261, 5], e, 19, numbers19);
+checkin(4, [342, 17, 261, 5], 19, numbers19);
 
 function question19() {
     if (
