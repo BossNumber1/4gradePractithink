@@ -1,4 +1,4 @@
-.app18 {
+.app21 {
     width: 1170px;
     height: 511px;
     left: calc(50% - 1170px / 2);
@@ -9,7 +9,7 @@
     margin-bottom: 51px;
 }
 
-.titlePage18 {
+.titlePage21 {
     top: 25px;
     width: 1170px;
     height: 22px;
@@ -24,24 +24,24 @@
     color: #2f2f2f;
 }
 
-.lineUnderHeading18 {
+.lineUnderHeading21 {
     position: absolute;
     width: 1169px;
     height: 0px;
-    top: 71px;
+    top: 100px;
     border-bottom: 1px solid #a8a8a8;
 }
 
 /* content styles */
 
-.content18 {
-    top: 122.68px;
+.content21 {
+    top: 100px;
     left: calc(50% - 430px / 2);
     width: 430px;
     height: 268.32px;
 }
 
-.figure18 {
+.figure21 {
     left: calc(50% - 215.86px / 2);
     width: 215.86px;
     height: 193.32px;
@@ -49,7 +49,7 @@
 
 /* btns styles */
 
-.btns18 {
+.btns21 {
     top: 29px;
     left: calc(50% - 430px / 2);
     width: 430px;
@@ -59,7 +59,7 @@
     align-items: flex-start;
 }
 
-.btns18 div {
+.btns21 div {
     display: flex;
     flex-direction: row;
     justify-content: center;
