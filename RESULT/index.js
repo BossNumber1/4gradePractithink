@@ -553,7 +553,7 @@ let numbers6 = {
 
 checkin(3, [342, 17, 261, 5], e, 6, numbers6);
 
-function question2() {
+function question6() {
     if (
         numbers6.firstNumber != "" &&
         numbers6.secondNumber != "" &&
