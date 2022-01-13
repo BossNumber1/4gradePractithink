@@ -142,6 +142,94 @@ function createMiniIcon(property, element) {
         addMiniIcon(element, "failure");
     }
 }
+
+function succerrorAndCreateMiniIcon(countId, numberQuestion, number) {
+    for (let i = 0; i < countId; i++) {
+        if (i === 0) {
+            succerror(
+                document.getElementById("firstNumber" + numberQuestion),
+                number.firstNumber === "wrong"
+            );
+
+            createMiniIcon(
+                number.firstNumber,
+                document.getElementById("firstNumber" + numberQuestion)
+            );
+        }
+
+        if (i === 1) {
+            succerror(
+                document.getElementById("secondNumber" + numberQuestion),
+                number.secondNumber === "wrong"
+            );
+
+            createMiniIcon(
+                number.secondNumber,
+                document.getElementById("secondNumber" + numberQuestion)
+            );
+        }
+
+        if (i === 2) {
+            succerror(
+                document.getElementById("thirdNumber" + numberQuestion),
+                number.thirdNumber === "wrong"
+            );
+
+            createMiniIcon(
+                number.thirdNumber,
+                document.getElementById("thirdNumber" + numberQuestion)
+            );
+        }
+
+        if (i === 3) {
+            succerror(
+                document.getElementById("fourthNumber" + numberQuestion),
+                number.fourthNumber === "wrong"
+            );
+
+            createMiniIcon(
+                number.fourthNumber,
+                document.getElementById("fourthNumber" + numberQuestion)
+            );
+        }
+    }
+}
+
+function podsvetkanevibrannihblokov(countId, numberQuestion, number) {
+    for (let i = 0; i < countId; i++) {
+        if (i === 0) {
+            if (number.firstNumber === "") {
+                document.getElementById(
+                    "firstNumber" + numberQuestion
+                ).style.border = "2px solid #FFB47D";
+            }
+        }
+
+        if (i === 1) {
+            if (number.secondNumber === "") {
+                document.getElementById(
+                    "secondNumber" + numberQuestion
+                ).style.border = "2px solid #FFB47D";
+            }
+        }
+
+        if (i === 2) {
+            if (number.thirdNumber === "") {
+                document.getElementById(
+                    "thirdNumber" + numberQuestion
+                ).style.border = "2px solid #FFB47D";
+            }
+        }
+
+        if (i === 3) {
+            if (number.fourthNumber === "") {
+                document.getElementById(
+                    "fourthNumber" + numberQuestion
+                ).style.border = "2px solid #FFB47D";
+            }
+        }
+    }
+}
 // ----------------------------------------------------------------------------------------------------------------------------
 
 // 1 QUESTION
@@ -192,47 +280,7 @@ function question1() {
         numbers1.thirdNumber != "" &&
         numbers1.fourthNumber != ""
     ) {
-        succerror(
-            document.getElementById("firstNumber1"),
-            numbers1.firstNumber === "wrong"
-        );
-
-        succerror(
-            document.getElementById("secondNumber1"),
-            numbers1.secondNumber === "wrong"
-        );
-
-        succerror(
-            document.getElementById("thirdNumber1"),
-            numbers1.thirdNumber === "wrong"
-        );
-
-        succerror(
-            document.getElementById("fourthNumber1"),
-            numbers1.fourthNumber === "wrong"
-        );
-
-        // расставляем мини-иконки
-
-        createMiniIcon(
-            numbers1.firstNumber,
-            document.getElementById("firstNumber1")
-        );
-
-        createMiniIcon(
-            numbers1.secondNumber,
-            document.getElementById("secondNumber1")
-        );
-
-        createMiniIcon(
-            numbers1.thirdNumber,
-            document.getElementById("thirdNumber1")
-        );
-
-        createMiniIcon(
-            numbers1.fourthNumber,
-            document.getElementById("fourthNumber1")
-        );
+        succerrorAndCreateMiniIcon(4, 1, numbers1);
 
         // выносим общий статус к номеру вопроса
 
@@ -259,27 +307,79 @@ function question1() {
             // addCorrectAnswerQuestion10();
         }
     } else {
-        if (numbers1.firstNumber === "") {
-            document.getElementById("firstNumber1").style.border =
-                "2px solid #FFB47D";
-        }
-
-        if (numbers1.secondNumber === "") {
-            document.getElementById("secondNumber1").style.border =
-                "2px solid #FFB47D";
-        }
-
-        if (numbers1.thirdNumber === "") {
-            document.getElementById("thirdNumber1").style.border =
-                "2px solid #FFB47D";
-        }
-
-        if (numbers1.fourthNumber === "") {
-            document.getElementById("fourthNumber1").style.border =
-                "2px solid #FFB47D";
-        }
+        podsvetkanevibrannihblokov(4, 1, numbers1);
     }
 }
+
+// 2 QUESTION
+
+let numbers2 = {
+    firstNumber: "",
+    secondNumber: "",
+    thirdNumber: "",
+};
+
+document.getElementById("firstNumber2").onchange = function (e) {
+    if (e.target.value == 342) {
+        numbers2.firstNumber = "right";
+    } else {
+        numbers2.firstNumber = "wrong";
+    }
+};
+
+document.getElementById("secondNumber2").onchange = function (e) {
+    if (e.target.value == 17) {
+        numbers2.secondNumber = "right";
+    } else {
+        numbers2.secondNumber = "wrong";
+    }
+};
+
+document.getElementById("thirdNumber2").onchange = function (e) {
+    if (e.target.value == 261) {
+        numbers2.thirdNumber = "right";
+    } else {
+        numbers2.thirdNumber = "wrong";
+    }
+};
+
+function question2() {
+    if (
+        numbers2.firstNumber != "" &&
+        numbers2.secondNumber != "" &&
+        numbers2.thirdNumber != ""
+    ) {
+        succerrorAndCreateMiniIcon(3, 2, numbers2);
+
+        // выносим общий статус к номеру вопроса
+
+        if (
+            numbers2.firstNumber === "right" &&
+            numbers2.secondNumber === "right" &&
+            numbers2.thirdNumber === "right"
+        ) {
+            addImage(
+                "success",
+                document.getElementsByClassName("question2"),
+                "app2",
+                2
+            );
+        } else {
+            addImage(
+                "failure",
+                document.getElementsByClassName("question2"),
+                "app2",
+                2
+            );
+
+            // addCorrectAnswerQuestion10();
+        }
+    } else {
+        podsvetkanevibrannihblokov(3, 2, numbers2);
+    }
+}
+
+// RESULT
 
 document.getElementById("submit").onclick = function () {
     question1();
