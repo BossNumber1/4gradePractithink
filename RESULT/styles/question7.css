@@ -1,4 +1,4 @@
-.app6 {
+.app7 {
     width: 1170px;
     height: 482px;
     left: calc(50% - 1170px / 2);
@@ -9,11 +9,11 @@
     margin-bottom: 51px;
 }
 
-.titlePage6 {
+.titlePage7 {
     top: 25px;
     left: calc(50% - 770px / 2);
     width: 770px;
-    height: 44px;
+    height: 22px;
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
@@ -22,30 +22,17 @@
     color: #2f2f2f;
 }
 
-.subtitle6 {
-    top: 10px;
-    left: calc(50% - 348px / 2);
-    width: 348px;
-    height: 24px;
-    font-size: 16px;
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
-    color: #065b5b;
-    font-weight: lighter;
-}
-
-.lineUnderHeading6 {
+.lineUnderHeading7 {
     position: absolute;
     width: 1169px;
     height: 0px;
-    top: 100px;
+    top: 70px;
     border-bottom: 1px solid #a8a8a8;
 }
 
 /* content styles */
 
-.content6 {
+.content7 {
     top: 136px;
     left: calc(50% - 585px / 2);
     width: 585px;
@@ -56,12 +43,12 @@
     justify-content: space-between;
 }
 
-.content6 div {
+.content7 div {
     width: 155px;
     height: 205.56px;
 }
 
-.content6 input {
+.content7 input {
     display: flex;
     flex-direction: row;
     justify-content: center;
