@@ -1,4 +1,4 @@
-.app12 {
+.app15 {
     width: 1170px;
     height: 548px;
     left: calc(50% - 1170px / 2);
@@ -9,7 +9,7 @@
     margin-bottom: 51px;
 }
 
-.titlePage12 {
+.titlePage15 {
     top: 25px;
     width: 1170px;
     height: 22px;
@@ -24,7 +24,7 @@
     color: #2f2f2f;
 }
 
-.lineUnderHeading12 {
+.lineUnderHeading15 {
     position: absolute;
     width: 1169px;
     height: 0px;
@@ -34,14 +34,14 @@
 
 /* content styles */
 
-.content12 {
+.content15 {
     top: 104.5px;
     left: calc(50% - 819.62px / 2);
     width: 819.62px;
     height: 303.5px;
 }
 
-.figures12 {
+.figures15 {
     left: calc(50% - 819.62px / 2);
     width: 819.62px;
     height: 171.83px;
@@ -49,7 +49,7 @@
 
 /* places styles */
 
-.places12 {
+.places15 {
     left: calc(50% - 768px / 2);
     width: 768px;
     height: 45px;
@@ -58,7 +58,7 @@
     justify-content: space-between;
 }
 
-.places12 div {
+.places15 div {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -75,7 +75,7 @@
 
 /* btns styles */
 
-.btns12 {
+.btns15 {
     top: 40px;
     left: calc(50% - 552px / 2);
     width: 552px;
@@ -85,7 +85,7 @@
     justify-content: space-between;
 }
 
-.btns12 div {
+.btns15 div {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -101,6 +101,6 @@
     color: white;
 }
 
-.btns12 div:not(:last-child) {
+.btns15 div:not(:last-child) {
     margin-right: 20px;
 }
