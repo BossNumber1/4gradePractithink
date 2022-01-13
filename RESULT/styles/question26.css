@@ -1,4 +1,4 @@
-.app22 {
+.app26 {
     width: 1170px;
     height: 687px;
     left: calc(50% - 1170px / 2);
@@ -9,7 +9,7 @@
     margin-bottom: 51px;
 }
 
-.titlePage22 {
+.titlePage26 {
     top: 25px;
     left: calc(50% - 770px / 2);
     width: 770px;
@@ -23,24 +23,9 @@
     align-items: center;
     justify-content: center;
     color: #2f2f2f;
-
-    /* border: 1px solid; */
 }
 
-.subtitle22 {
-    top: 37px;
-    left: calc(50% - 391px / 2);
-    width: 391px;
-    height: 24px;
-    font-size: 16px;
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
-    color: #065b5b;
-    font-weight: lighter;
-}
-
-.lineUnderHeading22 {
+.lineUnderHeading26 {
     top: 148px;
     position: absolute;
     width: 1169px;
@@ -50,7 +35,7 @@
 
 /* content styles */
 
-.content22 {
+.content26 {
     top: 129px;
     left: calc(50% - 900px / 2);
     width: 900px;
@@ -60,12 +45,12 @@
     justify-content: space-between;
 }
 
-.graph22 {
+.graph26 {
     width: 370px;
     height: 369px;
 }
 
-.table22 {
+.table26 {
     top: -25px;
     width: 398px;
     height: 221px;
@@ -74,24 +59,24 @@
     justify-content: space-between;
 }
 
-.leftColumn22,
-.rightColumn22 {
+.leftColumn26,
+.rightColumn26 {
     width: 199.54px;
     height: 221px;
 }
 
 /* rows styles */
 
-.first1row22,
-.second1row22,
-.third1row22,
-.fourth1row22,
-.fifth1row22,
-.first2row22,
-.second2row22,
-.third2row22,
-.fourth2row22,
-.fifth2row22 {
+.first1row26,
+.second1row26,
+.third1row26,
+.fourth1row26,
+.fifth1row26,
+.first2row26,
+.second2row26,
+.third2row26,
+.fourth2row26,
+.fifth2row26 {
     width: 199.54px;
     height: 45px;
     background: #ffffff;
@@ -99,15 +84,14 @@
     box-sizing: border-box;
     padding-top: 12.5px;
     text-align: center;
-
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
     line-height: 20px;
 }
 
-.first1row22,
-.first2row22 {
+.first1row26,
+.first2row26 {
     background: #68c2d0;
     color: white;
 }
@@ -118,9 +102,7 @@
     height: 83px;
     left: 221px;
     top: 225px;
-
     border: 2px dashed #d634ff;
     box-sizing: border-box;
-
     cursor: row-resize;
 }
