@@ -15,6 +15,7 @@
 @import "./styles/question11.css";
 @import "./styles/question12.css";
 @import "./styles/question13.css";
+@import "./styles/question014.css"; /* NEW */
 @import "./styles/question14.css";
 @import "./styles/question15.css";
 @import "./styles/question16.css";
@@ -67,7 +68,8 @@ body {
     margin: 0 0 5px 40px;
 }
 
-.subtitle {
+.subtitle,
+.subtitle014 {
     margin-top: 35px;
     width: 1170px;
     height: 24px;
@@ -77,6 +79,14 @@ body {
     justify-content: center;
     color: #065b5b;
     text-align: center;
+}
+
+.subtitle {
+    margin-top: 35px;
+}
+
+.subtitle014 {
+    margin-top: 60px;
 }
 
 .subtitle img {
