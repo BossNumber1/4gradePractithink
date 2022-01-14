@@ -223,6 +223,7 @@ body {
 .contentCorrectAnswer,
 .contentCorrectAnswer2,
 .contentCorrectAnswer3,
+.contentCorrectAnswer4,
 .contentCorrectAnswer9,
 .contentCorrectAnswer10,
 .contentCorrectAnswer6,
@@ -275,6 +276,7 @@ body {
     top: 120px;
 }
 
+.contentCorrectAnswer4,
 .contentCorrectAnswer3 {
     top: 160px;
 }
