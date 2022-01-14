@@ -26,7 +26,7 @@
 }
 
 .lineUnderHeading26 {
-    top: 148px;
+    top: 140px;
     position: absolute;
     width: 1169px;
     height: 0px;
@@ -36,9 +36,9 @@
 /* content styles */
 
 .content26 {
-    top: 129px;
-    left: calc(50% - 900px / 2);
-    width: 900px;
+    top: 100px;
+    left: calc(50% - 1000px / 2);
+    width: 1000px;
     height: 369px;
     display: flex;
     align-items: center;
@@ -46,7 +46,7 @@
 }
 
 .graph26 {
-    width: 370px;
+    width: 491px;
     height: 369px;
 }
 
@@ -85,7 +85,6 @@
     padding-top: 12.5px;
     text-align: center;
     font-style: normal;
-    font-weight: 600;
     font-size: 16px;
     line-height: 20px;
 }
@@ -96,13 +95,29 @@
     color: white;
 }
 
+.first1row26,
+.second1row26,
+.third1row26,
+.fourth1row26,
+.fifth1row26,
+.first2row26 {
+    font-weight: 600;
+}
+
+.second2row26,
+.third2row26,
+.fourth2row26,
+.fifth2row26 {
+    font-weight: 500;
+}
+
 .adjustableLevel {
     position: absolute;
-    width: 53px;
-    height: 83px;
-    left: 221px;
-    top: 225px;
-    border: 2px dashed #d634ff;
+    width: 69px;
+    height: 293px;
+    left: 300px;
+    top: 25.5px;
+    /* border: 2px dashed #d634ff; */
     box-sizing: border-box;
     cursor: row-resize;
 }

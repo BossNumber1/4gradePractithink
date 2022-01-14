@@ -45,7 +45,7 @@
 }
 
 .expression16 {
-    top: 170px;
+    top: 160px;
     left: calc(50% - 130px / 2);
     width: 130px;
     height: 30px;
@@ -77,7 +77,7 @@
 
 .inputs16 div:nth-child(1),
 .inputs16 div:nth-child(2) {
-    left: 115px;
+    left: 125px;
 }
 
 .inputs16 div:nth-child(3),
@@ -95,11 +95,6 @@
     border: 1px solid #09e31e;
 }
 
-.inputs16 div:nth-child(3),
-.inputs16 div:nth-child(4) {
-    left: 320px;
-}
-
 .inputs16 div:nth-child(1),
 .inputs16 div:nth-child(3) {
     top: -115px;
@@ -107,5 +102,5 @@
 
 .inputs16 div:nth-child(2),
 .inputs16 div:nth-child(4) {
-    top: 25px;
+    top: -5px;
 }

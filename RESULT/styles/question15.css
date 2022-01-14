@@ -36,22 +36,22 @@
 
 .content15 {
     top: 104.5px;
-    left: calc(50% - 819.62px / 2);
-    width: 819.62px;
+    left: calc(50% - 1078.69px / 2);
+    width: 1078.69px;
     height: 303.5px;
 }
 
 .figures15 {
-    left: calc(50% - 819.62px / 2);
-    width: 819.62px;
+    width: 1078.69px;
     height: 171.83px;
 }
 
 /* places styles */
 
 .places15 {
-    left: calc(50% - 768px / 2);
-    width: 768px;
+    top: 50px;
+    left: calc(50% - 1013px / 2);
+    width: 1013px;
     height: 45px;
     display: flex;
     align-items: center;
@@ -76,7 +76,7 @@
 /* btns styles */
 
 .btns15 {
-    top: 40px;
+    top: 100px;
     left: calc(50% - 552px / 2);
     width: 552px;
     height: 45px;

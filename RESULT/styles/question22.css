@@ -33,12 +33,13 @@
 
 .content22 {
     top: 119px;
-    left: calc(50% - 800px / 2);
-    width: 800px;
-    height: 90px;
+    left: calc(50% - 878px / 2);
+    width: 878px;
+    height: 102px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    /* border: 1px solid; */
 }
 
 .content22 input {
@@ -63,16 +64,16 @@
     align-items: center;
     width: 348px;
     height: 30px;
-    margin-bottom: 27px;
+    margin-bottom: 40px;
     /* border: 1px solid orange; */
 }
 
 .leftBlock22 {
     width: 348px;
-    height: 90px;
+    height: 102px;
 }
 
 .rightBlock22 {
     width: 342px;
-    height: 90px;
+    height: 102px;
 }

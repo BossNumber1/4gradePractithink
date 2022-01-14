@@ -76,7 +76,8 @@ body {
 .subtitle12,
 .subtitle14,
 .subtitle16,
-.subtitle25 {
+.subtitle25,
+.subtitle26 {
     margin-top: 35px;
     width: 1170px;
     height: 24px;
@@ -93,7 +94,8 @@ body {
 .subtitle9,
 .subtitle12,
 .subtitle16,
-.subtitle25 {
+.subtitle25,
+.subtitle26 {
     margin-top: 17px;
 }
 
@@ -112,7 +114,8 @@ body {
 .subtitle12 img,
 .subtitle14 img,
 .subtitle16 img,
-.subtitle25 img {
+.subtitle25 img,
+.subtitle26 img {
     margin-right: 5px;
 }
 
