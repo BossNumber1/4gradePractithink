@@ -1,34 +1,108 @@
 // ---------------------------------------------------------------------- button selection -------------------------------------------------------
 
+function commonForSelectBtn(idBtn) {
+    document.getElementById(idBtn).style.backgroundColor = "#bbedf4";
+    document.getElementById(idBtn).style.color = "#0e80a4";
+    document.getElementById(idBtn).style.border = "1px solid #BBEDF4";
+}
+
+function commonForNoselectedBtn(arrayBtnsId) {
+    arrayBtnsId.map((el) => {
+        document.getElementById(el).style.backgroundColor = "white";
+        document.getElementById(el).style.color = "black";
+        document.getElementById(el).style.border = "1px solid black";
+    });
+}
+
+// 21 QUESTION
+
+let selectBtn21 = "",
+    nameSelectedBtn21 = "";
+
+document.getElementById("firstBtn21").onclick = function () {
+    selectBtn21 = "right";
+    nameSelectedBtn21 = "firstBtn21";
+
+    commonForSelectBtn("firstBtn21");
+    commonForNoselectedBtn([
+        "secondBtn21",
+        "thirdBtn21",
+        "fourthBtn21",
+        "fifthBtn21",
+    ]);
+};
+
+document.getElementById("secondBtn21").onclick = function () {
+    selectBtn21 = "wrong";
+    nameSelectedBtn21 = "secondBtn21";
+
+    commonForSelectBtn("secondBtn21");
+    commonForNoselectedBtn([
+        "firstBtn21",
+        "thirdBtn21",
+        "fourthBtn21",
+        "fifthBtn21",
+    ]);
+};
+
+document.getElementById("thirdBtn21").onclick = function () {
+    selectBtn21 = "wrong";
+    nameSelectedBtn21 = "thirdBtn21";
+
+    commonForSelectBtn("thirdBtn21");
+    commonForNoselectedBtn([
+        "firstBtn21",
+        "secondBtn21",
+        "fourthBtn21",
+        "fifthBtn21",
+    ]);
+};
+
+document.getElementById("fourthBtn21").onclick = function () {
+    selectBtn21 = "wrong";
+    nameSelectedBtn21 = "fourthBtn21";
+
+    commonForSelectBtn("fourthBtn21");
+    commonForNoselectedBtn([
+        "firstBtn21",
+        "secondBtn21",
+        "thirdBtn21",
+        "fifthBtn21",
+    ]);
+};
+
+document.getElementById("fifthBtn21").onclick = function () {
+    selectBtn21 = "wrong";
+    nameSelectedBtn21 = "fifthBtn21";
+
+    commonForSelectBtn("fifthBtn21");
+    commonForNoselectedBtn([
+        "firstBtn21",
+        "secondBtn21",
+        "fourthBtn21",
+        "thirdBtn21",
+    ]);
+};
+
 // 25 QUESTION
 
 let selectBtn25 = "",
     nameSelectedBtn25 = "";
 
 document.getElementById("firstBtn25").onclick = function () {
-    document.getElementById("firstBtn25").style.backgroundColor = "#bbedf4";
-    document.getElementById("firstBtn25").style.color = "#0e80a4";
-    document.getElementById("firstBtn25").style.border = "1px solid #BBEDF4";
+    selectBtn21 = "right";
+    nameSelectedBtn21 = "firstBtn25";
 
-    selectBtn25 = "right";
-    nameSelectedBtn25 = "firstBtn25";
-
-    document.getElementById("secondBtn25").style.backgroundColor = "white";
-    document.getElementById("secondBtn25").style.color = "black";
-    document.getElementById("secondBtn25").style.border = "1px solid black";
+    commonForSelectBtn("firstBtn25");
+    commonForNoselectedBtn(["secondBtn25"]);
 };
 
 document.getElementById("secondBtn25").onclick = function () {
-    document.getElementById("secondBtn25").style.backgroundColor = "#bbedf4";
-    document.getElementById("secondBtn25").style.color = "#0e80a4";
-    document.getElementById("secondBtn25").style.border = "1px solid #BBEDF4";
+    selectBtn21 = "wrong";
+    nameSelectedBtn21 = "secondBtn25";
 
-    selectBtn25 = "wrong";
-    nameSelectedBtn25 = "secondBtn25";
-
-    document.getElementById("firstBtn25").style.backgroundColor = "white";
-    document.getElementById("firstBtn25").style.color = "black";
-    document.getElementById("firstBtn25").style.border = "1px solid black";
+    commonForSelectBtn("secondBtn25");
+    commonForNoselectedBtn(["firstBtn25"]);
 };
 
 // --------------------------------------------------------------------- validation of input fields ----------------------------------------------
@@ -176,7 +250,12 @@ function createMiniIcon(property, element) {
     }
 }
 
-function checkin(countId, correctNumbers, numberQuestion, number) {
+function gettingDataFromFields(
+    countId,
+    correctNumbers,
+    numberQuestion,
+    number
+) {
     for (let i = 0; i < countId; i++) {
         if (i === 0) {
             document.getElementById("firstNumber" + numberQuestion).onchange =
@@ -322,7 +401,7 @@ function succerrorAndCreateMiniIcon(countId, numberQuestion, number) {
     }
 }
 
-function podsvetkanevibrannihblokov(countId, numberQuestion, number) {
+function highlightUnselectedBlocks(countId, numberQuestion, number) {
     for (let i = 0; i < countId; i++) {
         if (i === 0) {
             if (number.firstNumber === "") {
@@ -384,7 +463,7 @@ let numbers1 = {
     fourthNumber: "",
 };
 
-checkin(4, [342, 17, 261, 5], 1, numbers1);
+gettingDataFromFields(4, [342, 17, 261, 5], 1, numbers1);
 
 function question1() {
     if (
@@ -420,7 +499,7 @@ function question1() {
             // addCorrectAnswerQuestion1();
         }
     } else {
-        podsvetkanevibrannihblokov(4, 1, numbers1);
+        highlightUnselectedBlocks(4, 1, numbers1);
     }
 }
 
@@ -432,7 +511,7 @@ let numbers2 = {
     thirdNumber: "",
 };
 
-checkin(3, [320, 240, 400], 2, numbers2);
+gettingDataFromFields(3, [320, 240, 400], 2, numbers2);
 
 function question2() {
     if (
@@ -466,7 +545,7 @@ function question2() {
             // addCorrectAnswerQuestion2();
         }
     } else {
-        podsvetkanevibrannihblokov(3, 2, numbers2);
+        highlightUnselectedBlocks(3, 2, numbers2);
     }
 }
 
@@ -478,7 +557,7 @@ let numbers3 = {
     thirdNumber: "",
 };
 
-checkin(3, [52, 40, 12], 3, numbers3);
+gettingDataFromFields(3, [52, 40, 12], 3, numbers3);
 
 function question3() {
     if (
@@ -512,7 +591,7 @@ function question3() {
             // addCorrectAnswerQuestion3();
         }
     } else {
-        podsvetkanevibrannihblokov(3, 3, numbers3);
+        highlightUnselectedBlocks(3, 3, numbers3);
     }
 }
 
@@ -525,7 +604,7 @@ let numbers4 = {
     fourthNumber: "",
 };
 
-checkin(4, [12, 28, 40, 44], 4, numbers4);
+gettingDataFromFields(4, [12, 28, 40, 44], 4, numbers4);
 
 function question4() {
     if (
@@ -561,7 +640,7 @@ function question4() {
             // addCorrectAnswerQuestion4();
         }
     } else {
-        podsvetkanevibrannihblokov(4, 4, numbers4);
+        highlightUnselectedBlocks(4, 4, numbers4);
     }
 }
 
@@ -578,7 +657,7 @@ let numbers6 = {
     sixthNumber: "",
 };
 
-// checkin(6, ["3/10", "1/8", "2/9", "5/12", "3/5", "6/7"], 6, numbers6);
+// gettingDataFromFields(6, ["3/10", "1/8", "2/9", "5/12", "3/5", "6/7"], 6, numbers6);
 
 function question6() {
     if (
@@ -618,7 +697,7 @@ function question6() {
             // addCorrectAnswerQuestion6();
         }
     } else {
-        podsvetkanevibrannihblokov(6, 6, numbers6);
+        highlightUnselectedBlocks(6, 6, numbers6);
     }
 }
 
@@ -631,7 +710,7 @@ let numbers7 = {
     fourthNumber: "",
 };
 
-checkin(4, [4, 8, 3, 6], 7, numbers7);
+gettingDataFromFields(4, [4, 8, 3, 6], 7, numbers7);
 
 function question7() {
     if (
@@ -667,7 +746,7 @@ function question7() {
             // addCorrectAnswerQuestion7();
         }
     } else {
-        podsvetkanevibrannihblokov(4, 7, numbers7);
+        highlightUnselectedBlocks(4, 7, numbers7);
     }
 }
 
@@ -684,7 +763,7 @@ let numbers8 = {
     eighthNumber: "",
 };
 
-checkin(8, [2, 8, 1, 8, 2, 8, 5, 8], 8, numbers8);
+gettingDataFromFields(8, [2, 8, 1, 8, 2, 8, 5, 8], 8, numbers8);
 
 function question8() {
     if (
@@ -728,7 +807,7 @@ function question8() {
             // addCorrectAnswerQuestion8();
         }
     } else {
-        podsvetkanevibrannihblokov(8, 8, numbers8);
+        highlightUnselectedBlocks(8, 8, numbers8);
     }
 }
 
@@ -740,7 +819,7 @@ let numbers9 = {
     thirdNumber: "",
 };
 
-checkin(3, [109, 100, 9], 9, numbers9);
+gettingDataFromFields(3, [109, 100, 9], 9, numbers9);
 
 function question9() {
     if (
@@ -774,7 +853,7 @@ function question9() {
             // addCorrectAnswerQuestion9();
         }
     } else {
-        podsvetkanevibrannihblokov(3, 9, numbers9);
+        highlightUnselectedBlocks(3, 9, numbers9);
     }
 }
 
@@ -790,7 +869,7 @@ let numbers12 = {
     fourthNumber: "",
 };
 
-checkin(4, [1215, 1000, 200, 15], 12, numbers12);
+gettingDataFromFields(4, [1215, 1000, 200, 15], 12, numbers12);
 
 function question12() {
     if (
@@ -826,7 +905,7 @@ function question12() {
             // addCorrectAnswerQuestion12();
         }
     } else {
-        podsvetkanevibrannihblokov(4, 12, numbers12);
+        highlightUnselectedBlocks(4, 12, numbers12);
     }
 }
 
@@ -839,7 +918,7 @@ let numbers13 = {
     fourthNumber: "",
 };
 
-// checkin(4, ["10 1/2", "16 2/3", "18 1/5", "24 3/8"], 13, numbers13);
+// gettingDataFromFields(4, ["10 1/2", "16 2/3", "18 1/5", "24 3/8"], 13, numbers13);
 
 function question13() {
     if (
@@ -875,7 +954,7 @@ function question13() {
             // addCorrectAnswerQuestion13();
         }
     } else {
-        podsvetkanevibrannihblokov(4, 13, numbers13);
+        highlightUnselectedBlocks(4, 13, numbers13);
     }
 }
 
@@ -888,7 +967,7 @@ let numbers14 = {
     fourthNumber: "",
 };
 
-// checkin(4, ["2/5", "30", "60/5", "12"], 14, numbers14);
+// gettingDataFromFields(4, ["2/5", "30", "60/5", "12"], 14, numbers14);
 
 function question14() {
     if (
@@ -924,7 +1003,7 @@ function question14() {
             // addCorrectAnswerQuestion14();
         }
     } else {
-        podsvetkanevibrannihblokov(4, 14, numbers14);
+        highlightUnselectedBlocks(4, 14, numbers14);
     }
 }
 
@@ -940,7 +1019,7 @@ let numbers16 = {
     fifthNumber: "",
 };
 
-checkin(5, [828, 600, 90, 120, 18], 16, numbers16);
+gettingDataFromFields(5, [828, 600, 90, 120, 18], 16, numbers16);
 
 function question16() {
     if (
@@ -978,7 +1057,7 @@ function question16() {
             // addCorrectAnswerQuestion16();
         }
     } else {
-        podsvetkanevibrannihblokov(5, 16, numbers16);
+        highlightUnselectedBlocks(5, 16, numbers16);
     }
 }
 
@@ -991,7 +1070,7 @@ let numbers17 = {
     fourthNumber: "",
 };
 
-checkin(4, [8, 12, 3, 4], 17, numbers17);
+gettingDataFromFields(4, [8, 12, 3, 4], 17, numbers17);
 
 function question17() {
     if (
@@ -1027,7 +1106,7 @@ function question17() {
             // addCorrectAnswerQuestion17();
         }
     } else {
-        podsvetkanevibrannihblokov(4, 17, numbers17);
+        highlightUnselectedBlocks(4, 17, numbers17);
     }
 }
 
@@ -1039,7 +1118,7 @@ let numbers18 = {
     thirdNumber: "",
 };
 
-checkin(3, [40, 90, 50], 18, numbers18);
+gettingDataFromFields(3, [40, 90, 50], 18, numbers18);
 
 function question18() {
     if (
@@ -1073,7 +1152,7 @@ function question18() {
             // addCorrectAnswerQuestion18();
         }
     } else {
-        podsvetkanevibrannihblokov(3, 18, numbers18);
+        highlightUnselectedBlocks(3, 18, numbers18);
     }
 }
 
@@ -1083,7 +1162,7 @@ let numbers19 = {
     firstNumber: "",
 };
 
-checkin(1, [14], 19, numbers19);
+gettingDataFromFields(1, [14], 19, numbers19);
 
 function question19() {
     if (numbers19.firstNumber != "") {
@@ -1109,7 +1188,7 @@ function question19() {
             // addCorrectAnswerQuestion19();
         }
     } else {
-        podsvetkanevibrannihblokov(1, 19, numbers19);
+        highlightUnselectedBlocks(1, 19, numbers19);
     }
 }
 
@@ -1119,7 +1198,7 @@ let numbers20 = {
     firstNumber: "",
 };
 
-checkin(1, [2], 20, numbers20);
+gettingDataFromFields(1, [2], 20, numbers20);
 
 function question20() {
     if (numbers20.firstNumber != "") {
@@ -1145,7 +1224,7 @@ function question20() {
             // addCorrectAnswerQuestion20();
         }
     } else {
-        podsvetkanevibrannihblokov(1, 20, numbers20);
+        highlightUnselectedBlocks(1, 20, numbers20);
     }
 }
 
@@ -1160,7 +1239,7 @@ let numbers22 = {
     fourthNumber: "",
 };
 
-checkin(4, [452, 34, 5411, 124], 22, numbers22);
+gettingDataFromFields(4, [452, 34, 5411, 124], 22, numbers22);
 
 function question22() {
     if (
@@ -1196,7 +1275,7 @@ function question22() {
             // addCorrectAnswerQuestion22();
         }
     } else {
-        podsvetkanevibrannihblokov(4, 22, numbers22);
+        highlightUnselectedBlocks(4, 22, numbers22);
     }
 }
 
@@ -1206,7 +1285,7 @@ let numbers23 = {
     firstNumber: "",
 };
 
-checkin(1, [288000], 23, numbers23);
+gettingDataFromFields(1, [288000], 23, numbers23);
 
 function question23() {
     if (numbers23.firstNumber != "") {
@@ -1232,7 +1311,7 @@ function question23() {
             // addCorrectAnswerQuestion23();
         }
     } else {
-        podsvetkanevibrannihblokov(1, 23, numbers23);
+        highlightUnselectedBlocks(1, 23, numbers23);
     }
 }
 
