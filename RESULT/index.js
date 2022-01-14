@@ -534,61 +534,6 @@ function question4() {
 
 // PLACE FOR 5 QUESTION
 
-// 5 QUESTION // не поставлено
-
-let numbers5 = {
-    firstNumber: "",
-    secondNumber: "",
-    thirdNumber: "",
-    fourthNumber: "",
-    fifthNumber: "",
-    sixthNumber: "",
-};
-
-checkin(6, [342, 17, 261, 5], 5, numbers5);
-
-function question5() {
-    if (
-        numbers5.firstNumber != "" &&
-        numbers5.secondNumber != "" &&
-        numbers5.thirdNumber != "" &&
-        numbers5.fourthNumber != "" &&
-        numbers5.fifthNumber != "" &&
-        numbers5.sixthNumber != ""
-    ) {
-        succerrorAndCreateMiniIcon(6, 5, numbers5);
-
-        // выносим общий статус к номеру вопроса
-
-        if (
-            numbers5.firstNumber === "right" &&
-            numbers5.secondNumber === "right" &&
-            numbers5.thirdNumber === "right" &&
-            numbers5.fourthNumber === "right" &&
-            numbers5.fifthNumber === "right" &&
-            numbers5.sixthNumber === "right"
-        ) {
-            addImage(
-                "success",
-                document.getElementsByClassName("question5"),
-                "app5",
-                5
-            );
-        } else {
-            addImage(
-                "failure",
-                document.getElementsByClassName("question5"),
-                "app5",
-                5
-            );
-
-            // addCorrectAnswerQuestion5();
-        }
-    } else {
-        podsvetkanevibrannihblokov(6, 5, numbers5);
-    }
-}
-
 // 6 QUESTION
 
 let numbers6 = {
@@ -801,55 +746,7 @@ function question9() {
 }
 
 // PLACE FOR 10 QUESTION
-
-// 11 QUESTION
-
-let numbers11 = {
-    firstNumber: "",
-    secondNumber: "",
-    thirdNumber: "",
-    fourthNumber: "",
-};
-
-checkin(4, [342, 17, 261, 5], 11, numbers11);
-
-function question11() {
-    if (
-        numbers11.firstNumber != "" &&
-        numbers11.secondNumber != "" &&
-        numbers11.thirdNumber != "" &&
-        numbers11.fourthNumber != ""
-    ) {
-        succerrorAndCreateMiniIcon(4, 11, numbers11);
-
-        // выносим общий статус к номеру вопроса
-
-        if (
-            numbers11.firstNumber === "right" &&
-            numbers11.secondNumber === "right" &&
-            numbers11.thirdNumber === "right" &&
-            numbers11.fourthNumber === "right"
-        ) {
-            addImage(
-                "success",
-                document.getElementsByClassName("question11"),
-                "app11",
-                11
-            );
-        } else {
-            addImage(
-                "failure",
-                document.getElementsByClassName("question11"),
-                "app11",
-                11
-            );
-
-            // addCorrectAnswerQuestion11();
-        }
-    } else {
-        podsvetkanevibrannihblokov(4, 11, numbers11);
-    }
-}
+// PLACE FOR 11 QUESTION
 
 // 12 QUESTION
 
@@ -998,6 +895,8 @@ function question14() {
     }
 }
 
+// PLACE FOR 15 QUESTION
+
 // 16 QUESTION
 
 let numbers16 = {
@@ -1098,8 +997,6 @@ function question17() {
         podsvetkanevibrannihblokov(4, 17, numbers17);
     }
 }
-
-// PLACE FOR 14 QUESTION
 
 // 18 QUESTION
 
@@ -1219,7 +1116,7 @@ function question20() {
     }
 }
 
-// PLACE FOR 18 QUESTION
+// PLACE FOR 21 QUESTION
 
 // 22 QUESTION
 
@@ -1306,6 +1203,10 @@ function question23() {
     }
 }
 
+// PLACE FOR 24 QUESTION
+// PLACE FOR 25 QUESTION
+// PLACE FOR 26 QUESTION
+
 // RESULT
 
 document.getElementById("submit").onclick = function () {
@@ -1314,16 +1215,16 @@ document.getElementById("submit").onclick = function () {
     question3();
     question4();
     // -- 5 --
-    // question5();
     question6();
     question7();
     question8();
     question9();
     // -- 10 --
-    question11();
+    // -- 11 --
     question12();
     question13();
     question14();
+    // -- 15 --
     question16();
     question17();
     question18();
@@ -1332,4 +1233,7 @@ document.getElementById("submit").onclick = function () {
     // -- 21 --
     question22();
     question23();
+    // -- 24 --
+    // -- 25 --
+    // -- 26 --
 };
