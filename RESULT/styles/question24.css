@@ -49,7 +49,7 @@
     justify-content: space-between;
 }
 
-.figures24 input {
+.figures24 div {
     padding: 6px 16px;
     width: 70px;
     height: 45px;
@@ -83,7 +83,7 @@
     border: 1px solid #369cb7;
     box-sizing: border-box;
     border-radius: 5px;
-    cursor: pointer;
+    cursor: grab;
     color: white;
 }
 
