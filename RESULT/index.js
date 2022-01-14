@@ -105,6 +105,52 @@ document.getElementById("secondBtn25").onclick = function () {
     commonForNoselectedBtn(["firstBtn25"]);
 };
 
+// ---------------------------------------------------------------------- SHOWING THE CORRECT ANSWER
+
+// для одной картинки
+
+function addCorrectAnswer(
+    numberCorrectAnswer,
+    numberQue,
+    numberContent,
+    numberContentCorrectAnswer
+) {
+    let newElement = document.createElement("div");
+    newElement.className = numberCorrectAnswer;
+
+    let childNewElement = document.createElement("div"); // сосед 1
+    childNewElement.className = "headerCorrectAnswer";
+    childNewElement.textContent = "Correct answer";
+
+    let secondChildNewElement = document.createElement("div"); // сосед 2
+    secondChildNewElement.className = numberContentCorrectAnswer;
+
+    let contentContent = document.createElement("img");
+    contentContent.src = "./pictures/" + numberQue + "/correctAnswer.svg";
+    contentContent.alt = "correct answer";
+
+    secondChildNewElement.appendChild(contentContent);
+
+    document.getElementsByClassName(numberContent)[0].appendChild(newElement);
+
+    document
+        .getElementsByClassName(numberCorrectAnswer)[0]
+        .appendChild(childNewElement);
+    document
+        .getElementsByClassName(numberCorrectAnswer)[0]
+        .appendChild(secondChildNewElement);
+}
+
+function addCorrectAnswerQuestion1() {
+    document.getElementsByClassName("app1")[0].style.height = "425px";
+    addCorrectAnswer("correctAnswer1", "1que", "app1", "contentCorrectAnswer");
+}
+
+function addCorrectAnswerQuestion2() {
+    document.getElementsByClassName("app2")[0].style.height = "600px";
+    addCorrectAnswer("correctAnswer2", "2que", "app2", "contentCorrectAnswer2");
+}
+
 // --------------------------------------------------------------------- validation of input fields ----------------------------------------------
 
 // -------------------------------------------------------------common function---------------------------------------------------
@@ -1323,7 +1369,9 @@ function question23() {
 
 document.getElementById("submit").onclick = function () {
     question1();
+    addCorrectAnswerQuestion1();
     question2();
+    addCorrectAnswerQuestion2();
     question3();
     question4();
     // -- 5 --
