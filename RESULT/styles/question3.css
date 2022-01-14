@@ -33,7 +33,7 @@
 /* content styles */
 
 .content3 {
-    top: 125px;
+    top: 100px;
     left: calc(50% - 391px / 2);
     width: 391px;
     height: 230px;
@@ -45,7 +45,7 @@
 }
 
 .expression3 {
-    top: 30px;
+    top: 40px;
     left: calc(50% - 117px / 2);
     width: 117px;
     height: 30px;
