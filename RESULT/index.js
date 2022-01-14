@@ -1,4 +1,37 @@
-// --------------------------------------------------------------------- validation of input fields -----------------------------------------------
+// ---------------------------------------------------------------------- button selection -------------------------------------------------------
+
+// 25 QUESTION
+
+let selectBtn25 = "",
+    nameSelectedBtn25 = "";
+
+document.getElementById("firstBtn25").onclick = function () {
+    document.getElementById("firstBtn25").style.backgroundColor = "#bbedf4";
+    document.getElementById("firstBtn25").style.color = "#0e80a4";
+    document.getElementById("firstBtn25").style.border = "1px solid #BBEDF4";
+
+    selectBtn25 = "right";
+    nameSelectedBtn25 = "firstBtn25";
+
+    document.getElementById("secondBtn25").style.backgroundColor = "white";
+    document.getElementById("secondBtn25").style.color = "black";
+    document.getElementById("secondBtn25").style.border = "1px solid black";
+};
+
+document.getElementById("secondBtn25").onclick = function () {
+    document.getElementById("secondBtn25").style.backgroundColor = "#bbedf4";
+    document.getElementById("secondBtn25").style.color = "#0e80a4";
+    document.getElementById("secondBtn25").style.border = "1px solid #BBEDF4";
+
+    selectBtn25 = "wrong";
+    nameSelectedBtn25 = "secondBtn25";
+
+    document.getElementById("firstBtn25").style.backgroundColor = "white";
+    document.getElementById("firstBtn25").style.color = "black";
+    document.getElementById("firstBtn25").style.border = "1px solid black";
+};
+
+// --------------------------------------------------------------------- validation of input fields ----------------------------------------------
 
 // -------------------------------------------------------------common function---------------------------------------------------
 
