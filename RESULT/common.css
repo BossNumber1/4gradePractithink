@@ -173,6 +173,7 @@ body {
     top: 160px;
 }
 
+.correctAnswer3,
 .correctAnswer4,
 .correctAnswer6,
 .correctAnswer9,
@@ -190,10 +191,6 @@ body {
 
 .correctAnswer16 {
     top: 220px;
-}
-
-.correctAnswer3 {
-    top: 260px;
 }
 
 .correctAnswer19 {
@@ -253,8 +250,11 @@ body {
     top: 40px;
 }
 
+.contentCorrectAnswer17 {
+    top: 50px;
+}
+
 .contentCorrectAnswer2,
-.contentCorrectAnswer3,
 .contentCorrectAnswer10 {
     top: 60px;
 }
@@ -269,14 +269,14 @@ body {
     top: 100px;
 }
 
-.contentCorrectAnswer17 {
-    top: 50px;
-}
-
 .contentCorrectAnswer7,
 .contentCorrectAnswer14,
 .contentCorrectAnswer19 {
     top: 120px;
+}
+
+.contentCorrectAnswer3 {
+    top: 160px;
 }
 
 .contentCorrectAnswer18 {
