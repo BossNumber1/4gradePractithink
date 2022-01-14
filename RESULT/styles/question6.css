@@ -1,6 +1,6 @@
-.app02 {
+.app6 {
     width: 1170px;
-    height: 373px;
+    height: 480px;
     left: calc(50% - 1170px / 2);
     top: 10px;
     box-shadow: 4px 4px 50px rgba(0, 0, 0, 0.05);
@@ -9,7 +9,7 @@
     margin-bottom: 51px;
 }
 
-.titlePage02 {
+.titlePage6 {
     top: 25px;
     left: calc(50% - 770px / 2);
     width: 770px;
@@ -22,44 +22,49 @@
     color: #2f2f2f;
 }
 
-.lineUnderHeading02 {
-    top: 120px;
+.lineUnderHeading6 {
     position: absolute;
     width: 1169px;
     height: 0px;
+    top: 100px;
     border-bottom: 1px solid #a8a8a8;
 }
 
 /* content styles */
 
-.content02 {
-    top: 85px;
-    left: calc(50% - 629px / 2);
-    width: 629px;
-    height: 110px;
-}
-
-.topRow02,
-.centerRow02,
-.bottomRow02 {
-    width: 629px;
-    height: 30px;
-    margin-bottom: 7px;
+.content6 {
+    top: 136px;
+    left: calc(50% - 370px / 2);
+    width: 370px;
+    height: 204px;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-between;
 }
 
-.topRow02 div,
-.centerRow02 div,
-.bottomRow02 div {
-    margin-right: 10px;
+.leftColumn6,
+.rightColumn6 {
+    width: 155px;
+    height: 204px;
 }
 
-.content02 input {
-    width: 40px;
-    height: 30px;
-    border-radius: 5px;
-    text-align: center;
+.top1row6,
+.center1row6,
+.bottom1row6,
+.top2row6,
+.center2row6,
+.bottom2row6 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.content6 input {
+    width: 57px;
+    height: 30.15px;
     border: 1px solid;
+    border-radius: 5px;
+    margin-left: 10px;
+    text-align: center;
 }
