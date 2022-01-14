@@ -589,30 +589,39 @@ function question5() {
     }
 }
 
-// 6 QUESTION // не поставлено
+// 6 QUESTION
 
 let numbers6 = {
     firstNumber: "",
     secondNumber: "",
     thirdNumber: "",
+    fourthNumber: "",
+    fifthNumber: "",
+    sixthNumber: "",
 };
 
-checkin(3, [342, 17, 261, 5], 6, numbers6);
+checkin(6, ["3/10", "1/8", "2/9", "5/12", "3/5", "6/7"], 6, numbers6);
 
 function question6() {
     if (
-        numbers6.firstNumber != "" &&
-        numbers6.secondNumber != "" &&
-        numbers6.thirdNumber != ""
+        numbers6.firstNumber !== "" &&
+        numbers6.secondNumber !== "" &&
+        numbers6.thirdNumber !== "" &&
+        numbers6.fourthNumber !== "" &&
+        numbers6.fifthNumber !== "" &&
+        numbers6.sixthNumber !== ""
     ) {
-        succerrorAndCreateMiniIcon(3, 6, numbers6);
+        succerrorAndCreateMiniIcon(6, 6, numbers6);
 
         // выносим общий статус к номеру вопроса
 
         if (
             numbers6.firstNumber === "right" &&
             numbers6.secondNumber === "right" &&
-            numbers6.thirdNumber === "right"
+            numbers6.thirdNumber === "right" &&
+            numbers6.fourthNumber === "right" &&
+            numbers6.fifthNumber === "right" &&
+            numbers6.sixthNumber === "right"
         ) {
             addImage(
                 "success",
@@ -631,7 +640,7 @@ function question6() {
             // addCorrectAnswerQuestion6();
         }
     } else {
-        podsvetkanevibrannihblokov(3, 6, numbers6);
+        podsvetkanevibrannihblokov(6, 6, numbers6);
     }
 }
 
@@ -888,6 +897,104 @@ function question12() {
         }
     } else {
         podsvetkanevibrannihblokov(4, 12, numbers12);
+    }
+}
+
+// 13 QUESTION
+
+let numbers13 = {
+    firstNumber: "",
+    secondNumber: "",
+    thirdNumber: "",
+    fourthNumber: "",
+};
+
+checkin(4, ["10 1/2", "16 2/3", "18 1/5", "24 3/8"], 13, numbers13);
+
+function question13() {
+    if (
+        numbers13.firstNumber != "" &&
+        numbers13.secondNumber != "" &&
+        numbers13.thirdNumber != "" &&
+        numbers13.fourthNumber != ""
+    ) {
+        succerrorAndCreateMiniIcon(4, 13, numbers13);
+
+        // выносим общий статус к номеру вопроса
+
+        if (
+            numbers13.firstNumber === "right" &&
+            numbers13.secondNumber === "right" &&
+            numbers13.thirdNumber === "right" &&
+            numbers13.fourthNumber === "right"
+        ) {
+            addImage(
+                "success",
+                document.getElementsByClassName("question13"),
+                "app13",
+                13
+            );
+        } else {
+            addImage(
+                "failure",
+                document.getElementsByClassName("question13"),
+                "app13",
+                13
+            );
+
+            // addCorrectAnswerQuestion13();
+        }
+    } else {
+        podsvetkanevibrannihblokov(4, 13, numbers13);
+    }
+}
+
+// 14 QUESTION
+
+let numbers14 = {
+    firstNumber: "",
+    secondNumber: "",
+    thirdNumber: "",
+    fourthNumber: "",
+};
+
+checkin(4, ["2/5", "30", "60/5", "12"], 14, numbers14);
+
+function question14() {
+    if (
+        numbers14.firstNumber !== "" &&
+        numbers14.secondNumber !== "" &&
+        numbers14.thirdNumber !== "" &&
+        numbers14.fourthNumber !== ""
+    ) {
+        succerrorAndCreateMiniIcon(4, 14, numbers14);
+
+        // выносим общий статус к номеру вопроса
+
+        if (
+            numbers14.firstNumber === "right" &&
+            numbers14.secondNumber === "right" &&
+            numbers14.thirdNumber === "right" &&
+            numbers14.fourthNumber === "right"
+        ) {
+            addImage(
+                "success",
+                document.getElementsByClassName("question14"),
+                "app14",
+                14
+            );
+        } else {
+            addImage(
+                "failure",
+                document.getElementsByClassName("question14"),
+                "app14",
+                14
+            );
+
+            // addCorrectAnswerQuestion14();
+        }
+    } else {
+        podsvetkanevibrannihblokov(4, 14, numbers14);
     }
 }
 
@@ -1213,16 +1320,16 @@ document.getElementById("submit").onclick = function () {
     question8();
     question9();
     // -- 10 --
-    question10();
     question11();
     question12();
+    question13();
+    question14();
     question16();
     question17();
-    // -- 14 --
     question18();
     question19();
     question20();
-    // -- 18 --
+    // -- 21 --
     question22();
     question23();
 };
