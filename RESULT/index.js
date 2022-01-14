@@ -399,7 +399,7 @@ let numbers2 = {
     thirdNumber: "",
 };
 
-checkin(3, [52, 40, 12], 2, numbers2);
+checkin(3, [320, 240, 400], 2, numbers2);
 
 function question2() {
     if (
@@ -443,27 +443,24 @@ let numbers3 = {
     firstNumber: "",
     secondNumber: "",
     thirdNumber: "",
-    fourthNumber: "",
 };
 
-checkin(4, [12, 28, 40, 44], 3, numbers3);
+checkin(3, [52, 40, 12], 3, numbers3);
 
 function question3() {
     if (
         numbers3.firstNumber != "" &&
         numbers3.secondNumber != "" &&
-        numbers3.thirdNumber != "" &&
-        numbers3.fourthNumber != ""
+        numbers3.thirdNumber != ""
     ) {
-        succerrorAndCreateMiniIcon(4, 3, numbers3);
+        succerrorAndCreateMiniIcon(3, 3, numbers3);
 
         // выносим общий статус к номеру вопроса
 
         if (
             numbers3.firstNumber === "right" &&
             numbers3.secondNumber === "right" &&
-            numbers3.thirdNumber === "right" &&
-            numbers3.fourthNumber === "right"
+            numbers3.thirdNumber === "right"
         ) {
             addImage(
                 "success",
@@ -482,13 +479,62 @@ function question3() {
             // addCorrectAnswerQuestion3();
         }
     } else {
-        podsvetkanevibrannihblokov(4, 3, numbers3);
+        podsvetkanevibrannihblokov(3, 3, numbers3);
     }
 }
 
-// PLACE FOR 4 QUESTION
+// 4 QUESTION
 
-// 5 QUESTION
+let numbers4 = {
+    firstNumber: "",
+    secondNumber: "",
+    thirdNumber: "",
+    fourthNumber: "",
+};
+
+checkin(4, [12, 28, 40, 44], 4, numbers4);
+
+function question4() {
+    if (
+        numbers4.firstNumber != "" &&
+        numbers4.secondNumber != "" &&
+        numbers4.thirdNumber != "" &&
+        numbers4.fourthNumber != ""
+    ) {
+        succerrorAndCreateMiniIcon(4, 4, numbers4);
+
+        // выносим общий статус к номеру вопроса
+
+        if (
+            numbers4.firstNumber === "right" &&
+            numbers4.secondNumber === "right" &&
+            numbers4.thirdNumber === "right" &&
+            numbers4.fourthNumber === "right"
+        ) {
+            addImage(
+                "success",
+                document.getElementsByClassName("question4"),
+                "app4",
+                4
+            );
+        } else {
+            addImage(
+                "failure",
+                document.getElementsByClassName("question4"),
+                "app4",
+                4
+            );
+
+            // addCorrectAnswerQuestion4();
+        }
+    } else {
+        podsvetkanevibrannihblokov(4, 4, numbers4);
+    }
+}
+
+// PLACE FOR 5 QUESTION
+
+// 5 QUESTION // не поставлено
 
 let numbers5 = {
     firstNumber: "",
@@ -543,7 +589,7 @@ function question5() {
     }
 }
 
-// 6 QUESTION
+// 6 QUESTION // не поставлено
 
 let numbers6 = {
     firstNumber: "",
@@ -595,24 +641,27 @@ let numbers7 = {
     firstNumber: "",
     secondNumber: "",
     thirdNumber: "",
+    fourthNumber: "",
 };
 
-checkin(3, [109, 100, 9], 7, numbers7);
+checkin(4, [4, 8, 3, 6], 7, numbers7);
 
 function question7() {
     if (
         numbers7.firstNumber != "" &&
         numbers7.secondNumber != "" &&
-        numbers7.thirdNumber != ""
+        numbers7.thirdNumber != "" &&
+        numbers7.fourthNumber != ""
     ) {
-        succerrorAndCreateMiniIcon(3, 7, numbers7);
+        succerrorAndCreateMiniIcon(4, 7, numbers7);
 
         // выносим общий статус к номеру вопроса
 
         if (
             numbers7.firstNumber === "right" &&
             numbers7.secondNumber === "right" &&
-            numbers7.thirdNumber === "right"
+            numbers7.thirdNumber === "right" &&
+            numbers7.fourthNumber === "right"
         ) {
             addImage(
                 "success",
@@ -631,62 +680,118 @@ function question7() {
             // addCorrectAnswerQuestion7();
         }
     } else {
-        podsvetkanevibrannihblokov(3, 7, numbers7);
+        podsvetkanevibrannihblokov(4, 7, numbers7);
     }
 }
 
-// PLACE FOR 8 QUESTION
+// 8 QUESTION
 
-// PLACE FOR 9 QUESTION
-
-// 10 QUESTION
-
-let numbers10 = {
+let numbers8 = {
     firstNumber: "",
     secondNumber: "",
     thirdNumber: "",
     fourthNumber: "",
+    fifthNumber: "",
+    sixthNumber: "",
+    seventhNumber: "",
+    eighthNumber: "",
 };
 
-checkin(4, [1215, 1000, 200, 15], 10, numbers10);
+checkin(8, [2, 8, 1, 8, 2, 8, 5, 8], 8, numbers8);
 
-function question10() {
+function question8() {
     if (
-        numbers10.firstNumber != "" &&
-        numbers10.secondNumber != "" &&
-        numbers10.thirdNumber != "" &&
-        numbers10.fourthNumber != ""
+        numbers8.firstNumber !== "" &&
+        numbers8.secondNumber !== "" &&
+        numbers8.thirdNumber !== "" &&
+        numbers8.fourthNumber !== "" &&
+        numbers8.fifthNumber !== "" &&
+        numbers8.sixthNumber !== "" &&
+        numbers8.seventhNumber !== "" &&
+        numbers8.eighthNumber !== ""
     ) {
-        succerrorAndCreateMiniIcon(4, 10, numbers10);
+        succerrorAndCreateMiniIcon(8, 8, numbers8);
 
         // выносим общий статус к номеру вопроса
 
         if (
-            numbers10.firstNumber === "right" &&
-            numbers10.secondNumber === "right" &&
-            numbers10.thirdNumber === "right" &&
-            numbers10.fourthNumber === "right"
+            numbers8.firstNumber === "right" &&
+            numbers8.secondNumber === "right" &&
+            numbers8.thirdNumber === "right" &&
+            numbers8.fourthNumber === "right" &&
+            numbers8.fifthNumber === "right" &&
+            numbers8.sixthNumber === "right" &&
+            numbers8.seventhNumber === "right" &&
+            numbers8.eighthNumber === "right"
         ) {
             addImage(
                 "success",
-                document.getElementsByClassName("question10"),
-                "app10",
-                10
+                document.getElementsByClassName("question8"),
+                "app8",
+                8
             );
         } else {
             addImage(
                 "failure",
-                document.getElementsByClassName("question10"),
-                "app10",
-                10
+                document.getElementsByClassName("question8"),
+                "app8",
+                8
             );
 
-            // addCorrectAnswerQuestion10();
+            // addCorrectAnswerQuestion8();
         }
     } else {
-        podsvetkanevibrannihblokov(4, 10, numbers10);
+        podsvetkanevibrannihblokov(8, 8, numbers8);
     }
 }
+
+// 9 QUESTION
+
+let numbers9 = {
+    firstNumber: "",
+    secondNumber: "",
+    thirdNumber: "",
+};
+
+checkin(3, [109, 100, 9], 9, numbers9);
+
+function question9() {
+    if (
+        numbers9.firstNumber != "" &&
+        numbers9.secondNumber != "" &&
+        numbers9.thirdNumber != ""
+    ) {
+        succerrorAndCreateMiniIcon(3, 9, numbers9);
+
+        // выносим общий статус к номеру вопроса
+
+        if (
+            numbers9.firstNumber === "right" &&
+            numbers9.secondNumber === "right" &&
+            numbers9.thirdNumber === "right"
+        ) {
+            addImage(
+                "success",
+                document.getElementsByClassName("question9"),
+                "app9",
+                9
+            );
+        } else {
+            addImage(
+                "failure",
+                document.getElementsByClassName("question9"),
+                "app9",
+                9
+            );
+
+            // addCorrectAnswerQuestion9();
+        }
+    } else {
+        podsvetkanevibrannihblokov(3, 9, numbers9);
+    }
+}
+
+// PLACE FOR 10 QUESTION
 
 // 11 QUESTION
 
@@ -737,105 +842,52 @@ function question11() {
     }
 }
 
-// PLACE FOR 12 QUESTION
+// 12 QUESTION
 
-// 13 QUESTION
-
-let numbers13 = {
+let numbers12 = {
     firstNumber: "",
     secondNumber: "",
     thirdNumber: "",
     fourthNumber: "",
-    fifthNumber: "",
 };
 
-checkin(5, [828, 600, 90, 120, 18], 13, numbers13);
+checkin(4, [1215, 1000, 200, 15], 12, numbers12);
 
-function question13() {
+function question12() {
     if (
-        numbers13.firstNumber != "" &&
-        numbers13.secondNumber != "" &&
-        numbers13.thirdNumber != "" &&
-        numbers13.fourthNumber != "" &&
-        numbers13.fifthNumber != ""
+        numbers12.firstNumber != "" &&
+        numbers12.secondNumber != "" &&
+        numbers12.thirdNumber != "" &&
+        numbers12.fourthNumber != ""
     ) {
-        succerrorAndCreateMiniIcon(5, 13, numbers13);
+        succerrorAndCreateMiniIcon(4, 12, numbers12);
 
         // выносим общий статус к номеру вопроса
 
         if (
-            numbers13.firstNumber === "right" &&
-            numbers13.secondNumber === "right" &&
-            numbers13.thirdNumber === "right" &&
-            numbers13.fourthNumber === "right" &&
-            numbers13.fifthNumber === "right"
+            numbers12.firstNumber === "right" &&
+            numbers12.secondNumber === "right" &&
+            numbers12.thirdNumber === "right" &&
+            numbers12.fourthNumber === "right"
         ) {
             addImage(
                 "success",
-                document.getElementsByClassName("question13"),
-                "app13",
-                13
+                document.getElementsByClassName("question12"),
+                "app12",
+                12
             );
         } else {
             addImage(
                 "failure",
-                document.getElementsByClassName("question13"),
-                "app13",
-                13
+                document.getElementsByClassName("question12"),
+                "app12",
+                12
             );
 
-            // addCorrectAnswerQuestion13();
+            // addCorrectAnswerQuestion12();
         }
     } else {
-        podsvetkanevibrannihblokov(5, 13, numbers13);
-    }
-}
-
-// PLACE FOR 14 QUESTION
-
-// 15 QUESTION
-
-let numbers15 = {
-    firstNumber: "",
-    secondNumber: "",
-    thirdNumber: "",
-};
-
-checkin(3, [40, 90, 50], 15, numbers15);
-
-function question15() {
-    if (
-        numbers15.firstNumber != "" &&
-        numbers15.secondNumber != "" &&
-        numbers15.thirdNumber != ""
-    ) {
-        succerrorAndCreateMiniIcon(3, 15, numbers15);
-
-        // выносим общий статус к номеру вопроса
-
-        if (
-            numbers15.firstNumber === "right" &&
-            numbers15.secondNumber === "right" &&
-            numbers15.thirdNumber === "right"
-        ) {
-            addImage(
-                "success",
-                document.getElementsByClassName("question15"),
-                "app15",
-                15
-            );
-        } else {
-            addImage(
-                "failure",
-                document.getElementsByClassName("question15"),
-                "app15",
-                15
-            );
-
-            // addCorrectAnswerQuestion15();
-        }
-    } else {
-        podsvetkanevibrannihblokov(3, 15, numbers15);
+        podsvetkanevibrannihblokov(4, 12, numbers12);
     }
 }
 
@@ -843,17 +895,33 @@ function question15() {
 
 let numbers16 = {
     firstNumber: "",
+    secondNumber: "",
+    thirdNumber: "",
+    fourthNumber: "",
+    fifthNumber: "",
 };
 
-checkin(1, [14], 16, numbers16);
+checkin(5, [828, 600, 90, 120, 18], 16, numbers16);
 
 function question16() {
-    if (numbers16.firstNumber != "") {
-        succerrorAndCreateMiniIcon(1, 16, numbers16);
+    if (
+        numbers16.firstNumber != "" &&
+        numbers16.secondNumber != "" &&
+        numbers16.thirdNumber != "" &&
+        numbers16.fourthNumber != "" &&
+        numbers16.fifthNumber != ""
+    ) {
+        succerrorAndCreateMiniIcon(5, 16, numbers16);
 
         // выносим общий статус к номеру вопроса
 
-        if (numbers16.firstNumber === "right") {
+        if (
+            numbers16.firstNumber === "right" &&
+            numbers16.secondNumber === "right" &&
+            numbers16.thirdNumber === "right" &&
+            numbers16.fourthNumber === "right" &&
+            numbers16.fifthNumber === "right"
+        ) {
             addImage(
                 "success",
                 document.getElementsByClassName("question16"),
@@ -871,7 +939,7 @@ function question16() {
             // addCorrectAnswerQuestion16();
         }
     } else {
-        podsvetkanevibrannihblokov(1, 16, numbers16);
+        podsvetkanevibrannihblokov(5, 16, numbers16);
     }
 }
 
@@ -879,17 +947,30 @@ function question16() {
 
 let numbers17 = {
     firstNumber: "",
+    secondNumber: "",
+    thirdNumber: "",
+    fourthNumber: "",
 };
 
-checkin(1, [2], 17, numbers17);
+checkin(4, [8, 12, 3, 4], 17, numbers17);
 
 function question17() {
-    if (numbers17.firstNumber != "") {
-        succerrorAndCreateMiniIcon(1, 17, numbers17);
+    if (
+        numbers17.firstNumber != "" &&
+        numbers17.secondNumber != "" &&
+        numbers17.thirdNumber != "" &&
+        numbers17.fourthNumber != ""
+    ) {
+        succerrorAndCreateMiniIcon(4, 17, numbers17);
 
         // выносим общий статус к номеру вопроса
 
-        if (numbers17.firstNumber === "right") {
+        if (
+            numbers17.firstNumber === "right" &&
+            numbers17.secondNumber === "right" &&
+            numbers17.thirdNumber === "right" &&
+            numbers17.fourthNumber === "right"
+        ) {
             addImage(
                 "success",
                 document.getElementsByClassName("question17"),
@@ -907,40 +988,73 @@ function question17() {
             // addCorrectAnswerQuestion17();
         }
     } else {
-        podsvetkanevibrannihblokov(1, 17, numbers17);
+        podsvetkanevibrannihblokov(4, 17, numbers17);
     }
 }
 
-// PLACE FOR 18 QUESTION
+// PLACE FOR 14 QUESTION
+
+// 18 QUESTION
+
+let numbers18 = {
+    firstNumber: "",
+    secondNumber: "",
+    thirdNumber: "",
+};
+
+checkin(3, [40, 90, 50], 18, numbers18);
+
+function question18() {
+    if (
+        numbers18.firstNumber != "" &&
+        numbers18.secondNumber != "" &&
+        numbers18.thirdNumber != ""
+    ) {
+        succerrorAndCreateMiniIcon(3, 18, numbers18);
+
+        // выносим общий статус к номеру вопроса
+
+        if (
+            numbers18.firstNumber === "right" &&
+            numbers18.secondNumber === "right" &&
+            numbers18.thirdNumber === "right"
+        ) {
+            addImage(
+                "success",
+                document.getElementsByClassName("question18"),
+                "app18",
+                18
+            );
+        } else {
+            addImage(
+                "failure",
+                document.getElementsByClassName("question18"),
+                "app18",
+                18
+            );
+
+            // addCorrectAnswerQuestion18();
+        }
+    } else {
+        podsvetkanevibrannihblokov(3, 18, numbers18);
+    }
+}
 
 // 19 QUESTION
 
 let numbers19 = {
     firstNumber: "",
-    secondNumber: "",
-    thirdNumber: "",
-    fourthNumber: "",
 };
 
-checkin(4, [452, 34, 5411, 124], 19, numbers19);
+checkin(1, [14], 19, numbers19);
 
 function question19() {
-    if (
-        numbers19.firstNumber != "" &&
-        numbers19.secondNumber != "" &&
-        numbers19.thirdNumber != "" &&
-        numbers19.fourthNumber != ""
-    ) {
-        succerrorAndCreateMiniIcon(4, 19, numbers19);
+    if (numbers19.firstNumber != "") {
+        succerrorAndCreateMiniIcon(1, 19, numbers19);
 
         // выносим общий статус к номеру вопроса
 
-        if (
-            numbers19.firstNumber === "right" &&
-            numbers19.secondNumber === "right" &&
-            numbers19.thirdNumber === "right" &&
-            numbers19.fourthNumber === "right"
-        ) {
+        if (numbers19.firstNumber === "right") {
             addImage(
                 "success",
                 document.getElementsByClassName("question19"),
@@ -958,7 +1072,130 @@ function question19() {
             // addCorrectAnswerQuestion19();
         }
     } else {
-        podsvetkanevibrannihblokov(4, 19, numbers19);
+        podsvetkanevibrannihblokov(1, 19, numbers19);
+    }
+}
+
+// 20 QUESTION
+
+let numbers20 = {
+    firstNumber: "",
+};
+
+checkin(1, [2], 20, numbers20);
+
+function question20() {
+    if (numbers20.firstNumber != "") {
+        succerrorAndCreateMiniIcon(1, 20, numbers20);
+
+        // выносим общий статус к номеру вопроса
+
+        if (numbers20.firstNumber === "right") {
+            addImage(
+                "success",
+                document.getElementsByClassName("question20"),
+                "app20",
+                20
+            );
+        } else {
+            addImage(
+                "failure",
+                document.getElementsByClassName("question20"),
+                "app20",
+                20
+            );
+
+            // addCorrectAnswerQuestion20();
+        }
+    } else {
+        podsvetkanevibrannihblokov(1, 20, numbers20);
+    }
+}
+
+// PLACE FOR 18 QUESTION
+
+// 22 QUESTION
+
+let numbers22 = {
+    firstNumber: "",
+    secondNumber: "",
+    thirdNumber: "",
+    fourthNumber: "",
+};
+
+checkin(4, [452, 34, 5411, 124], 22, numbers22);
+
+function question22() {
+    if (
+        numbers22.firstNumber != "" &&
+        numbers22.secondNumber != "" &&
+        numbers22.thirdNumber != "" &&
+        numbers22.fourthNumber != ""
+    ) {
+        succerrorAndCreateMiniIcon(4, 22, numbers22);
+
+        // выносим общий статус к номеру вопроса
+
+        if (
+            numbers22.firstNumber === "right" &&
+            numbers22.secondNumber === "right" &&
+            numbers22.thirdNumber === "right" &&
+            numbers22.fourthNumber === "right"
+        ) {
+            addImage(
+                "success",
+                document.getElementsByClassName("question22"),
+                "app22",
+                22
+            );
+        } else {
+            addImage(
+                "failure",
+                document.getElementsByClassName("question22"),
+                "app22",
+                22
+            );
+
+            // addCorrectAnswerQuestion22();
+        }
+    } else {
+        podsvetkanevibrannihblokov(4, 22, numbers22);
+    }
+}
+
+// 23 QUESTION
+
+let numbers23 = {
+    firstNumber: "",
+};
+
+checkin(1, [288000], 23, numbers23);
+
+function question23() {
+    if (numbers23.firstNumber != "") {
+        succerrorAndCreateMiniIcon(1, 23, numbers23);
+
+        // выносим общий статус к номеру вопроса
+
+        if (numbers23.firstNumber === "right") {
+            addImage(
+                "success",
+                document.getElementsByClassName("question23"),
+                "app23",
+                23
+            );
+        } else {
+            addImage(
+                "failure",
+                document.getElementsByClassName("question23"),
+                "app23",
+                23
+            );
+
+            // addCorrectAnswerQuestion23();
+        }
+    } else {
+        podsvetkanevibrannihblokov(1, 23, numbers23);
     }
 }
 
@@ -968,20 +1205,24 @@ document.getElementById("submit").onclick = function () {
     question1();
     question2();
     question3();
-    // -- 4 --
-    question5();
+    question4();
+    // -- 5 --
+    // question5();
     question6();
     question7();
-    // -- 8 --
-    // -- 9 --
+    question8();
+    question9();
+    // -- 10 --
     question10();
     question11();
-    // -- 12 --
-    question13();
-    // -- 14 --
-    question15();
+    question12();
     question16();
     question17();
-    // -- 18 --
+    // -- 14 --
+    question18();
     question19();
+    question20();
+    // -- 18 --
+    question22();
+    question23();
 };
