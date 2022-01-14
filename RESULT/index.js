@@ -545,7 +545,7 @@ let numbers6 = {
     sixthNumber: "",
 };
 
-checkin(6, ["3/10", "1/8", "2/9", "5/12", "3/5", "6/7"], 6, numbers6);
+// checkin(6, ["3/10", "1/8", "2/9", "5/12", "3/5", "6/7"], 6, numbers6);
 
 function question6() {
     if (
@@ -806,7 +806,7 @@ let numbers13 = {
     fourthNumber: "",
 };
 
-checkin(4, ["10 1/2", "16 2/3", "18 1/5", "24 3/8"], 13, numbers13);
+// checkin(4, ["10 1/2", "16 2/3", "18 1/5", "24 3/8"], 13, numbers13);
 
 function question13() {
     if (
@@ -855,7 +855,7 @@ let numbers14 = {
     fourthNumber: "",
 };
 
-checkin(4, ["2/5", "30", "60/5", "12"], 14, numbers14);
+// checkin(4, ["2/5", "30", "60/5", "12"], 14, numbers14);
 
 function question14() {
     if (
@@ -1215,15 +1215,15 @@ document.getElementById("submit").onclick = function () {
     question3();
     question4();
     // -- 5 --
-    question6();
+    // question6();
     question7();
     question8();
     question9();
     // -- 10 --
     // -- 11 --
     question12();
-    question13();
-    question14();
+    // question13();
+    // question14();
     // -- 15 --
     question16();
     question17();

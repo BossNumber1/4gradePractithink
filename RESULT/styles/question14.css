@@ -41,6 +41,18 @@
     justify-content: space-between;
 }
 
+.text14 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #2f2f2f;
+}
+
+.content14 div {
+    margin-right: 8px;
+}
+
 .content14 input {
     width: 67.45px;
     height: 38.78px;
