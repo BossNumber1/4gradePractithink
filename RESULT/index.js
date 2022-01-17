@@ -703,6 +703,68 @@ function highlightUnselectedBlocks(countId, numberQuestion, number) {
         }
     }
 }
+
+function highlightingUnfillededBlocks(countId, numberQuestion) {
+    let firstEmpty = document.getElementById("firstEmpty" + numberQuestion);
+    let secondEmpty = document.getElementById("secondEmpty" + numberQuestion);
+    let thirdEmpty = document.getElementById("thirdEmpty" + numberQuestion);
+    let fourthEmpty = document.getElementById("fourthEmpty" + numberQuestion);
+    let fifthEmpty = document.getElementById("fifthEmpty" + numberQuestion);
+    let sixthEmpty = document.getElementById("sixthEmpty" + numberQuestion);
+    let seventhEmpty = document.getElementById("seventhEmpty" + numberQuestion);
+    let eighthEmpty = document.getElementById("eighthEmpty" + numberQuestion);
+
+    for (let i = 0; i < countId; i++) {
+        if (i === 0) {
+            if (firstEmpty.textContent === "") {
+                firstEmpty.style.border = "2px solid #FFB47D";
+            }
+        }
+
+        if (i === 1) {
+            if (secondEmpty.textContent === "") {
+                secondEmpty.style.border = "2px solid #FFB47D";
+            }
+        }
+
+        if (i === 2) {
+            if (thirdEmpty.textContent === "") {
+                thirdEmpty.style.border = "2px solid #FFB47D";
+            }
+        }
+
+        if (i === 3) {
+            if (fourthEmpty.textContent === "") {
+                fourthEmpty.style.border = "2px solid #FFB47D";
+            }
+        }
+
+        if (i === 4) {
+            if (fifthEmpty.textContent === "") {
+                fifthEmpty.style.border = "2px solid #FFB47D";
+            }
+        }
+
+        if (i === 5) {
+            if (sixthEmpty.textContent === "") {
+                sixthEmpty.style.border = "2px solid #FFB47D";
+            }
+        }
+
+        if (i === 6) {
+            if (seventhEmpty.textContent === "") {
+                seventhEmpty.style.border = "2px solid #FFB47D";
+            }
+        }
+
+        if (i === 7) {
+            if (eighthEmpty.textContent === "") {
+                eighthEmpty.style.border = "2px solid #FFB47D";
+            }
+        }
+    }
+} // for 5, 15, 24 questions
+
 // ----------------------------------------------------------------------------------------------------------------------------
 
 // 1 QUESTION
@@ -895,49 +957,10 @@ function question4() {
     }
 }
 
-// PLACE FOR 5 QUESTION
+// 5 QUESTION
 
 function question5() {
-    let firstEmpty = document.getElementById("firstEmpty5");
-    let secondEmpty = document.getElementById("secondEmpty5");
-    let thirdEmpty = document.getElementById("thirdEmpty5");
-    let fourthEmpty = document.getElementById("fourthEmpty5");
-    let fifthEmpty = document.getElementById("fifthEmpty5");
-    let sixthEmpty = document.getElementById("sixthEmpty5");
-    let seventhEmpty = document.getElementById("seventhEmpty5");
-    let eighthEmpty = document.getElementById("eighthEmpty5");
-
-    if (firstEmpty.textContent === "") {
-        firstEmpty.style.border = "2px solid #FFB47D";
-    }
-
-    if (secondEmpty.textContent === "") {
-        secondEmpty.style.border = "2px solid #FFB47D";
-    }
-
-    if (thirdEmpty.textContent === "") {
-        thirdEmpty.style.border = "2px solid #FFB47D";
-    }
-
-    if (fourthEmpty.textContent === "") {
-        fourthEmpty.style.border = "2px solid #FFB47D";
-    }
-
-    if (fifthEmpty.textContent === "") {
-        fifthEmpty.style.border = "2px solid #FFB47D";
-    }
-
-    if (sixthEmpty.textContent === "") {
-        sixthEmpty.style.border = "2px solid #FFB47D";
-    }
-
-    if (seventhEmpty.textContent === "") {
-        seventhEmpty.style.border = "2px solid #FFB47D";
-    }
-
-    if (eighthEmpty.textContent === "") {
-        eighthEmpty.style.border = "2px solid #FFB47D";
-    }
+    highlightingUnfillededBlocks(8, 5);
 }
 
 // 6 QUESTION
@@ -1301,7 +1324,11 @@ function question14() {
     }
 }
 
-// PLACE FOR 15 QUESTION
+// 15 QUESTION
+
+function question15() {
+    highlightingUnfillededBlocks(5, 15);
+}
 
 // 16 QUESTION
 
@@ -1609,7 +1636,12 @@ function question23() {
     }
 }
 
-// PLACE FOR 24 QUESTION
+// 24 QUESTION
+
+function question24() {
+    highlightingUnfillededBlocks(4, 24);
+}
+
 // PLACE FOR 25 QUESTION
 // PLACE FOR 26 QUESTION
 
@@ -1620,7 +1652,6 @@ document.getElementById("submit").onclick = function () {
     question2();
     question3();
     question4();
-    // -- 5 --
     question5();
     // addCorrectAnswerQuestion5();
     // question6();
@@ -1637,7 +1668,7 @@ document.getElementById("submit").onclick = function () {
     // addCorrectAnswerQuestion13();
     // question14();
     // addCorrectAnswerQuestion14();
-    // -- 15 --
+    question15();
     // addCorrectAnswerQuestion15();
     question16();
     question17();
@@ -1648,7 +1679,7 @@ document.getElementById("submit").onclick = function () {
     // addCorrectAnswerQuestion21();
     question22();
     question23();
-    // -- 24 --
+    question24();
     // addCorrectAnswerQuestion24();
     // -- 25 --
     // addCorrectAnswerQuestion25();
