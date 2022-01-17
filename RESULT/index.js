@@ -1215,55 +1215,170 @@ function question11() {
     let ninthEmpty = document.getElementById("block2part1secondNumber11");
     let tenthEmpty = document.getElementById("block2part2secondNumber11");
     let eleventhEmpty = document.getElementById("block2part1thirdNumber11");
-    let twelthEmpty = document.getElementById("block2part2thirdNumber11");
-    debugger;
+    let twelfthEmpty = document.getElementById("block2part2thirdNumber11");
 
-    if (firstEmpty.value === "") {
-        firstEmpty.style.border = "2px solid #FFB47D";
-    }
+    if (
+        firstEmpty.value !== "" &&
+        thirdEmpty.value !== "" &&
+        fourthEmpty.value !== "" &&
+        fifthEmpty.value !== "" &&
+        sixthEmpty.value !== "" &&
+        seventhEmpty.value !== "" &&
+        eighthEmpty.value !== "" &&
+        ninthEmpty.value !== "" &&
+        tenthEmpty.value !== "" &&
+        eleventhEmpty.value !== "" &&
+        twelfthEmpty.value !== ""
+    ) {
+        if (
+            firstEmpty.value === "3" &&
+            thirdEmpty.value === "2" &&
+            fourthEmpty.value === "6" &&
+            fifthEmpty.value === "4" &&
+            sixthEmpty.value === "2" &&
+            seventhEmpty.value === "3" &&
+            eighthEmpty.value === "3" &&
+            ninthEmpty.value === "4" &&
+            tenthEmpty.value === "3" &&
+            eleventhEmpty.value === "2" &&
+            twelfthEmpty.value === "2"
+        ) {
+            addImage(
+                "success",
+                document.getElementsByClassName("question11"),
+                "app11",
+                11
+            );
+        } else {
+            if (firstEmpty.value !== "3") {
+                firstEmpty.style.border = "2px solid #FFB47D";
+                firstEmpty.style.backgroundColor = "#FFB47D";
+                firstEmpty.style.color = "white";
+            }
 
-    if (secondEmpty.value === "") {
-        secondEmpty.style.border = "2px solid #FFB47D";
-    }
+            if (secondEmpty.value !== "") {
+                secondEmpty.style.border = "2px solid #FFB47D";
+                secondEmpty.style.backgroundColor = "#FFB47D";
+                secondEmpty.style.color = "white";
+            }
 
-    if (thirdEmpty.value === "") {
-        thirdEmpty.style.border = "2px solid #FFB47D";
-    }
+            if (thirdEmpty.value !== "2") {
+                thirdEmpty.style.border = "2px solid #FFB47D";
+                thirdEmpty.style.backgroundColor = "#FFB47D";
+                thirdEmpty.style.color = "white";
+            }
 
-    if (fourthEmpty.value === "") {
-        fourthEmpty.style.border = "2px solid #FFB47D";
-    }
+            if (fourthEmpty.value !== "6") {
+                fourthEmpty.style.border = "2px solid #FFB47D";
+                fourthEmpty.style.backgroundColor = "#FFB47D";
+                fourthEmpty.style.color = "white";
+            }
 
-    if (fifthEmpty.value === "") {
-        fifthEmpty.style.border = "2px solid #FFB47D";
-    }
+            if (fifthEmpty.value !== "4") {
+                fifthEmpty.style.border = "2px solid #FFB47D";
+                fifthEmpty.style.backgroundColor = "#FFB47D";
+                fifthEmpty.style.color = "white";
+            }
 
-    if (sixthEmpty.value === "") {
-        sixthEmpty.style.border = "2px solid #FFB47D";
-    }
+            if (sixthEmpty.value !== "2") {
+                sixthEmpty.style.border = "2px solid #FFB47D";
+                sixthEmpty.style.backgroundColor = "#FFB47D";
+                sixthEmpty.style.color = "white";
+            }
 
-    if (seventhEmpty.value === "") {
-        seventhEmpty.style.border = "2px solid #FFB47D";
-    }
+            if (seventhEmpty.value !== "3") {
+                seventhEmpty.style.border = "2px solid #FFB47D";
+                seventhEmpty.style.backgroundColor = "#FFB47D";
+                seventhEmpty.style.color = "white";
+            }
 
-    if (eighthEmpty.value === "") {
-        eighthEmpty.style.border = "2px solid #FFB47D";
-    }
+            if (eighthEmpty.value !== "3") {
+                eighthEmpty.style.border = "2px solid #FFB47D";
+                eighthEmpty.style.backgroundColor = "#FFB47D";
+                eighthEmpty.style.color = "white";
+            }
 
-    if (ninthEmpty.value === "") {
-        ninthEmpty.style.border = "2px solid #FFB47D";
-    }
+            if (ninthEmpty.value !== "4") {
+                ninthEmpty.style.border = "2px solid #FFB47D";
+                ninthEmpty.style.backgroundColor = "#FFB47D";
+                ninthEmpty.style.color = "white";
+            }
 
-    if (tenthEmpty.value === "") {
-        tenthEmpty.style.border = "2px solid #FFB47D";
-    }
+            if (tenthEmpty.value !== "3") {
+                tenthEmpty.style.border = "2px solid #FFB47D";
+                tenthEmpty.style.backgroundColor = "#FFB47D";
+                tenthEmpty.style.color = "white";
+            }
 
-    if (eleventhEmpty.value === "") {
-        eleventhEmpty.style.border = "2px solid #FFB47D";
-    }
+            if (eleventhEmpty.value !== "2") {
+                eleventhEmpty.style.border = "2px solid #FFB47D";
+                eleventhEmpty.style.backgroundColor = "#FFB47D";
+                eleventhEmpty.style.color = "white";
+            }
 
-    if (twelthEmpty.value === "") {
-        twelthEmpty.style.border = "2px solid #FFB47D";
+            if (twelfthEmpty.value !== "2") {
+                twelfthEmpty.style.border = "2px solid #FFB47D";
+                twelfthEmpty.style.backgroundColor = "#FFB47D";
+                twelfthEmpty.style.color = "white";
+            }
+
+            addImage(
+                "failure",
+                document.getElementsByClassName("question11"),
+                "app11",
+                11
+            );
+
+            addCorrectAnswerQuestion11();
+        }
+    } else {
+        if (firstEmpty.value === "") {
+            firstEmpty.style.border = "2px solid #FFB47D";
+        }
+
+        if (secondEmpty.value === "") {
+            secondEmpty.style.border = "2px solid #FFB47D";
+        }
+
+        if (thirdEmpty.value === "") {
+            thirdEmpty.style.border = "2px solid #FFB47D";
+        }
+
+        if (fourthEmpty.value === "") {
+            fourthEmpty.style.border = "2px solid #FFB47D";
+        }
+
+        if (fifthEmpty.value === "") {
+            fifthEmpty.style.border = "2px solid #FFB47D";
+        }
+
+        if (sixthEmpty.value === "") {
+            sixthEmpty.style.border = "2px solid #FFB47D";
+        }
+
+        if (seventhEmpty.value === "") {
+            seventhEmpty.style.border = "2px solid #FFB47D";
+        }
+
+        if (eighthEmpty.value === "") {
+            eighthEmpty.style.border = "2px solid #FFB47D";
+        }
+
+        if (ninthEmpty.value === "") {
+            ninthEmpty.style.border = "2px solid #FFB47D";
+        }
+
+        if (tenthEmpty.value === "") {
+            tenthEmpty.style.border = "2px solid #FFB47D";
+        }
+
+        if (eleventhEmpty.value === "") {
+            eleventhEmpty.style.border = "2px solid #FFB47D";
+        }
+
+        if (twelfthEmpty.value === "") {
+            twelfthEmpty.style.border = "2px solid #FFB47D";
+        }
     }
 }
 
