@@ -180,7 +180,8 @@ body {
 .correctAnswer9,
 .correctAnswer11,
 .correctAnswer12,
-.correctAnswer13 {
+.correctAnswer13,
+.correctAnswer19 {
     top: 180px;
 }
 
@@ -194,10 +195,6 @@ body {
 
 .correctAnswer15 {
     top: 260px;
-}
-
-.correctAnswer19 {
-    top: 280px;
 }
 
 .correctAnswer7 img:not(:last-child),
