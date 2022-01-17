@@ -1201,7 +1201,71 @@ function question10() {
     highlightingUnfillededBlocks(2, 10);
 }
 
-// PLACE FOR 11 QUESTION
+// 11 QUESTION
+
+function question11() {
+    let firstEmpty = document.getElementById("block1part1firstNumber11");
+    let secondEmpty = document.getElementById("block1part2firstNumber11");
+    let thirdEmpty = document.getElementById("block1part1secondNumber11");
+    let fourthEmpty = document.getElementById("block1part2secondNumber11");
+    let fifthEmpty = document.getElementById("block1part1thirdNumber11");
+    let sixthEmpty = document.getElementById("block1part2thirdNumber11");
+    let seventhEmpty = document.getElementById("block2part1firstNumber11");
+    let eighthEmpty = document.getElementById("block2part2firstNumber11");
+    let ninthEmpty = document.getElementById("block2part1secondNumber11");
+    let tenthEmpty = document.getElementById("block2part2secondNumber11");
+    let eleventhEmpty = document.getElementById("block2part1thirdNumber11");
+    let twelthEmpty = document.getElementById("block2part2thirdNumber11");
+    debugger;
+
+    if (firstEmpty.value === "") {
+        firstEmpty.style.border = "2px solid #FFB47D";
+    }
+
+    if (secondEmpty.value === "") {
+        secondEmpty.style.border = "2px solid #FFB47D";
+    }
+
+    if (thirdEmpty.value === "") {
+        thirdEmpty.style.border = "2px solid #FFB47D";
+    }
+
+    if (fourthEmpty.value === "") {
+        fourthEmpty.style.border = "2px solid #FFB47D";
+    }
+
+    if (fifthEmpty.value === "") {
+        fifthEmpty.style.border = "2px solid #FFB47D";
+    }
+
+    if (sixthEmpty.value === "") {
+        sixthEmpty.style.border = "2px solid #FFB47D";
+    }
+
+    if (seventhEmpty.value === "") {
+        seventhEmpty.style.border = "2px solid #FFB47D";
+    }
+
+    if (eighthEmpty.value === "") {
+        eighthEmpty.style.border = "2px solid #FFB47D";
+    }
+
+    if (ninthEmpty.value === "") {
+        ninthEmpty.style.border = "2px solid #FFB47D";
+    }
+
+    if (tenthEmpty.value === "") {
+        tenthEmpty.style.border = "2px solid #FFB47D";
+    }
+
+    if (eleventhEmpty.value === "") {
+        eleventhEmpty.style.border = "2px solid #FFB47D";
+    }
+
+    if (twelthEmpty.value === "") {
+        twelthEmpty.style.border = "2px solid #FFB47D";
+    }
+}
 
 // 12 QUESTION
 
@@ -1776,7 +1840,7 @@ document.getElementById("submit").onclick = function () {
     question9();
     question10();
     // addCorrectAnswerQuestion10();
-    // -- 11 --
+    question11();
     // addCorrectAnswerQuestion11();
     question12();
     // question13();
