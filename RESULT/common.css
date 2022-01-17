@@ -158,7 +158,6 @@ body {
     top: 40px;
 }
 
-.correctAnswer21,
 .correctAnswer22 {
     top: 200px;
 }
@@ -181,7 +180,8 @@ body {
 .correctAnswer11,
 .correctAnswer12,
 .correctAnswer13,
-.correctAnswer19 {
+.correctAnswer19,
+.correctAnswer21 {
     top: 180px;
 }
 
