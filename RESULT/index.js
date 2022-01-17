@@ -897,6 +897,49 @@ function question4() {
 
 // PLACE FOR 5 QUESTION
 
+function question5() {
+    let firstEmpty = document.getElementById("firstEmpty5");
+    let secondEmpty = document.getElementById("secondEmpty5");
+    let thirdEmpty = document.getElementById("thirdEmpty5");
+    let fourthEmpty = document.getElementById("fourthEmpty5");
+    let fifthEmpty = document.getElementById("fifthEmpty5");
+    let sixthEmpty = document.getElementById("sixthEmpty5");
+    let seventhEmpty = document.getElementById("seventhEmpty5");
+    let eighthEmpty = document.getElementById("eighthEmpty5");
+
+    if (firstEmpty.textContent === "") {
+        firstEmpty.style.border = "2px solid #FFB47D";
+    }
+
+    if (secondEmpty.textContent === "") {
+        secondEmpty.style.border = "2px solid #FFB47D";
+    }
+
+    if (thirdEmpty.textContent === "") {
+        thirdEmpty.style.border = "2px solid #FFB47D";
+    }
+
+    if (fourthEmpty.textContent === "") {
+        fourthEmpty.style.border = "2px solid #FFB47D";
+    }
+
+    if (fifthEmpty.textContent === "") {
+        fifthEmpty.style.border = "2px solid #FFB47D";
+    }
+
+    if (sixthEmpty.textContent === "") {
+        sixthEmpty.style.border = "2px solid #FFB47D";
+    }
+
+    if (seventhEmpty.textContent === "") {
+        seventhEmpty.style.border = "2px solid #FFB47D";
+    }
+
+    if (eighthEmpty.textContent === "") {
+        eighthEmpty.style.border = "2px solid #FFB47D";
+    }
+}
+
 // 6 QUESTION
 
 let numbers6 = {
@@ -1578,6 +1621,7 @@ document.getElementById("submit").onclick = function () {
     question3();
     question4();
     // -- 5 --
+    question5();
     // addCorrectAnswerQuestion5();
     // question6();
     // addCorrectAnswerQuestion6();
