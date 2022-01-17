@@ -267,7 +267,6 @@ body {
     top: 60px;
 }
 
-.contentCorrectAnswer12,
 .contentCorrectAnswer13 {
     top: 80px;
 }
@@ -287,6 +286,7 @@ body {
     top: 140px;
 }
 
+.contentCorrectAnswer12,
 .contentCorrectAnswer9,
 .contentCorrectAnswer4,
 .contentCorrectAnswer3 {
