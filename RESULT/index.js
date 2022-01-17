@@ -747,7 +747,7 @@ function question1() {
                 1
             );
 
-            // addCorrectAnswerQuestion1();
+            addCorrectAnswerQuestion1();
         }
     } else {
         highlightUnselectedBlocks(4, 1, numbers1);
@@ -793,7 +793,7 @@ function question2() {
                 2
             );
 
-            // addCorrectAnswerQuestion2();
+            addCorrectAnswerQuestion2();
         }
     } else {
         highlightUnselectedBlocks(3, 2, numbers2);
@@ -839,7 +839,7 @@ function question3() {
                 3
             );
 
-            // addCorrectAnswerQuestion3();
+            addCorrectAnswerQuestion3();
         }
     } else {
         highlightUnselectedBlocks(3, 3, numbers3);
@@ -888,7 +888,7 @@ function question4() {
                 4
             );
 
-            // addCorrectAnswerQuestion4();
+            addCorrectAnswerQuestion4();
         }
     } else {
         highlightUnselectedBlocks(4, 4, numbers4);
@@ -994,7 +994,7 @@ function question7() {
                 7
             );
 
-            // addCorrectAnswerQuestion7();
+            addCorrectAnswerQuestion7();
         }
     } else {
         highlightUnselectedBlocks(4, 7, numbers7);
@@ -1055,7 +1055,7 @@ function question8() {
                 8
             );
 
-            // addCorrectAnswerQuestion8();
+            addCorrectAnswerQuestion8();
         }
     } else {
         highlightUnselectedBlocks(8, 8, numbers8);
@@ -1101,7 +1101,7 @@ function question9() {
                 9
             );
 
-            // addCorrectAnswerQuestion9();
+            addCorrectAnswerQuestion9();
         }
     } else {
         highlightUnselectedBlocks(3, 9, numbers9);
@@ -1153,7 +1153,7 @@ function question12() {
                 12
             );
 
-            // addCorrectAnswerQuestion12();
+            addCorrectAnswerQuestion12();
         }
     } else {
         highlightUnselectedBlocks(4, 12, numbers12);
@@ -1305,7 +1305,7 @@ function question16() {
                 16
             );
 
-            // addCorrectAnswerQuestion16();
+            addCorrectAnswerQuestion16();
         }
     } else {
         highlightUnselectedBlocks(5, 16, numbers16);
@@ -1354,7 +1354,7 @@ function question17() {
                 17
             );
 
-            // addCorrectAnswerQuestion17();
+            addCorrectAnswerQuestion17();
         }
     } else {
         highlightUnselectedBlocks(4, 17, numbers17);
@@ -1400,7 +1400,7 @@ function question18() {
                 18
             );
 
-            // addCorrectAnswerQuestion18();
+            addCorrectAnswerQuestion18();
         }
     } else {
         highlightUnselectedBlocks(3, 18, numbers18);
@@ -1436,7 +1436,7 @@ function question19() {
                 19
             );
 
-            // addCorrectAnswerQuestion19();
+            addCorrectAnswerQuestion19();
         }
     } else {
         highlightUnselectedBlocks(1, 19, numbers19);
@@ -1472,7 +1472,7 @@ function question20() {
                 20
             );
 
-            // addCorrectAnswerQuestion20();
+            addCorrectAnswerQuestion20();
         }
     } else {
         highlightUnselectedBlocks(1, 20, numbers20);
@@ -1523,7 +1523,7 @@ function question22() {
                 22
             );
 
-            // addCorrectAnswerQuestion22();
+            addCorrectAnswerQuestion22();
         }
     } else {
         highlightUnselectedBlocks(4, 22, numbers22);
@@ -1559,7 +1559,7 @@ function question23() {
                 23
             );
 
-            // addCorrectAnswerQuestion23();
+            addCorrectAnswerQuestion23();
         }
     } else {
         highlightUnselectedBlocks(1, 23, numbers23);
@@ -1574,55 +1574,40 @@ function question23() {
 
 document.getElementById("submit").onclick = function () {
     question1();
-    addCorrectAnswerQuestion1();
     question2();
-    addCorrectAnswerQuestion2();
     question3();
-    addCorrectAnswerQuestion3();
     question4();
-    addCorrectAnswerQuestion4();
     // -- 5 --
-    addCorrectAnswerQuestion5();
+    // addCorrectAnswerQuestion5();
     // question6();
-    addCorrectAnswerQuestion6();
+    // addCorrectAnswerQuestion6();
     question7();
-    addCorrectAnswerQuestion7();
     question8();
-    addCorrectAnswerQuestion8();
     question9();
-    addCorrectAnswerQuestion9();
     // -- 10 --
-    addCorrectAnswerQuestion10();
+    // addCorrectAnswerQuestion10();
     // -- 11 --
-    addCorrectAnswerQuestion11();
+    // addCorrectAnswerQuestion11();
     question12();
-    addCorrectAnswerQuestion12();
     // question13();
-    addCorrectAnswerQuestion13();
+    // addCorrectAnswerQuestion13();
     // question14();
-    addCorrectAnswerQuestion14();
+    // addCorrectAnswerQuestion14();
     // -- 15 --
-    addCorrectAnswerQuestion15();
+    // addCorrectAnswerQuestion15();
     question16();
-    addCorrectAnswerQuestion16();
     question17();
-    addCorrectAnswerQuestion17();
     question18();
-    addCorrectAnswerQuestion18();
     question19();
-    addCorrectAnswerQuestion19();
     question20();
-    addCorrectAnswerQuestion20();
     // -- 21 --
-    addCorrectAnswerQuestion21();
+    // addCorrectAnswerQuestion21();
     question22();
-    addCorrectAnswerQuestion22();
     question23();
-    addCorrectAnswerQuestion23();
     // -- 24 --
-    addCorrectAnswerQuestion24();
+    // addCorrectAnswerQuestion24();
     // -- 25 --
-    addCorrectAnswerQuestion25();
+    // addCorrectAnswerQuestion25();
     // -- 26 --
-    addCorrectAnswerQuestion26();
+    // addCorrectAnswerQuestion26();
 };
