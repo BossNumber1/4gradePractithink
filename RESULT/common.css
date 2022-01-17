@@ -150,7 +150,8 @@ body {
 .correctAnswer21,
 .correctAnswer22,
 .correctAnswer23,
-.correctAnswer24 {
+.correctAnswer24,
+.correctAnswer25 {
     left: calc(50% - 450px / 2);
     width: 450px;
     height: 94px;
@@ -158,10 +159,6 @@ body {
 
 .correctAnswer10 {
     top: 40px;
-}
-
-.correctAnswer24 {
-    top: 200px;
 }
 
 .correctAnswer23 {
@@ -192,7 +189,9 @@ body {
 }
 
 .correctAnswer20,
-.correctAnswer22 {
+.correctAnswer22,
+.correctAnswer24,
+.correctAnswer25 {
     top: 200px;
 }
 
