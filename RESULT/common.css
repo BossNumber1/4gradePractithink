@@ -158,16 +158,13 @@ body {
     top: 40px;
 }
 
-.correctAnswer5 {
-    top: 160px;
-}
-
-.correctAnswer18,
 .correctAnswer21,
 .correctAnswer22 {
     top: 200px;
 }
 
+.correctAnswer18,
+.correctAnswer5,
 .correctAnswer7,
 .correctAnswer1,
 .correctAnswer2,
