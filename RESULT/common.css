@@ -172,6 +172,7 @@ body {
 .correctAnswer1,
 .correctAnswer2,
 .correctAnswer8,
+.correctAnswer17,
 .correctAnswer14 {
     top: 160px;
 }
@@ -186,7 +187,6 @@ body {
     top: 180px;
 }
 
-.correctAnswer17,
 .correctAnswer20 {
     top: 200px;
 }
