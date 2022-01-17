@@ -246,6 +246,16 @@ function addCorrectAnswerQuestion15() {
     );
 }
 
+function addCorrectAnswerQuestion16() {
+    document.getElementsByClassName("app16")[0].style.height = "1200px";
+    addCorrectAnswer(
+        "correctAnswer16",
+        "16que",
+        "app16",
+        "contentCorrectAnswer16"
+    );
+}
+
 // --------------------------------------------------------------------- validation of input fields ----------------------------------------------
 
 // -------------------------------------------------------------common function---------------------------------------------------
@@ -1494,6 +1504,7 @@ document.getElementById("submit").onclick = function () {
     // -- 15 --
     addCorrectAnswerQuestion15();
     question16();
+    addCorrectAnswerQuestion16();
     question17();
     question18();
     question19();
