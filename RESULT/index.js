@@ -1030,11 +1030,14 @@ let numbers7 = {
 gettingDataFromFields(4, [4, 8, 3, 6], 7, numbers7);
 
 function question7() {
+    let firstEmpty = document.getElementById("firstEmpty7");
+
     if (
-        numbers7.firstNumber != "" &&
-        numbers7.secondNumber != "" &&
-        numbers7.thirdNumber != "" &&
-        numbers7.fourthNumber != ""
+        numbers7.firstNumber !== "" &&
+        numbers7.secondNumber !== "" &&
+        numbers7.thirdNumber !== "" &&
+        numbers7.fourthNumber !== "" &&
+        firstEmpty.textContent !== ""
     ) {
         succerrorAndCreateMiniIcon(4, 7, numbers7);
 
@@ -1064,6 +1067,10 @@ function question7() {
         }
     } else {
         highlightUnselectedBlocks(4, 7, numbers7);
+
+        firstEmpty.style.border = "2px solid #FFB47D";
+
+        debugger;
     }
 }
 
