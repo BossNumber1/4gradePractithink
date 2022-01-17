@@ -164,6 +164,7 @@ body {
     top: 200px;
 }
 
+.correctAnswer7,
 .correctAnswer1,
 .correctAnswer2,
 .correctAnswer8,
@@ -183,7 +184,6 @@ body {
     top: 180px;
 }
 
-.correctAnswer7,
 .correctAnswer17,
 .correctAnswer20 {
     top: 200px;
@@ -256,6 +256,7 @@ body {
     top: 50px;
 }
 
+.contentCorrectAnswer7,
 .contentCorrectAnswer2,
 .contentCorrectAnswer10 {
     top: 60px;
@@ -271,7 +272,6 @@ body {
 }
 
 .contentCorrectAnswer6,
-.contentCorrectAnswer7,
 .contentCorrectAnswer14,
 .contentCorrectAnswer19 {
     top: 120px;
