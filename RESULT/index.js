@@ -419,9 +419,19 @@ function addMiniIcon(elem, status) {
 
     objDiv.style.width = widthAdjacentElement;
     objDiv.style.position = "absolute";
-    objDiv.style.marginLeft =
-        elem.offsetLeft + widthAdjacentElement / 2 - 7 + "px";
-    objDiv.style.marginTop = "-63px";
+
+    if (
+        elem.parentElement.parentElement.parentElement.className === "content1"
+    ) {
+        objDiv.style.marginTop = "-40px";
+        objDiv.style.marginLeft =
+            elem.offsetLeft + widthAdjacentElement / 2 - 20 + "px";
+    } else {
+        objDiv.style.marginTop = "-63px";
+        objDiv.style.marginLeft =
+            elem.offsetLeft + widthAdjacentElement / 2 - 7 + "px";
+    }
+
     objDiv.style.marginRight = rightIndent;
     objDiv.style.paddingBottom = "10px";
     objDiv.style.display = "flex";
