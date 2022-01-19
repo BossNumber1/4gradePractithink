@@ -990,7 +990,12 @@ let numbers6 = {
     sixthNumber: "",
 };
 
-// gettingDataFromFields(6, ["3/10", "1/8", "2/9", "5/12", "3/5", "6/7"], 6, numbers6);
+gettingDataFromFields(
+    6,
+    ["3/10", "1/8", "2/9", "5/12", "3/5", "6/7"],
+    6,
+    numbers6
+);
 
 function question6() {
     if (
@@ -1948,7 +1953,7 @@ document.getElementById("submit").onclick = function () {
     question4();
     question5();
     // addCorrectAnswerQuestion5();
-    // question6();
+    question6();
     // addCorrectAnswerQuestion6();
     question7();
     question8();
