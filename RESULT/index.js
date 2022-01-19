@@ -407,63 +407,23 @@ function addMiniIcon(elem, status) {
     let widthAdjacentElement = elem.getBoundingClientRect().width;
 
     // получаем отступы элемента, для того же
-    let leftIndent = window
-        .getComputedStyle(elem, null)
-        .getPropertyValue("margin-left");
+    // let leftIndent = window
+    //     .getComputedStyle(elem, null)
+    //     .getPropertyValue("margin-left");
 
     let rightIndent = window
         .getComputedStyle(elem, null)
         .getPropertyValue("margin-right");
 
-    // устанавливаем её нашему блоку
+    objDiv.className = "statusMiniIcon";
+
     objDiv.style.width = widthAdjacentElement;
-
-    if (elem.parentElement.parentElement.className === "content2") {
-        objDiv.style.marginLeft = "85px";
-        objDiv.style.position = "absolute";
-
-        let parent = elem.parentElement;
-
-        parent.style.width = "150px";
-        parent.style.display = "flex";
-        parent.style.alignItems = "center";
-        parent.style.justifyContent = "space-between";
-
-        parent.style.marginRight = "15px";
-
-        document.getElementsByClassName("content2")[0].style.width = "268px";
-    } else if (elem.parentElement.parentElement.className === "content8") {
-        if (elem.parentElement.className === "rightExpression8") {
-            objDiv.style.marginLeft = "80px";
-        } else {
-            objDiv.style.marginLeft = "55px";
-        }
-
-        objDiv.style.position = "absolute";
-
-        let parent = elem.parentElement;
-
-        parent.style.width = "150px";
-        parent.style.alignItems = "center";
-        parent.style.justifyContent = "space-between";
-
-        parent.style.marginRight = "15px";
-
-        document.getElementsByClassName("content8")[0].style.width = "458px";
-    } else {
-        objDiv.style.marginLeft = leftIndent;
-    }
-
+    objDiv.style.position = "absolute";
+    objDiv.style.marginLeft =
+        elem.offsetLeft + widthAdjacentElement / 2 - 7 + "px";
+    objDiv.style.marginTop = "-63px";
     objDiv.style.marginRight = rightIndent;
-
-    if (
-        elem.parentElement.parentElement.parentElement.className === "content10"
-    ) {
-        objDiv.style.paddingBottom = "5px";
-    } else {
-        objDiv.style.paddingBottom = "10px";
-    }
-
+    objDiv.style.paddingBottom = "10px";
     objDiv.style.display = "flex";
     objDiv.style.justifyContent = "center";
     objDiv.style.alignItems = "center";
@@ -477,14 +437,6 @@ function addMiniIcon(elem, status) {
     }
 
     objDiv.appendChild(obj);
-
-    if (elem.parentElement.parentElement.className === "content2") {
-        objDiv.style.marginTop = "-45px";
-    } else if (elem.parentElement.parentElement.className === "content8") {
-        objDiv.style.marginTop = "-55px";
-    } else {
-        objDiv.style.marginTop = "-23px";
-    }
 
     // устанавливаем её в нужное место
     let elementParent = elem.parentElement;
