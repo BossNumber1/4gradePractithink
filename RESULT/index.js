@@ -1483,7 +1483,7 @@ function question13() {
                 13
             );
 
-            // addCorrectAnswerQuestion13();
+            addCorrectAnswerQuestion13();
         }
     } else {
         highlightUnselectedBlocks(4, 13, numbers13);
@@ -1967,7 +1967,6 @@ document.getElementById("submit").onclick = function () {
     question11();
     question12();
     question13();
-    // addCorrectAnswerQuestion13();
     question14();
     // addCorrectAnswerQuestion14();
     question15();
