@@ -1445,7 +1445,12 @@ let numbers13 = {
     fourthNumber: "",
 };
 
-// gettingDataFromFields(4, ["10 1/2", "16 2/3", "18 1/5", "24 3/8"], 13, numbers13);
+gettingDataFromFields(
+    4,
+    ["10 1/2", "16 2/3", "18 1/5", "24 3/8"],
+    13,
+    numbers13
+);
 
 function question13() {
     if (
@@ -1963,7 +1968,7 @@ document.getElementById("submit").onclick = function () {
     question11();
     // addCorrectAnswerQuestion11();
     question12();
-    // question13();
+    question13();
     // addCorrectAnswerQuestion13();
     // question14();
     // addCorrectAnswerQuestion14();
