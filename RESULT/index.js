@@ -1032,7 +1032,7 @@ function question6() {
                 6
             );
 
-            // addCorrectAnswerQuestion6();
+            addCorrectAnswerQuestion6();
         }
     } else {
         highlightUnselectedBlocks(6, 6, numbers6);
@@ -1959,7 +1959,6 @@ document.getElementById("submit").onclick = function () {
     question5();
     // addCorrectAnswerQuestion5();
     question6();
-    // addCorrectAnswerQuestion6();
     question7();
     question8();
     question9();
