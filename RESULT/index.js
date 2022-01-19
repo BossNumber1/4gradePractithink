@@ -1499,7 +1499,7 @@ let numbers14 = {
     fourthNumber: "",
 };
 
-// gettingDataFromFields(4, ["2/5", "30", "60/5", "12"], 14, numbers14);
+gettingDataFromFields(4, ["2/5", "30", "60/5", "12"], 14, numbers14);
 
 function question14() {
     if (
@@ -1970,7 +1970,7 @@ document.getElementById("submit").onclick = function () {
     question12();
     question13();
     // addCorrectAnswerQuestion13();
-    // question14();
+    question14();
     // addCorrectAnswerQuestion14();
     question15();
     // addCorrectAnswerQuestion15();
