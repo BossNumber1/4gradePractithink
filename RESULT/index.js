@@ -1965,7 +1965,6 @@ document.getElementById("submit").onclick = function () {
     question10();
     // addCorrectAnswerQuestion10();
     question11();
-    // addCorrectAnswerQuestion11();
     question12();
     question13();
     // addCorrectAnswerQuestion13();
