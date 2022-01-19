@@ -90,16 +90,16 @@ let selectBtn25 = "",
     nameSelectedBtn25 = "";
 
 document.getElementById("firstBtn25").onclick = function () {
-    selectBtn21 = "right";
-    nameSelectedBtn21 = "firstBtn25";
+    selectBtn25 = "wrong";
+    nameSelectedBtn25 = "firstBtn25";
 
     commonForSelectBtn("firstBtn25");
     commonForNoselectedBtn(["secondBtn25"]);
 };
 
 document.getElementById("secondBtn25").onclick = function () {
-    selectBtn21 = "wrong";
-    nameSelectedBtn21 = "secondBtn25";
+    selectBtn25 = "right";
+    nameSelectedBtn25 = "secondBtn25";
 
     commonForSelectBtn("secondBtn25");
     commonForNoselectedBtn(["firstBtn25"]);
