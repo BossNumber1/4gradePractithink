@@ -407,9 +407,6 @@ function addMiniIcon(elem, status) {
     let widthAdjacentElement = elem.getBoundingClientRect().width;
 
     // получаем отступы элемента, для того же
-    // let leftIndent = window
-    //     .getComputedStyle(elem, null)
-    //     .getPropertyValue("margin-left");
 
     let rightIndent = window
         .getComputedStyle(elem, null)
@@ -453,6 +450,12 @@ function addMiniIcon(elem, status) {
         objDiv.style.marginTop = "-63px";
         objDiv.style.marginLeft =
             elem.offsetLeft + widthAdjacentElement / 2 - 7 + "px";
+    }
+
+    if (
+        elem.parentElement.parentElement.parentElement.className === "content11"
+    ) {
+        objDiv.style.marginTop = "-40px";
     }
 
     if (elem.parentElement.parentElement.className === "content14") {
@@ -1335,72 +1338,96 @@ function question11() {
                 firstEmpty.style.border = "2px solid #ED7777";
                 firstEmpty.style.backgroundColor = "#ED7777";
                 firstEmpty.style.color = "white";
+
+                addMiniIcon(firstEmpty, "failure");
             }
 
             if (secondEmpty.value !== "") {
                 secondEmpty.style.border = "2px solid #ED7777";
                 secondEmpty.style.backgroundColor = "#ED7777";
                 secondEmpty.style.color = "white";
+
+                addMiniIcon(secondEmpty, "failure");
             }
 
             if (thirdEmpty.value !== "2") {
                 thirdEmpty.style.border = "2px solid #ED7777";
                 thirdEmpty.style.backgroundColor = "#ED7777";
                 thirdEmpty.style.color = "white";
+
+                addMiniIcon(thirdEmpty, "failure");
             }
 
             if (fourthEmpty.value !== "6") {
                 fourthEmpty.style.border = "2px solid #ED7777";
                 fourthEmpty.style.backgroundColor = "#ED7777";
                 fourthEmpty.style.color = "white";
+
+                addMiniIcon(fourthEmpty, "failure");
             }
 
             if (fifthEmpty.value !== "4") {
                 fifthEmpty.style.border = "2px solid #ED7777";
                 fifthEmpty.style.backgroundColor = "#ED7777";
                 fifthEmpty.style.color = "white";
+
+                addMiniIcon(fifthEmpty, "failure");
             }
 
             if (sixthEmpty.value !== "2") {
                 sixthEmpty.style.border = "2px solid #ED7777";
                 sixthEmpty.style.backgroundColor = "#ED7777";
                 sixthEmpty.style.color = "white";
+
+                addMiniIcon(sixthEmpty, "failure");
             }
 
             if (seventhEmpty.value !== "3") {
                 seventhEmpty.style.border = "2px solid #ED7777";
                 seventhEmpty.style.backgroundColor = "#ED7777";
                 seventhEmpty.style.color = "white";
+
+                addMiniIcon(seventhEmpty, "failure");
             }
 
             if (eighthEmpty.value !== "3") {
                 eighthEmpty.style.border = "2px solid #ED7777";
                 eighthEmpty.style.backgroundColor = "#ED7777";
                 eighthEmpty.style.color = "white";
+
+                addMiniIcon(eighthEmpty, "failure");
             }
 
             if (ninthEmpty.value !== "4") {
                 ninthEmpty.style.border = "2px solid #ED7777";
                 ninthEmpty.style.backgroundColor = "#ED7777";
                 ninthEmpty.style.color = "white";
+
+                addMiniIcon(ninthEmpty, "failure");
             }
 
             if (tenthEmpty.value !== "3") {
                 tenthEmpty.style.border = "2px solid #ED7777";
                 tenthEmpty.style.backgroundColor = "#ED7777";
                 tenthEmpty.style.color = "white";
+
+                addMiniIcon(tenthEmpty, "failure");
             }
 
             if (eleventhEmpty.value !== "2") {
                 eleventhEmpty.style.border = "2px solid #ED7777";
                 eleventhEmpty.style.backgroundColor = "#ED7777";
                 eleventhEmpty.style.color = "white";
+
+                addMiniIcon(eleventhEmpty, "failure");
             }
 
             if (twelfthEmpty.value !== "2") {
                 twelfthEmpty.style.border = "2px solid #ED7777";
                 twelfthEmpty.style.backgroundColor = "#ED7777";
                 twelfthEmpty.style.color = "white";
+
+                addMiniIcon(twelfthEmpty, "failure");
             }
 
             addImage(
