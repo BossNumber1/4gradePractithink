@@ -455,6 +455,14 @@ function addMiniIcon(elem, status) {
             elem.offsetLeft + widthAdjacentElement / 2 - 7 + "px";
     }
 
+    if (
+        elem.parentElement.firstElementChild.id === "secondNumber9" ||
+        elem.parentElement.firstElementChild.id === "thirdNumber9"
+    ) {
+        objDiv.style.marginTop = "223px";
+        objDiv.style.marginLeft = elem.offsetLeft - 100 + "px";
+    }
+
     objDiv.style.marginRight = rightIndent;
     objDiv.style.paddingBottom = "10px";
     objDiv.style.display = "flex";
