@@ -375,11 +375,11 @@ function drag5(e) {
 }
 
 function drop5(e) {
-    // получаем имя и id взятого элемента
+    // получаем текст и id взятого элемента
     let idOrig = localStorage.getItem("idOrigin5question4class");
     let textContent = localStorage.getItem("textContent5question4class");
 
-    // получаем имя и id, на который кладём элемент
+    // получаем id, на который кладём элемент
     let currentId = e.target.id;
 
     // получаем объекты
@@ -412,11 +412,11 @@ function drag10(e) {
 }
 
 function drop10(e) {
-    // получаем имя и id взятого элемента
+    // получаем текст и id взятого элемента
     let idOrig = localStorage.getItem("idOrigin10question4class");
     let textContent = localStorage.getItem("textContent10question4class");
 
-    // получаем имя и id, на который кладём элемент
+    // получаем id, на который кладём элемент
     let currentId = e.target.id;
 
     // получаем объекты
@@ -449,11 +449,11 @@ function drag15(e) {
 }
 
 function drop15(e) {
-    // получаем имя и id взятого элемента
+    // получаем текст и id взятого элемента
     let idOrig = localStorage.getItem("idOrigin15question4class");
     let textContent = localStorage.getItem("textContent15question4class");
 
-    // получаем имя и id, на который кладём элемент
+    // получаем id, на который кладём элемент
     let currentId = e.target.id;
 
     // получаем объекты
@@ -468,6 +468,49 @@ function drop15(e) {
 
     orignalElement.textContent = "";
     orignalElement.style.opacity = "0.3";
+    orignalElement.style.cursor = "default";
+
+    // меняем id местами
+    currentElement.id = idOrig;
+    orignalElement.id = currentId;
+}
+
+// 24 QUESTION
+
+function drag24(e) {
+    localStorage.setItem("idOrigin24question4class", e.target.id);
+    localStorage.setItem(
+        "textContent24question4class",
+        e.target.textContent.trim()
+    );
+}
+
+function drop24(e) {
+    // получаем текст и id взятого элемента
+    let idOrig = localStorage.getItem("idOrigin24question4class");
+    let textContent = localStorage.getItem("textContent24question4class");
+
+    // получаем id, на который кладём элемент
+    let currentId = e.target.id;
+
+    // получаем объекты
+    let orignalElement = document.getElementById(idOrig);
+    let currentElement = document.getElementById(currentId);
+
+    // меняем блоки местами
+    currentElement.textContent = textContent;
+    currentElement.style.backgroundColor = "#369cb7";
+    currentElement.style.border = "1px solid #369cb7";
+    currentElement.style.color = "white";
+    currentElement.style.cursor = "grab";
+
+    currentElement.style.display = "flex";
+    currentElement.style.alignItems = "center";
+    currentElement.style.justifyContent = "center";
+
+    orignalElement.style.backgroundColor = "white";
+    orignalElement.style.border = "1px solid black";
+    orignalElement.textContent = "";
     orignalElement.style.cursor = "default";
 
     // меняем id местами
