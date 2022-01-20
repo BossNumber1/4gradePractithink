@@ -401,6 +401,43 @@ function drop5(e) {
     orignalElement.id = currentId;
 }
 
+// 10 QUESTION
+
+function drag10(e) {
+    localStorage.setItem("idOrigin10question4class", e.target.id);
+    localStorage.setItem(
+        "textContent10question4class",
+        e.target.textContent.trim()
+    );
+}
+
+function drop10(e) {
+    // получаем имя и id взятого элемента
+    let idOrig = localStorage.getItem("idOrigin10question4class");
+    let textContent = localStorage.getItem("textContent10question4class");
+
+    // получаем имя и id, на который кладём элемент
+    let currentId = e.target.id;
+
+    // получаем объекты
+    let orignalElement = document.getElementById(idOrig);
+    let currentElement = document.getElementById(currentId);
+
+    // меняем блоки местами
+    currentElement.textContent = textContent;
+    currentElement.style.opacity = "1";
+    currentElement.style.color = "white";
+    currentElement.style.cursor = "grab";
+
+    orignalElement.textContent = "";
+    orignalElement.style.opacity = "0.3";
+    orignalElement.style.cursor = "default";
+
+    // меняем id местами
+    currentElement.id = idOrig;
+    orignalElement.id = currentId;
+}
+
 // --------------------------------------------------------------------- validation of input fields ----------------------------------------------
 
 // -------------------------------------------------------------common function---------------------------------------------------
