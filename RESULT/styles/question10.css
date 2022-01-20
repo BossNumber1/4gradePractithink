@@ -69,16 +69,7 @@
     border: 1px solid #369cb7;
     box-sizing: border-box;
     border-radius: 5px;
-}
-
-#firstEmpty10 {
-    margin-right: 5px;
-    margin-left: 0px;
-}
-
-#secondEmpty10 {
-    margin-right: 5px;
-    margin-left: 5px;
+    margin: 0px 5px;
 }
 
 .dedicated10 {
