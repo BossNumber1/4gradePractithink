@@ -476,6 +476,16 @@ function addMiniIcon(elem, status) {
         objDiv.style.marginLeft = elem.offsetLeft - 100 + "px";
     }
 
+    if (
+        elem.parentElement.firstElementChild.id === "secondNumber16" ||
+        elem.parentElement.firstElementChild.id === "thirdNumber16" ||
+        elem.parentElement.firstElementChild.id === "fourthNumber16" ||
+        elem.parentElement.firstElementChild.id === "fifthNumber16"
+    ) {
+        objDiv.style.marginTop = "100px";
+        objDiv.style.marginLeft = elem.offsetLeft - 110 + "px";
+    }
+
     objDiv.style.marginRight = rightIndent;
     objDiv.style.paddingBottom = "10px";
     objDiv.style.display = "flex";
