@@ -475,7 +475,9 @@ function addMiniIcon(elem, status) {
     let elementParent = elem.parentElement;
 
     if (
-        elem.parentElement.parentElement.parentElement.className !== "content4"
+        elem.parentElement.parentElement.parentElement.className !==
+            "content4" &&
+        elem.parentElement.parentElement.parentElement.className !== "content8"
     ) {
         elementParent.insertBefore(objDiv, elem);
     }
@@ -501,7 +503,7 @@ function gettingDataFromFields(
         if (i === 0) {
             document.getElementById("firstNumber" + numberQuestion).onchange =
                 function (e) {
-                    if (e.target.value === correctNumbers[i]) {
+                    if (e.target.value == correctNumbers[i]) {
                         number.firstNumber = "right";
                     } else {
                         number.firstNumber = "wrong";
@@ -512,7 +514,7 @@ function gettingDataFromFields(
         if (i === 1) {
             document.getElementById("secondNumber" + numberQuestion).onchange =
                 function (e) {
-                    if (e.target.value === correctNumbers[i]) {
+                    if (e.target.value == correctNumbers[i]) {
                         number.secondNumber = "right";
                     } else {
                         number.secondNumber = "wrong";
@@ -523,7 +525,7 @@ function gettingDataFromFields(
         if (i === 2) {
             document.getElementById("thirdNumber" + numberQuestion).onchange =
                 function (e) {
-                    if (e.target.value === correctNumbers[i]) {
+                    if (e.target.value == correctNumbers[i]) {
                         number.thirdNumber = "right";
                     } else {
                         number.thirdNumber = "wrong";
@@ -534,7 +536,7 @@ function gettingDataFromFields(
         if (i === 3) {
             document.getElementById("fourthNumber" + numberQuestion).onchange =
                 function (e) {
-                    if (e.target.value === correctNumbers[i]) {
+                    if (e.target.value == correctNumbers[i]) {
                         number.fourthNumber = "right";
                     } else {
                         number.fourthNumber = "wrong";
@@ -545,7 +547,7 @@ function gettingDataFromFields(
         if (i === 4) {
             document.getElementById("fifthNumber" + numberQuestion).onchange =
                 function (e) {
-                    if (e.target.value === correctNumbers[i]) {
+                    if (e.target.value == correctNumbers[i]) {
                         number.fifthNumber = "right";
                     } else {
                         number.fifthNumber = "wrong";
@@ -556,10 +558,32 @@ function gettingDataFromFields(
         if (i === 5) {
             document.getElementById("sixthNumber" + numberQuestion).onchange =
                 function (e) {
-                    if (e.target.value === correctNumbers[i]) {
+                    if (e.target.value == correctNumbers[i]) {
                         number.sixthNumber = "right";
                     } else {
                         number.sixthNumber = "wrong";
+                    }
+                };
+        }
+
+        if (i === 6) {
+            document.getElementById("seventhNumber" + numberQuestion).onchange =
+                function (e) {
+                    if (e.target.value == correctNumbers[i]) {
+                        number.seventhNumber = "right";
+                    } else {
+                        number.seventhNumber = "wrong";
+                    }
+                };
+        }
+
+        if (i === 7) {
+            document.getElementById("eighthNumber" + numberQuestion).onchange =
+                function (e) {
+                    if (e.target.value == correctNumbers[i]) {
+                        number.eighthNumber = "right";
+                    } else {
+                        number.eighthNumber = "wrong";
                     }
                 };
         }
@@ -637,6 +661,30 @@ function succerrorAndCreateMiniIcon(countId, numberQuestion, number) {
             createMiniIcon(
                 number.sixthNumber,
                 document.getElementById("sixthNumber" + numberQuestion)
+            );
+        }
+
+        if (i === 6) {
+            succerror(
+                document.getElementById("seventhNumber" + numberQuestion),
+                number.seventhNumber === "wrong"
+            );
+
+            createMiniIcon(
+                number.seventhNumber,
+                document.getElementById("seventhNumber" + numberQuestion)
+            );
+        }
+
+        if (i === 7) {
+            succerror(
+                document.getElementById("eighthNumber" + numberQuestion),
+                number.eighthNumber === "wrong"
+            );
+
+            createMiniIcon(
+                number.eighthNumber,
+                document.getElementById("eighthNumber" + numberQuestion)
             );
         }
     }
