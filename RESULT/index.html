@@ -981,7 +981,13 @@
                                     <input type="text" id="secondNumber17" />
                                 </div>
                             </div>
-                            <div id="firstEmpty17"></div>
+                            <div
+                                ondragstart="drag17(event)"
+                                ondrop="drop17(event)"
+                                ondragover="allowDrop(event)"
+                                draggable="true"
+                                id="firstEmpty17"
+                            ></div>
                             <div class="fraction17">
                                 <div>
                                     <input type="text" id="thirdNumber17" />
@@ -998,9 +1004,33 @@
                             </div>
                         </div>
                         <div class="btns17">
-                            <div><</div>
-                            <div>=</div>
-                            <div>></div>
+                            <div
+                                ondragstart="drag17(event)"
+                                ondrop="drop17(event)"
+                                ondragover="allowDrop(event)"
+                                draggable="true"
+                                id="firstBtn17"
+                            >
+                                <
+                            </div>
+                            <div
+                                ondragstart="drag17(event)"
+                                ondrop="drop17(event)"
+                                ondragover="allowDrop(event)"
+                                draggable="true"
+                                id="secondBtn17"
+                            >
+                                =
+                            </div>
+                            <div
+                                ondragstart="drag17(event)"
+                                ondrop="drop17(event)"
+                                ondragover="allowDrop(event)"
+                                draggable="true"
+                                id="thirdBtn17"
+                            >
+                                >
+                            </div>
                         </div>
                     </div>
                 </div>
