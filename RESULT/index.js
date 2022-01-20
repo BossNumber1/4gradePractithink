@@ -1396,7 +1396,7 @@ function question5() {
                 5
             );
 
-            // addCorrectAnswerQuestion5();
+            addCorrectAnswerQuestion5();
         }
     } else {
         highlightingUnfillededBlocks(8, 5);
@@ -2405,7 +2405,6 @@ document.getElementById("submit").onclick = function () {
     question3();
     question4();
     question5();
-    // addCorrectAnswerQuestion5();
     question6();
     question7();
     question8();
