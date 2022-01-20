@@ -677,6 +677,14 @@ function addMiniIcon(elem, status) {
     }
 
     if (
+        elem.parentElement.parentElement.parentElement.parentElement
+            .className === "content5"
+    ) {
+        objDiv.style.width = "70px";
+        objDiv.style.marginTop = "-55px";
+    }
+
+    if (
         elem.parentElement.parentElement.parentElement.className === "content11"
     ) {
         objDiv.style.marginTop = "-40px";
@@ -1279,7 +1287,120 @@ function question4() {
 // 5 QUESTION
 
 function question5() {
-    highlightingUnfillededBlocks(8, 5);
+    // получаем содежимое блоков
+    let first1row5 =
+        document.getElementsByClassName("first1row5")[0].children[0].id;
+    let second1row5 =
+        document.getElementsByClassName("second1row5")[0].children[0].id;
+    let third1row5 =
+        document.getElementsByClassName("third1row5")[0].children[0].id;
+    let fourth1row5 =
+        document.getElementsByClassName("fourth1row5")[0].children[0].id;
+    let first2row5 =
+        document.getElementsByClassName("first2row5")[0].children[0].id;
+    let second2row5 =
+        document.getElementsByClassName("second2row5")[0].children[0].id;
+    let third2row5 =
+        document.getElementsByClassName("third2row5")[0].children[0].id;
+    let fourth2row5 =
+        document.getElementsByClassName("fourth2row5")[0].children[0].id;
+
+    if (
+        first1row5 !== "firstEmpty5" &&
+        second1row5 !== "secondEmpty5" &&
+        third1row5 !== "thirdEmpty5" &&
+        fourth1row5 !== "fourthEmpty5" &&
+        first2row5 !== "fifthEmpty5" &&
+        second2row5 !== "sixthEmpty5" &&
+        third2row5 !== "seventhEmpty5" &&
+        fourth2row5 !== "eigthEmpty5"
+    ) {
+        // проверяем на верность для создания статуса
+        if (
+            first1row5 === "fourthBtn5" &&
+            second1row5 === "firstBtn5" &&
+            third1row5 === "seventhBtn5" &&
+            fourth1row5 === "eighthBtn5" &&
+            first2row5 === "fifthBtn5" &&
+            second2row5 === "thirdBtn5" &&
+            third2row5 === "sixthBtn5" &&
+            fourth2row5 === "secondBtn5"
+        ) {
+            addImage(
+                "success",
+                document.getElementsByClassName("question5"),
+                "app5",
+                5
+            );
+        } else {
+            if (first1row5 !== "fourthBtn5") {
+                document.getElementById(first1row5).style.border =
+                    "2px solid #ED7777";
+
+                addMiniIcon(document.getElementById(first1row5), "failure");
+            }
+
+            if (second1row5 !== "firstBtn5") {
+                document.getElementById(second1row5).style.border =
+                    "2px solid #ED7777";
+
+                addMiniIcon(document.getElementById(second1row5), "failure");
+            }
+
+            if (third1row5 !== "seventhBtn5") {
+                document.getElementById(third1row5).style.border =
+                    "2px solid #ED7777";
+
+                addMiniIcon(document.getElementById(third1row5), "failure");
+            }
+
+            if (fourth1row5 !== "eighthBtn5") {
+                document.getElementById(fourth1row5).style.border =
+                    "2px solid #ED7777";
+
+                addMiniIcon(document.getElementById(fourth1row5), "failure");
+            }
+
+            if (first2row5 !== "fifthBtn5") {
+                document.getElementById(first2row5).style.border =
+                    "2px solid #ED7777";
+
+                addMiniIcon(document.getElementById(first2row5), "failure");
+            }
+
+            if (second2row5 !== "thirdBtn5") {
+                document.getElementById(second2row5).style.border =
+                    "2px solid #ED7777";
+
+                addMiniIcon(document.getElementById(second2row5), "failure");
+            }
+
+            if (third2row5 !== "sixthBtn5") {
+                document.getElementById(third2row5).style.border =
+                    "2px solid #ED7777";
+
+                addMiniIcon(document.getElementById(third2row5), "failure");
+            }
+
+            if (fourth2row5 !== "secondBtn5") {
+                document.getElementById(fourth2row5).style.border =
+                    "2px solid #ED7777";
+
+                addMiniIcon(document.getElementById(fourth2row5), "failure");
+            }
+
+            addImage(
+                "failure",
+                document.getElementsByClassName("question5"),
+                "app5",
+                5
+            );
+
+            // addCorrectAnswerQuestion5();
+        }
+    } else {
+        highlightingUnfillededBlocks(8, 5);
+    }
 }
 
 // 6 QUESTION

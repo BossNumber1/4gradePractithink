@@ -75,14 +75,14 @@
     text-align: right;
 }
 
-.first1row5 div,
-.second1row5 div,
-.third1row5 div,
-.fourth1row5 div,
-.first2row5 div,
-.second2row5 div,
-.third2row5 div,
-.fourth2row5 div {
+.first1row5 div:not(.statusMiniIcon),
+.second1row5 div:not(.statusMiniIcon),
+.third1row5 div:not(.statusMiniIcon),
+.fourth1row5 div:not(.statusMiniIcon),
+.first2row5 div:not(.statusMiniIcon),
+.second2row5 div:not(.statusMiniIcon),
+.third2row5 div:not(.statusMiniIcon),
+.fourth2row5 div:not(.statusMiniIcon) {
     display: flex;
     flex-direction: row;
     justify-content: center;
