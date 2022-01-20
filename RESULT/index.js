@@ -460,6 +460,13 @@ function addMiniIcon(elem, status) {
     }
 
     if (
+        elem.parentElement.parentElement.parentElement.parentElement
+            .className === "content22"
+    ) {
+        objDiv.style.marginTop = "-23px";
+    }
+
+    if (
         elem.parentElement.firstElementChild.id === "secondNumber9" ||
         elem.parentElement.firstElementChild.id === "thirdNumber9"
     ) {
