@@ -102,7 +102,9 @@
     justify-content: space-between;
 }
 
-.btns7 div {
+#firstBtn7,
+#secondBtn7,
+#thirdBtn7 {
     display: flex;
     flex-direction: row;
     justify-content: center;

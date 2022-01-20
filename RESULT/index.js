@@ -401,6 +401,37 @@ function drop5(e) {
     orignalElement.id = currentId;
 }
 
+// 7 QUESTION
+
+function drag7(e) {
+    localStorage.setItem("idOrigin7question4class", e.target.id);
+    localStorage.setItem(
+        "textContent7question4class",
+        e.target.textContent.trim()
+    );
+}
+
+function drop7(e) {
+    // получаем текст и id взятого элемента
+    let idOrig = localStorage.getItem("idOrigin7question4class");
+    let textContent = localStorage.getItem("textContent7question4class");
+
+    // получаем id, на который кладём элемент
+    let currentId = e.target.id;
+
+    // получаем объекты
+    let orignalElement = document.getElementById(idOrig);
+    let currentElement = document.getElementById(currentId);
+
+    // меняем блоки местами
+    currentElement.textContent = textContent;
+    orignalElement.textContent = "";
+
+    // меняем id местами
+    currentElement.id = idOrig;
+    orignalElement.id = currentId;
+}
+
 // 10 QUESTION
 
 function drag10(e) {

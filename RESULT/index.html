@@ -416,7 +416,13 @@
                                     <input type="text" id="secondNumber7" />
                                 </div>
                             </div>
-                            <div id="firstEmpty7"></div>
+                            <div
+                                ondragstart="drag7(event)"
+                                ondrop="drop7(event)"
+                                ondragover="allowDrop(event)"
+                                draggable="true"
+                                id="firstEmpty7"
+                            ></div>
                             <div class="fraction7">
                                 <div>
                                     <input type="text" id="thirdNumber7" />
@@ -433,9 +439,33 @@
                             </div>
                         </div>
                         <div class="btns7">
-                            <div><</div>
-                            <div>=</div>
-                            <div>></div>
+                            <div
+                                ondragstart="drag7(event)"
+                                ondrop="drop7(event)"
+                                ondragover="allowDrop(event)"
+                                draggable="true"
+                                id="firstBtn7"
+                            >
+                                <
+                            </div>
+                            <div
+                                ondragstart="drag7(event)"
+                                ondrop="drop7(event)"
+                                ondragover="allowDrop(event)"
+                                draggable="true"
+                                id="secondBtn7"
+                            >
+                                =
+                            </div>
+                            <div
+                                ondragstart="drag7(event)"
+                                ondrop="drop7(event)"
+                                ondragover="allowDrop(event)"
+                                draggable="true"
+                                id="thirdBtn7"
+                            >
+                                >
+                            </div>
                         </div>
                     </div>
                 </div>
