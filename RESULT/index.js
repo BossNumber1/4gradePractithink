@@ -1302,74 +1302,74 @@ function question11() {
             );
         } else {
             if (firstEmpty.value !== "3") {
-                firstEmpty.style.border = "2px solid #FFB47D";
-                firstEmpty.style.backgroundColor = "#FFB47D";
+                firstEmpty.style.border = "2px solid #ED7777";
+                firstEmpty.style.backgroundColor = "#ED7777";
                 firstEmpty.style.color = "white";
             }
 
             if (secondEmpty.value !== "") {
-                secondEmpty.style.border = "2px solid #FFB47D";
-                secondEmpty.style.backgroundColor = "#FFB47D";
+                secondEmpty.style.border = "2px solid #ED7777";
+                secondEmpty.style.backgroundColor = "#ED7777";
                 secondEmpty.style.color = "white";
             }
 
             if (thirdEmpty.value !== "2") {
-                thirdEmpty.style.border = "2px solid #FFB47D";
-                thirdEmpty.style.backgroundColor = "#FFB47D";
+                thirdEmpty.style.border = "2px solid #ED7777";
+                thirdEmpty.style.backgroundColor = "#ED7777";
                 thirdEmpty.style.color = "white";
             }
 
             if (fourthEmpty.value !== "6") {
-                fourthEmpty.style.border = "2px solid #FFB47D";
-                fourthEmpty.style.backgroundColor = "#FFB47D";
+                fourthEmpty.style.border = "2px solid #ED7777";
+                fourthEmpty.style.backgroundColor = "#ED7777";
                 fourthEmpty.style.color = "white";
             }
 
             if (fifthEmpty.value !== "4") {
-                fifthEmpty.style.border = "2px solid #FFB47D";
-                fifthEmpty.style.backgroundColor = "#FFB47D";
+                fifthEmpty.style.border = "2px solid #ED7777";
+                fifthEmpty.style.backgroundColor = "#ED7777";
                 fifthEmpty.style.color = "white";
             }
 
             if (sixthEmpty.value !== "2") {
-                sixthEmpty.style.border = "2px solid #FFB47D";
-                sixthEmpty.style.backgroundColor = "#FFB47D";
+                sixthEmpty.style.border = "2px solid #ED7777";
+                sixthEmpty.style.backgroundColor = "#ED7777";
                 sixthEmpty.style.color = "white";
             }
 
             if (seventhEmpty.value !== "3") {
-                seventhEmpty.style.border = "2px solid #FFB47D";
-                seventhEmpty.style.backgroundColor = "#FFB47D";
+                seventhEmpty.style.border = "2px solid #ED7777";
+                seventhEmpty.style.backgroundColor = "#ED7777";
                 seventhEmpty.style.color = "white";
             }
 
             if (eighthEmpty.value !== "3") {
-                eighthEmpty.style.border = "2px solid #FFB47D";
-                eighthEmpty.style.backgroundColor = "#FFB47D";
+                eighthEmpty.style.border = "2px solid #ED7777";
+                eighthEmpty.style.backgroundColor = "#ED7777";
                 eighthEmpty.style.color = "white";
             }
 
             if (ninthEmpty.value !== "4") {
-                ninthEmpty.style.border = "2px solid #FFB47D";
-                ninthEmpty.style.backgroundColor = "#FFB47D";
+                ninthEmpty.style.border = "2px solid #ED7777";
+                ninthEmpty.style.backgroundColor = "#ED7777";
                 ninthEmpty.style.color = "white";
             }
 
             if (tenthEmpty.value !== "3") {
-                tenthEmpty.style.border = "2px solid #FFB47D";
-                tenthEmpty.style.backgroundColor = "#FFB47D";
+                tenthEmpty.style.border = "2px solid #ED7777";
+                tenthEmpty.style.backgroundColor = "#ED7777";
                 tenthEmpty.style.color = "white";
             }
 
             if (eleventhEmpty.value !== "2") {
-                eleventhEmpty.style.border = "2px solid #FFB47D";
-                eleventhEmpty.style.backgroundColor = "#FFB47D";
+                eleventhEmpty.style.border = "2px solid #ED7777";
+                eleventhEmpty.style.backgroundColor = "#ED7777";
                 eleventhEmpty.style.color = "white";
             }
 
             if (twelfthEmpty.value !== "2") {
-                twelfthEmpty.style.border = "2px solid #FFB47D";
-                twelfthEmpty.style.backgroundColor = "#FFB47D";
+                twelfthEmpty.style.border = "2px solid #ED7777";
+                twelfthEmpty.style.backgroundColor = "#ED7777";
                 twelfthEmpty.style.color = "white";
             }
 
