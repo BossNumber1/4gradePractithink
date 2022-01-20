@@ -443,6 +443,12 @@ function addMiniIcon(elem, status) {
         }
 
         objDiv.style.marginTop = "90px";
+    } else if (
+        elem.parentElement.parentElement.parentElement.className === "content6"
+    ) {
+        objDiv.style.marginTop = "-50px";
+        objDiv.style.marginLeft =
+            elem.offsetLeft + widthAdjacentElement / 2 - 7 + "px";
     } else {
         objDiv.style.marginTop = "-63px";
         objDiv.style.marginLeft =
