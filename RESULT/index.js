@@ -467,7 +467,12 @@ function addMiniIcon(elem, status) {
 
     // устанавливаем её в нужное место
     let elementParent = elem.parentElement;
-    elementParent.insertBefore(objDiv, elem);
+
+    if (
+        elem.parentElement.parentElement.parentElement.className !== "content4"
+    ) {
+        elementParent.insertBefore(objDiv, elem);
+    }
 }
 
 // делаем появление мини-иконок над областью проверки
