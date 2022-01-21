@@ -684,6 +684,19 @@ function addMiniIcon(elem, status) {
         objDiv.style.marginTop = "-55px";
     }
 
+    if (elem.parentElement.parentElement.className === "content10") {
+        objDiv.style.width = "70px";
+
+        if (elem.className === "firstInput10") {
+            objDiv.style.marginLeft =
+                elem.offsetLeft + widthAdjacentElement / 2 - 335 + "px";
+        } else if (elem.className === "secondInput10") {
+            objDiv.style.marginLeft = "-30px";
+        }
+
+        objDiv.style.marginRight = "130px";
+    }
+
     if (
         elem.parentElement.parentElement.parentElement.className === "content11"
     ) {
@@ -1627,7 +1640,58 @@ function question9() {
 // 10 QUESTION
 
 function question10() {
-    highlightingUnfillededBlocks(2, 10);
+    // получаем содежимое блоков
+    let firstInput10 =
+        document.getElementsByClassName("inputs10")[0].children[0].id;
+    let secondInput10 =
+        document.getElementsByClassName("inputs10")[0].children[1].id;
+
+    if (firstInput10 !== "firstEmpty10" && secondInput10 !== "secondEmpty10") {
+        // проверяем на верность для создания статуса
+        if (firstInput10 === "secondBtn10" && secondInput10 === "firstBtn10") {
+            addImage(
+                "success",
+                document.getElementsByClassName("question10"),
+                "app10",
+                10
+            );
+        } else {
+            if (firstInput10 !== "secondBtn10") {
+                document.getElementById(firstInput10).style.border =
+                    "2px solid #ED7777";
+
+                addMiniIcon(document.getElementById(firstInput10), "failure");
+            } else if (firstInput10 === "secondBtn10") {
+                document.getElementById(firstInput10).style.border =
+                    "2px solid #9DD765";
+
+                addMiniIcon(document.getElementById(firstInput10), "success");
+            }
+
+            if (secondInput10 !== "firstBtn10") {
+                document.getElementById(secondInput10).style.border =
+                    "2px solid #ED7777";
+
+                addMiniIcon(document.getElementById(secondInput10), "failure");
+            } else if (firstInput10 === "firstBtn10") {
+                document.getElementById(secondInput10).style.border =
+                    "2px solid #9DD765";
+
+                addMiniIcon(document.getElementById(secondInput10), "success");
+            }
+
+            addImage(
+                "failure",
+                document.getElementsByClassName("question10"),
+                "app10",
+                10
+            );
+
+            addCorrectAnswerQuestion10();
+        }
+    } else {
+        highlightingUnfillededBlocks(2, 10);
+    }
 }
 
 // 11 QUESTION
