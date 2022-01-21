@@ -58,7 +58,7 @@
     justify-content: space-between;
 }
 
-.places15 div {
+.places15 div:not(.statusMiniIcon) {
     display: flex;
     flex-direction: row;
     justify-content: center;
