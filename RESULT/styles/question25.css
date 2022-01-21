@@ -44,11 +44,11 @@
     height: 80.92px;
 }
 
-.figures25 img:nth-child(1) {
+.figures25 div:nth-child(1) {
     margin-left: 150px;
 }
 
-.figures25 img:nth-child(2) {
+.figures25 div:nth-child(2) {
     margin-top: 45px;
 }
 

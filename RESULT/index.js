@@ -664,6 +664,50 @@ document
         }
     });
 
+// ----------------------------------------------------------- ROTATE ARROWS ---------------------------------------------------------------
+
+dragElement2(document.getElementsByClassName("greenArrow")[0]);
+
+function dragElement2(element) {
+    let pos1 = 0,
+        pos2 = 0,
+        pos3 = 0,
+        pos4 = 0;
+
+    element.onmousedown = dragMouseDown;
+
+    function dragMouseDown(e) {
+        e = e || window.event;
+        // get the mouse cursor position at startup:
+        pos3 = e.clientX;
+        pos4 = e.clientY;
+        document.onmouseup = closeDragElement;
+        document.onmousemove = elementDrag;
+    }
+
+    function elementDrag(e) {
+        e = e || window.event;
+        // calculate the new cursor position:
+        pos1 = pos3 - e.clientX;
+        pos2 = pos4 - e.clientY;
+        pos3 = e.clientX;
+        pos4 = e.clientY;
+        // set the element's new position:
+        element.style.top = element.offsetTop - pos2 + "px";
+    }
+
+    function closeDragElement() {
+        document.onmouseup = null;
+        document.onmousemove = null;
+    }
+}
+
+document
+    .getElementsByClassName("greenArrow")[0]
+    .addEventListener("mousedown", (e) => {
+        dragElement2(document.getElementsByClassName("greenArrow")[0]);
+    });
+
 // --------------------------------------------------------------------- validation of input fields ----------------------------------------------
 
 // -------------------------------------------------------------common function---------------------------------------------------
