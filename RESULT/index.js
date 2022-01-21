@@ -2228,7 +2228,7 @@ let numbers17 = {
 gettingDataFromFields(4, [8, 12, 3, 4], 17, numbers17);
 
 function question17() {
-    let firstEmpty = document.getElementById("firstEmpty17");
+    let firstEmpty = document.getElementsByClassName("firstEmpty17")[0];
 
     if (
         numbers17.firstNumber !== "" &&
@@ -2237,8 +2237,6 @@ function question17() {
         numbers17.fourthNumber !== "" &&
         firstEmpty.textContent !== ""
     ) {
-        succerrorAndCreateMiniIcon(4, 17, numbers17);
-
         // выносим общий статус к номеру вопроса
 
         if (
@@ -2246,8 +2244,10 @@ function question17() {
             numbers17.secondNumber === "right" &&
             numbers17.thirdNumber === "right" &&
             numbers17.fourthNumber === "right" &&
-            firstEmpty.textContent !== "="
+            firstEmpty.textContent === "<"
         ) {
+            firstEmpty.style.backgroundColor = "#9DD765";
+
             addImage(
                 "success",
                 document.getElementsByClassName("question17"),
@@ -2255,6 +2255,28 @@ function question17() {
                 17
             );
         } else {
+            succerror(
+                document.getElementById("firstNumber17"),
+                numbers17.firstNumber === "wrong"
+            );
+
+            succerror(
+                document.getElementById("secondNumber17"),
+                numbers17.secondNumber === "wrong"
+            );
+
+            succerror(
+                document.getElementById("thirdNumber17"),
+                numbers17.thirdNumber === "wrong"
+            );
+
+            succerror(
+                document.getElementById("fourthNumber17"),
+                numbers17.fourthNumber === "wrong"
+            );
+
+            succerror(firstEmpty, firstEmpty.textContent !== "<");
+
             addImage(
                 "failure",
                 document.getElementsByClassName("question17"),
