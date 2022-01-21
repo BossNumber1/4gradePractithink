@@ -724,6 +724,10 @@ function addMiniIcon(elem, status) {
         objDiv.style.marginTop = "-23px";
     }
 
+    if (elem.parentElement.parentElement.className === "content21") {
+        objDiv.style.marginTop = "-23px";
+    }
+
     if (
         elem.parentElement.parentElement.parentElement.parentElement
             .className === "content22"
@@ -2677,7 +2681,6 @@ document.getElementById("submit").onclick = function () {
     question19();
     question20();
     question21();
-    // addCorrectAnswerQuestion21();
     question22();
     question23();
     question24();
