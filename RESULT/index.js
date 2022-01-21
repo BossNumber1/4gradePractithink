@@ -708,6 +708,30 @@ document
         dragElement2(document.getElementsByClassName("greenArrow")[0]);
     });
 
+// --------------------------------------------------------------------- BLOCK STRETCHING --------------------------------------------------------
+
+// 26 QUESTION
+
+// function question26() {
+document.getElementsByClassName("adjustableLevel")[0].onmousedown =
+    function () {
+        let adjustableLevel =
+            document.getElementsByClassName("adjustableLevel")[0];
+
+        adjustableLevel.children[0].src =
+            "./pictures/26que/adjustableLevelNew.svg";
+
+        let purpleDiv = document.createElement("div");
+        purpleDiv.style.backgroundColor = "#EA368C";
+
+        purpleDiv.style.top = "-90px";
+        purpleDiv.style.height = "87px";
+        purpleDiv.style.width = "69px";
+
+        adjustableLevel.appendChild(purpleDiv);
+    };
+// }
+
 // --------------------------------------------------------------------- validation of input fields ----------------------------------------------
 
 // -------------------------------------------------------------common function---------------------------------------------------
@@ -2842,6 +2866,6 @@ document.getElementById("submit").onclick = function () {
     question24();
     question25();
     // addCorrectAnswerQuestion25();
-    // -- 26 --
+    // question26();
     // addCorrectAnswerQuestion26();
 };
