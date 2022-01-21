@@ -87,3 +87,25 @@
     top: 118px;
     left: 320px;
 }
+
+.imgRuler {
+    cursor: grab;
+}
+
+.leftEdge,
+.rightEdge {
+    display: flex;
+    width: 50px;
+    height: 57px;
+    position: absolute;
+    cursor: pointer;
+    top: 150px;
+}
+
+.leftEdge {
+    z-index: 1;
+}
+
+.rightEdge {
+    left: 86.5%;
+}
