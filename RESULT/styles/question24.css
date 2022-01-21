@@ -49,7 +49,7 @@
     justify-content: space-between;
 }
 
-.figures24 div {
+.figures24 div:not(.statusMiniIcon) {
     width: 70px;
     height: 45px;
     background: #ffffff;

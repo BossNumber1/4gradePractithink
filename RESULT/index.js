@@ -1690,7 +1690,7 @@ function question10() {
                     "2px solid #ED7777";
 
                 addMiniIcon(document.getElementById(secondInput10), "failure");
-            } else if (firstInput10 === "firstBtn10") {
+            } else if (secondInput10 === "firstBtn10") {
                 document.getElementById(secondInput10).style.border =
                     "2px solid #9DD765";
 
@@ -2519,7 +2519,96 @@ function question23() {
 // 24 QUESTION
 
 function question24() {
-    highlightingUnfillededBlocks(4, 24);
+    // получаем содежимое блоков
+    let firstPlace24 =
+        document.getElementsByClassName("figures24")[0].children[0].id;
+    let secondPlace24 =
+        document.getElementsByClassName("figures24")[0].children[1].id;
+    let thirdPlace24 =
+        document.getElementsByClassName("figures24")[0].children[2].id;
+    let fourthPlace24 =
+        document.getElementsByClassName("figures24")[0].children[3].id;
+
+    if (
+        firstPlace24 !== "firstEmpty24" &&
+        secondPlace24 !== "secondEmpty24" &&
+        thirdPlace24 !== "thirdEmpty24" &&
+        fourthPlace24 !== "fourthEmpty24"
+    ) {
+        // проверяем на верность для создания статуса
+        if (
+            firstPlace24 === "thirdBtn24" &&
+            secondPlace24 === "secondBtn24" &&
+            thirdPlace24 === "fifthBtn24" &&
+            fourthPlace24 === "firstBtn24"
+        ) {
+            addImage(
+                "success",
+                document.getElementsByClassName("question24"),
+                "app24",
+                24
+            );
+        } else {
+            if (firstPlace24 !== "thirdBtn24") {
+                document.getElementById(firstPlace24).style.border =
+                    "2px solid #ED7777";
+
+                addMiniIcon(document.getElementById(firstPlace24), "failure");
+            } else if (firstPlace24 === "thirdBtn24") {
+                document.getElementById(firstPlace24).style.border =
+                    "2px solid #9DD765";
+
+                addMiniIcon(document.getElementById(firstPlace24), "success");
+            }
+
+            if (secondPlace24 !== "secondBtn24") {
+                document.getElementById(secondPlace24).style.border =
+                    "2px solid #ED7777";
+
+                addMiniIcon(document.getElementById(secondPlace24), "failure");
+            } else if (secondPlace24 === "secondBtn24") {
+                document.getElementById(secondPlace24).style.border =
+                    "2px solid #9DD765";
+
+                addMiniIcon(document.getElementById(secondPlace24), "success");
+            }
+
+            if (thirdPlace24 !== "fifthBtn24") {
+                document.getElementById(thirdPlace24).style.border =
+                    "2px solid #ED7777";
+
+                addMiniIcon(document.getElementById(thirdPlace24), "failure");
+            } else if (thirdPlace24 === "fifthBtn24") {
+                document.getElementById(thirdPlace24).style.border =
+                    "2px solid #9DD765";
+
+                addMiniIcon(document.getElementById(thirdPlace24), "success");
+            }
+
+            if (fourthPlace24 !== "firstBtn24") {
+                document.getElementById(fourthPlace24).style.border =
+                    "2px solid #ED7777";
+
+                addMiniIcon(document.getElementById(fourthPlace24), "failure");
+            } else if (fourthPlace24 === "firstBtn24") {
+                document.getElementById(fourthPlace24).style.border =
+                    "2px solid #9DD765";
+
+                addMiniIcon(document.getElementById(fourthPlace24), "success");
+            }
+
+            addImage(
+                "failure",
+                document.getElementsByClassName("question24"),
+                "app24",
+                24
+            );
+
+            addCorrectAnswerQuestion24();
+        }
+    } else {
+        highlightingUnfillededBlocks(4, 24);
+    }
 }
 
 // 25 QUESTION
