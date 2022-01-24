@@ -2,13 +2,19 @@
 <html lang="ru">
     <head>
         <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>TOTAL | 4 CLASS</title>
-        <link rel="stylesheet" href="./common.css" />
         <script
             type="text/javascript"
             src="./propeller/src/propeller.js"
         ></script>
+        <link
+            rel="stylesheet"
+            href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css"
+        />
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+        <link rel="stylesheet" href="./common.css" />
     </head>
     <body>
         <div class="app">
@@ -1396,7 +1402,9 @@
                             <img
                                 src="./pictures/26que/adjustableLevel.svg"
                                 alt="adjustable level"
+                                style="z-index: 2"
                             />
+                            <div id="resizable" class="ui-widget-content"></div>
                         </div>
                     </div>
                 </div>

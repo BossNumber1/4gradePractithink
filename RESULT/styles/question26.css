@@ -117,7 +117,13 @@
     height: 293px;
     left: 300px;
     top: 25.5px;
-    /* border: 2px dashed #d634ff; */
     box-sizing: border-box;
-    cursor: row-resize;
+}
+
+#resizable {
+    top: -88.5px;
+    height: 84px;
+    width: 67px;
+    position: relative;
+    background: #ea368c;
 }

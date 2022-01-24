@@ -712,7 +712,13 @@ document
 
 // 26 QUESTION
 
-// function question26() {
+$(function () {
+    $("#resizable").resizable({
+        handles: "n",
+        minWidth: "50",
+    });
+});
+
 document.getElementsByClassName("adjustableLevel")[0].onmousedown =
     function () {
         let adjustableLevel =
@@ -721,16 +727,8 @@ document.getElementsByClassName("adjustableLevel")[0].onmousedown =
         adjustableLevel.children[0].src =
             "./pictures/26que/adjustableLevelNew.svg";
 
-        let purpleDiv = document.createElement("div");
-        purpleDiv.style.backgroundColor = "#EA368C";
-
-        purpleDiv.style.top = "-90px";
-        purpleDiv.style.height = "87px";
-        purpleDiv.style.width = "69px";
-
-        adjustableLevel.appendChild(purpleDiv);
+        document.querySelector(".adjustableLevel > img").style.zIndex = -1;
     };
-// }
 
 // --------------------------------------------------------------------- validation of input fields ----------------------------------------------
 
