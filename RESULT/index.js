@@ -712,6 +712,8 @@ document
 
 // 26 QUESTION
 
+let whetherAblockIsSelected = "no";
+
 $(function () {
     $("#resizable").resizable({
         handles: "n",
@@ -721,6 +723,8 @@ $(function () {
 
 document.getElementsByClassName("adjustableLevel")[0].onmousedown =
     function () {
+        whetherAblockIsSelected = "yes";
+
         let adjustableLevel =
             document.getElementsByClassName("adjustableLevel")[0];
 
@@ -2833,7 +2837,38 @@ function question25() {
     }
 }
 
-// PLACE FOR 26 QUESTION
+// 26 QUESTION
+
+function question26() {
+    if (whetherAblockIsSelected === "yes") {
+        if (document.getElementById("resizable").style.height === "168px") {
+            addImage(
+                "success",
+                document.getElementsByClassName("question26"),
+                "app26",
+                26
+            );
+        } else {
+            document.getElementsByClassName("adjustableLevel")[0].style.border =
+                "0.5px solid #ED7777";
+
+            document.getElementById("resizable").style.marginTop = "-1px";
+            document.getElementById("resizable").style.marginLeft = "-0.5px";
+
+            addImage(
+                "failure",
+                document.getElementsByClassName("question26"),
+                "app26",
+                26
+            );
+
+            addCorrectAnswerQuestion26();
+        }
+    } else {
+        document.getElementsByClassName("adjustableLevel")[0].style.border =
+            "0.5px solid #FFB47D";
+    }
+}
 
 // RESULT
 
@@ -2863,7 +2898,5 @@ document.getElementById("submit").onclick = function () {
     question23();
     question24();
     question25();
-    // addCorrectAnswerQuestion25();
-    // question26();
-    // addCorrectAnswerQuestion26();
+    question26();
 };
