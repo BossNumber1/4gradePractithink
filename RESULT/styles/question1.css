@@ -50,6 +50,22 @@
     height: 63px;
 }
 
+.content1input {
+    top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 76px;
+    height: 30px;
+    margin-left: 10px;
+    /* border: 1px solid; */
+}
+
+.secondBlock1 .content1input,
+.fourthBlock1 .content1input {
+    margin-left: 0px;
+}
+
 .content1 input {
     display: flex;
     flex-direction: row;
@@ -61,14 +77,4 @@
     box-sizing: border-box;
     border-radius: 5px;
     text-align: center;
-}
-
-.content1input {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 76px;
-    height: 30px;
-    top: 13px;
-    margin-left: 10px;
 }
